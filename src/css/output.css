@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'SF Pro Display';
+
+  src: url('../fonts/SFProDisplay-Regular.eot');
+
+  src: url('../fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+        url('../fonts/SFProDisplay-Regular.ttf') format('truetype'),
+        url('../fonts/SFProDisplay-Regular.svg#SFProDisplay-Regular') format('svg'),
+        url('../fonts/SFProDisplay-Regular.OTF') format('otf');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -544,23 +563,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-rose-darck {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 0 126 / var(--tw-bg-opacity));
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.text-rose-darck {
-  --tw-text-opacity: 1;
-  color: rgb(255 0 126 / var(--tw-text-opacity));
+.font-SFProDisplay {
+  font-family: SF Pro Display, sans-serif;
 }
 
 .text-rose-light {
