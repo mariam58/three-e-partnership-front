@@ -30,37 +30,37 @@ module.exports = {
     },
     fontSize: {
       // 50px
-      'section-header-lg': ['3.125rem', {
+      'header-lg': ['3.125rem', {
         lineHeight: '3.75rem',
         fontWeight: '700',
       }],
       // 38px
-      'section-header-sm': ['2.375rem', {
+      'header-md': ['2.375rem', {
         lineHeight: '2.8rem',
         fontWeight: '700',
       }],
       // 28px
-      'card-title': ['1.75rem', {
+      'header-sm': ['1.75rem', {
         lineHeight: '2rem',
         fontWeight: '700',
       }],
       // 18px
-      'paragraf:lg': ['1.125rem', {
+      'text-xl': ['1.125rem', {
         lineHeight: '1.43rem',
         fontWeight: '700',
       }],
       // 16px
-      'medium': ['1rem', {
+      'text-lg': ['1rem', {
         lineHeight: '1.43rem',
         fontWeight: '500',
       }],
       // 14 px
-      'paragraf:md': ['0.8rem', {
+      'text-md': ['0.8rem', {
         lineHeight: '1.43rem',
         fontWeight: '500',
       }],
       // 12px
-      'paragraf:sm': ['0.75rem', {
+      'text-sm': ['0.75rem', {
         lineHeight: '1.43rem',
         fontWeight: '500',
       }],
