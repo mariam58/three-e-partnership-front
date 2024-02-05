@@ -24,8 +24,20 @@ module.exports = {
         green: '#1DB216',
         linksColor: '#00000080'
       },
-     
+     fontFamily:{
+      SFProDisplay:["SF Pro Display", "sans-serif"]
+     }
     },
   },
   plugins: [],
 }
+
+
+//     fontFamily: {
+//       PtSansBold: ["PtSansBold", "sans-serif"],
+//       PtSansItalic: ["PtSansItalic", "sans-serif"],
+//     },
+//   },
+// },
+// plugins: [],
+// };
