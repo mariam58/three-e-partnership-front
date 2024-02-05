@@ -544,6 +544,11 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.bg-rose-darck {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 126 / var(--tw-bg-opacity));
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -551,6 +556,16 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.text-rose-darck {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 126 / var(--tw-text-opacity));
+}
+
+.text-rose-light {
+  --tw-text-opacity: 1;
+  color: rgb(255 196 225 / var(--tw-text-opacity));
 }
 
 .underline {

@@ -16,10 +16,10 @@ module.exports = {
         },
         blue:{
           light: '#5B60FF',
-          darck:'#0E14F1',
+          dark:'#0E14F1',
         },
-        darckgray:'#2D2D2D',
-        pureWite:'#F7F5F0',
+        darkgray:'#2D2D2D',
+        pureWhite:'#F7F5F0',
         yellow: '#FFD700',
         green: '#1DB216',
         linksColor: '#00000080'
