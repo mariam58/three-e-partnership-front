@@ -27,6 +27,9 @@
 }
 
 .section-text {
-    @apply text-text-lg lg:text-header-lg text-rose-dark
-    
+    @apply text-text-lg lg:text-header-lg text-black 
+}
+
+.btn-prymari{
+    @apply bg-blue-dark hover:bg-darkgray text-white text-text-lg py-4 px-5 mx-auto rounded-lg
 }
