@@ -31,5 +31,19 @@
 }
 
 .btn-prymari{
-    @apply bg-blue-dark hover:bg-darkgray text-white text-text-lg py-4 px-5 mx-auto rounded-lg
+    @apply bg-blue-dark hover:bg-darkgray text-white text-text-lg py-4 px-5 mx-auto rounded-lg 
 }
+.more-link{
+    @apply text-text-lg underline text-darkgray hover:text-black
+    /* hover ar chans dizainshi */
+}
+
+.pagination-links{
+    @apply relative rounded-full border border-solid border-rose-dark w-[46px] h-[46px] text-text-lg text-rose-dark transition-all duration-300 bg-transparent hover:bg-rose-dark  hover:text-white
+    active:bg-rose-dark active:text-white
+}
+
+.pagination-items{
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+}
+
