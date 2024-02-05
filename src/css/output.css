@@ -594,10 +594,9 @@ video {
 
 .section-text {
   font-size: 1rem;
-  line-height: 1.43rem;
   font-weight: 500;
   --tw-text-opacity: 1;
-  color: rgb(255 0 126 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024) {
@@ -606,4 +605,25 @@ video {
     line-height: 3.75rem;
     font-weight: 700;
   }
+}
+
+.btn-prymari {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 20 241 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn-prymari:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 45 45 / var(--tw-bg-opacity));
 }

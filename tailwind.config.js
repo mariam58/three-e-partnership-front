@@ -51,7 +51,6 @@ module.exports = {
       }],
       // 16px
       'text-lg': ['1rem', {
-        lineHeight: '1.43rem',
         fontWeight: '500',
       }],
       // 14 px
