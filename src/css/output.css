@@ -563,15 +563,3 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.font-SFProDisplay {
-  font-family: SF Pro Display, sans-serif;
-}
-
-.text-rose-light {
-  --tw-text-opacity: 1;
-  color: rgb(255 196 225 / var(--tw-text-opacity));
-}
-
-.underline {
-  text-decoration-line: underline;
-}
