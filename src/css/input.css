@@ -30,7 +30,7 @@
 
     /* underlined buttons grey */
     .more-link {
-        @apply text-text-lg underline text-darkgray hover:text-black
+        @apply text-text-lg underline text-darkgray hover:text-linksColor
         /* hover ar chans dizainshi */
     }
 
