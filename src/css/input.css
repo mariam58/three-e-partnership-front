@@ -17,59 +17,55 @@
 @tailwind utilities;
 
 
-
-
-
-
-  /* btn learn more, contact */
-@layer components{
-    .btn-prymari{
-        @apply  bg-blue-dark hover:bg-darkgray text-white text-text-lg py-4 px-5 mx-auto rounded-lg cursor-pointer transition-colors duration-75 focus:ring-2  
+/* btn learn more, contact */
+@layer components {
+    .btn-prymari {
+        @apply bg-blue-dark hover:bg-darkgray text-white text-text-lg py-4 px-5 mx-auto rounded-lg cursor-pointer transition-colors duration-75 focus:ring-2
     }
+
+    /* btn see all  */
+    .btn-see-all {
+        @apply btn-prymari px-[50px] rounded-[30px] shadow-2xl shadow-blue-dark hover:shadow-darkgray
+    }
+
+    /* underlined buttons grey */
+    .more-link {
+        @apply text-text-lg underline text-darkgray hover:text-black
+        /* hover ar chans dizainshi */
+    }
+
     .nav-links {
         @apply text-text-lg leading-5 text-linksColor hover:text-black cursor-pointer inline-block
-        }
-
-    /* dropdown */
-    /* .dropdown-header{
-        @apply 
-    } */
+    }
 
     /* rose titles of section responsive */
     .section-header {
-        @apply text-header-md lg:text-header-lg text-rose-dark 
+        @apply text-header-md lg:text-header-lg text-rose-dark
     }
 
     /* main paaragrafs responsive */
     .section-text {
-        @apply text-text-lg lg:text-header-lg text-black 
+        @apply text-text-lg lg:text-header-lg text-black
     }
 
-    /* btn see all  */
-    .btn-see-all{
-        @apply btn-prymari px-[50px] rounded-[30px]  
-    }
-
-    /* underlined links grey */
-    .more-link{
-        @apply text-text-lg underline text-darkgray hover:text-black 
-        /* hover ar chans dizainshi */
-    }
     /* rose paginations a */
-    .pagination-links{
-        @apply relative rounded-full border border-solid border-rose-dark w-[46px] h-[46px] text-text-lg text-rose-dark transition-all duration-300 bg-transparent hover:bg-rose-dark  hover:text-white active:bg-rose-dark active:text-white cursor-pointer
+    .pagination-links {
+        @apply relative rounded-full border border-solid border-rose-dark w-[46px] h-[46px] text-text-lg text-rose-dark transition-all duration-300 bg-transparent hover:bg-rose-dark hover:text-white active:bg-rose-dark active:text-white cursor-pointer
     }
+
     /* paginations iner text - 1 2 3  */
-    .pagination-items{
+    .pagination-items {
         @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
     }
 
-    .wrapper{
+    /* all container wraper */
+    .wrapper {
         @apply container max-w-[1151px] w-full mx-auto px-2
     }
 
-}  
+    /* labels */
+    .label {
+        @apply mx-auto rounded-[40px] bg-white w-[91px] text-text-sm font-bold text-blue-dark px-2 cursor-pointer
+    }
 
-
-
-
+}
