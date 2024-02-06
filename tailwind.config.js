@@ -3,12 +3,12 @@ module.exports = {
   content: ["./src/**/*.{html,js}","./index.html"], 
    theme: {
     extend: {
-      screens:{
-        sm: '640px',
-        md: '768px',
-        lg: '1024',
-        xl: '1280',
-      },
+      // screens:{
+      //   sm: '640px',
+      //   md: '768px',
+      //   lg: '1024',
+      //   xl: '1280',
+      // },
       colors:{
         rose:{
           light: '#FFC4E1',
@@ -30,17 +30,17 @@ module.exports = {
     },
     fontSize: {
       // 50px
-      'header-lg': ['3.125rem', {
+      'heading-lg': ['3.125rem', {
         lineHeight: '3.75rem',
         fontWeight: '700',
       }],
       // 38px
-      'header-md': ['2.375rem', {
+      'heading-md': ['2.375rem', {
         lineHeight: '2.8rem',
         fontWeight: '700',
       }],
       // 28px
-      'header-sm': ['1.75rem', {
+      'heading-sm': ['1.75rem', {
         lineHeight: '2rem',
         fontWeight: '700',
       }],
