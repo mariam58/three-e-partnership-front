@@ -19,13 +19,13 @@
 
 /* btn learn more, contact */
 @layer components {
-    .btn-prymari {
+    .btn-primary {
         @apply bg-blue-dark hover:bg-darkgray text-white text-text-lg py-4 px-5 mx-auto rounded-lg cursor-pointer transition-colors duration-75 focus:ring-2
     }
 
     /* btn see all  */
     .btn-see-all {
-        @apply btn-prymari px-[50px] rounded-[30px] shadow-2xl shadow-blue-dark hover:shadow-darkgray
+        @apply btn-primary px-[50px] rounded-[30px] shadow-2xl shadow-blue-dark hover:shadow-darkgray
     }
 
     /* underlined buttons grey */
@@ -39,13 +39,13 @@
     }
 
     /* rose titles of section responsive */
-    .section-header {
-        @apply text-header-md lg:text-header-lg text-rose-dark
+    .section-heading {
+        @apply text-heading-md lg:text-heading-lg text-rose-dark
     }
 
     /* main paaragrafs responsive */
     .section-text {
-        @apply text-text-lg lg:text-header-lg text-black
+        @apply text-text-lg lg:text-heading-lg text-black
     }
 
     /* rose paginations a */
