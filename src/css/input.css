@@ -84,3 +84,6 @@ body{
     }
 
 }
+.dropdown{
+    @apply rounded-[10px] p-[7px] shadow-lg transition-all duration-300 cursor-pointer
+}

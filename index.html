@@ -18,9 +18,9 @@
                 <nav class="flex justify-between items-center gap-[10px]">
                     <ul class="flex justify-between items-center gap-[10px]">
                         <li class="">
-                            <a class="nav-links px-2" href="#" target="_blank">Home</a>
+                            <a class="nav-links px-2" href="#" target="_blank" >Home</a>
                         </li>
-                        <li class="">
+                        <li class="group relative">
                             <a class="nav-links pl-2" href="#" target="_blank">About<svg
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                     class="w-8 h-4 inline-block">
@@ -28,28 +28,48 @@
                                         d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
                                         clip-rule="evenodd" />
                                 </svg></a>
+                            <div class="group-hover:block dropdown absolute -left-4 top-full transition-all ease-linear  bg-white hidden">
+                                <ul class="dropdonw-menu">
+                                    <li class="nav-links"><a href="#" target="_blank">Project</a></li>
+                                    <li class="nav-links"><a href="#" target="_blank">Consortium</a></li>
+                                    <li class="nav-links"><a href="#" target="_blank">Dessemination</a></li>
+                                    </ul>
+                            </div> 
                         </li>
-                        <li class="">
-                            <a class="nav-links pl-2" href="#" target="_blank">News and Events<svg
+                        <li class="group relative">
+                            <a class="nav-links pl-2" href="#">News and Events<svg
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                     class="w-8 h-4 inline-block">
                                     <path
                                         d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
                                         clip-rule="evenodd" />
                                 </svg></a>
+                            <div class="group-hover:block dropdown absolute -left-4 top-full transition-all ease-linear  bg-white hidden">
+                                <ul class="dropdonw-menu flex flex-col">
+                                    <li class="nav-links"><a href="#" target="_blank">News</a></li>
+                                    <li class="nav-links"><a href="#" target="_blank">Events</a></li>
+                                </ul>
+                            </div>
                         </li>
                         </li>
                         <li class="">
                             <a class="nav-links px-2" href="#" target="_blank">Deliverables and Outputs</a>
                         </li>
-                        <li class="">
-                            <a class="nav-links pl-2" href="#" target="_blank">Digital Knowledge Hub<svg
+                        <li class="group relative">
+                            <a class="nav-links pl-2" href="#">Digital Knowledge Hub<svg
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                     class="w-8 h-4 inline-block">
                                     <path
                                         d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
                                         clip-rule="evenodd" />
                                 </svg></a>
+                                <div class="group-hover:block dropdown absolute -left-4 top-full transition-all ease-linear  bg-white hidden">
+                                    <ul class="dropdonw">
+                                        <li class="nav-links"><a href="#" target="_blank">Reports</a></li>
+                                        <li class="nav-links"><a href="#" target="_blank">Whitepapers</a></li>
+                                        <li class="nav-links"><a href="#" target="_blank">Webinars</a></li>
+                                    </ul>
+                                </div>
                         </li>
                     </ul>
                     <div>
@@ -63,7 +83,7 @@
                         </a>
                     </div>
                     <div>
-                        <a class="btn-primary">Contact</a>
+                       <a class="btn-primary" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
                     </div>
                 </nav>
             </div>
