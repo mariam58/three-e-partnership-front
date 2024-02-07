@@ -20,32 +20,32 @@
 /* btn learn more, contact */
 @layer components {
     .btn-primary {
-        @apply bg-blue-dark hover:bg-darkgray text-white text-text-lg py-4 px-5 mx-auto rounded-lg cursor-pointer transition-colors duration-75 focus:ring-2
+        @apply bg-blue-dark hover:bg-darkGray text-white text-text-lg py-4 px-5 mx-auto rounded-lg cursor-pointer transition-colors duration-75 focus:ring-2
     }
 
     /* btn see all  */
     .btn-see-all {
-        @apply btn-primary px-[50px] rounded-[30px] shadow-2xl shadow-blue-dark hover:shadow-darkgray
+        @apply btn-primary px-[50px] rounded-[30px] shadow-2xl shadow-blue-dark hover:shadow-darkGray
     }
 
     /* underlined buttons grey */
     .more-link {
-        @apply text-text-lg underline text-darkgray hover:text-linksColor
+        @apply text-text-lg leading-[19px] font-bold underline text-darkGray hover:text-linksColor
         /* hover ar chans dizainshi */
     }
 
     .nav-links {
-        @apply text-text-lg leading-5 text-linksColor hover:text-black cursor-pointer inline-block
+        @apply text-text-lg leading-[19px] text-linksColor hover:text-black cursor-pointer inline-block
     }
 
     /* rose titles of section responsive */
-    .section-heading {
+    .heading-base {
         @apply text-heading-md lg:text-heading-lg text-rose-dark
     }
 
     /* main paaragrafs responsive */
-    .section-text {
-        @apply text-text-lg lg:text-heading-lg text-black
+    .paragraph-base {
+        @apply text-text-lg text-black
     }
 
     /* rose paginations a */
@@ -60,12 +60,13 @@
 
     /* all container wraper */
     .wrapper {
-        @apply container max-w-[1151px] w-full mx-auto px-2
+        @apply container max-w-[1152px] w-full mx-auto px-6 md:px-0
     }
 
-    /* labels */
+    /* labels გაასწორე შადოუ*/ 
     .label {
-        @apply mx-auto rounded-[40px] bg-white w-[91px] text-text-sm font-bold text-blue-dark px-2 cursor-pointer
+        @apply rounded-[40px] bg-white text-text-sm font-bold text-blue-dark px-2 cursor-pointer shadow-lg
+        
     }
 
 }
