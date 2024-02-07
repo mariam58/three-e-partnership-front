@@ -16,6 +16,20 @@
 @tailwind components;
 @tailwind utilities;
 
+ /*  styles for space between footers and header 
+  */
+html,
+body{
+    height: 100%;
+}
+.wrapper {
+    @apply min-h-full flex flex-col
+}
+
+ /* all container wraper */
+.container-wrapper {
+    @apply container max-w-[1151px] w-full mx-auto px-2
+ }
 
 /* btn learn more, contact */
 @layer components {
