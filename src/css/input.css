@@ -84,10 +84,10 @@ body{
     }
     /* dropdown */
     .dropdown{
-        @apply absolute -left-4 top-full transition-all ease-linear rounded-[10px] p-[7px] shadow-lg duration-300 cursor-pointer hidden group-hover:block 
+        @apply absolute transition-all ease-linear rounded-[10px] p-[7px] shadow-lg duration-300 cursor-pointer  group-hover:block 
     }
     .dropdown-links{
-        @apply nav-links flex justify-between items-center w-full p-[10px] hover:text-rose-dark hover:bg-rose-light  rounded-lg  hover:after:content-['>'] hover:after:inline-block
+        @apply nav-links flex justify-between items-center p-[10px] hover:text-rose-dark hover:bg-rose-light  rounded-lg  hover:after:content-['>'] hover:after:float-right
     }
     /* .dropdonw-menu{
         @apply 
