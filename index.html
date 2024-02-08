@@ -10,7 +10,7 @@
 
 <body class="font-SFProDisplay">
     <div class="wrapper">
-        <header class="header bg-gray-600">
+        <header class="header ">
             <div class="container-wrapper flex justify-between items-center gap-[10px]">
                 <div class="logo">
                     <a class="w-[115px] inline-block" href="#"><img src="src/images/icons/3E_LOGO.svg" alt=""></a>
@@ -18,56 +18,63 @@
                 <nav class="flex justify-between items-center gap-[10px]">
                     <ul class="flex justify-between items-center gap-[10px]">
                         <li class="">
-                            <a class="nav-links px-2" href="#" target="_blank" >Home</a>
+                            <a class="nav-links px-2" href="#" >Home</a>
                         </li>
                         <li class="group relative">
-                            <a class="nav-links pl-2" href="#" target="_blank">About<svg
+                            <a class="nav-links pl-2" href="#" >About
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-8 h-4 inline-block">
+                                    <path
+                                        d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                                <!-- about dropdown 1-->
+                            <ul class="dropdown">
+                                <li class="dropdown-links">
+                                    <a class="" href="#"  target="_blank" rel="noopener noreferrer">Project</a></li>
+                                <li><a class="dropdown-links" href="#" target="_blank" rel="noopener noreferrer">Consortium</a></li>
+                                <li><a class="dropdown-links" href="#" target="_blank" rel="noopener noreferrer">>Dessemination</a></li>
+                            </ul>
+                        </li>
+                        <li class="group relative">
+                            <a class="nav-links pl-2" href="#">News and Events
+                                <svg
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                     class="w-8 h-4 inline-block">
                                     <path
                                         d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
                                         clip-rule="evenodd" />
-                                </svg></a>
-                            <div class="group-hover:block dropdown absolute -left-4 top-full transition-all ease-linear  bg-white hidden">
+                                </svg>
+                            </a>
+                                <!-- news and events dropdown 2-->
+                            <div class="dropdown ">
                                 <ul class="dropdonw-menu">
-                                    <li class="nav-links"><a href="#" target="_blank">Project</a></li>
-                                    <li class="nav-links"><a href="#" target="_blank">Consortium</a></li>
-                                    <li class="nav-links"><a href="#" target="_blank">Dessemination</a></li>
-                                    </ul>
-                            </div> 
-                        </li>
-                        <li class="group relative">
-                            <a class="nav-links pl-2" href="#">News and Events<svg
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                    class="w-8 h-4 inline-block">
-                                    <path
-                                        d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                                        clip-rule="evenodd" />
-                                </svg></a>
-                            <div class="group-hover:block dropdown absolute -left-4 top-full transition-all ease-linear  bg-white hidden">
-                                <ul class="dropdonw-menu flex flex-col">
-                                    <li class="nav-links"><a href="#" target="_blank">News</a></li>
-                                    <li class="nav-links"><a href="#" target="_blank">Events</a></li>
+                                    <li><a class="dropdown-links" href="#" target="_blank" rel="noopener noreferrer">News</a></li>
+                                    <li><a class="dropdown-links" href="#" target="_blank" rel="noopener noreferrer">Events</a></li>
                                 </ul>
                             </div>
                         </li>
-                        </li>
+                        
                         <li class="">
                             <a class="nav-links px-2" href="#" target="_blank">Deliverables and Outputs</a>
                         </li>
                         <li class="group relative">
-                            <a class="nav-links pl-2" href="#">Digital Knowledge Hub<svg
+                            <a class="nav-links pl-2" href="#">Digital Knowledge Hub
+                                <svg
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                     class="w-8 h-4 inline-block">
                                     <path
                                         d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
                                         clip-rule="evenodd" />
-                                </svg></a>
-                                <div class="group-hover:block dropdown absolute -left-4 top-full transition-all ease-linear  bg-white hidden">
-                                    <ul class="dropdonw">
-                                        <li class="nav-links"><a href="#" target="_blank">Reports</a></li>
-                                        <li class="nav-links"><a href="#" target="_blank">Whitepapers</a></li>
-                                        <li class="nav-links"><a href="#" target="_blank">Webinars</a></li>
+                                </svg>
+                            </a>
+                                <!-- knowledge dropdown 3 -->
+                                <div class="dropdown">
+                                    <ul class="dropdonw-menu">
+                                        <li ><a class="dropdown-links" href="#" target="_blank">Reports</a></li>
+                                        <li ><a class="dropdown-links" href="#" target="_blank">Whitepapers</a></li>
+                                        <li ><a class="dropdown-links after:content-[url('../src/images/icons/Icon-right.svg')]  after:inline-block" href="#" target="_blank">Webinars</a></li>
                                     </ul>
                                 </div>
                         </li>
@@ -89,7 +96,9 @@
             </div>
 
         </header>
-        <main class="grow"></main>
+        <main class="grow">
+
+        </main>
         <footer class="bg-slate-600 h-14"></footer>
     </div>
     <script src="src/js/script.js"></script>
