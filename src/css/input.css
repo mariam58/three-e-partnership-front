@@ -92,4 +92,14 @@ body {
         @apply nav-links flex justify-between items-center p-[10px] hover:text-rose-dark hover:bg-rose-light rounded-lg after:content-['>'] after:float-right after:opacity-0 after:ml-[16px] hover:after:opacity-100 
     }
 
+    /* burger menu */
+    .burger-menu-line{
+        @apply  block w-4 border-[2px] border-solid border-black group-[.active]:ease-linear
+    }
+
+
+    /*  icentreba X  */
+    .active {
+        @apply pl-[7px]
+    }
 }
