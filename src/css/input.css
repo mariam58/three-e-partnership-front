@@ -89,12 +89,12 @@ body {
     }
 
     .dropdown-links {
-        @apply nav-links flex justify-between items-center p-[10px] hover:text-rose-dark hover:bg-rose-light rounded-lg after:content-['>'] after:float-right after:opacity-0 after:ml-[16px] hover:after:opacity-100 
+        @apply nav-links flex justify-between items-center p-[10px] hover:text-rose-dark hover:bg-rose-light rounded-lg after:content-['>'] after:float-right after:opacity-0 after:ml-[16px] hover:after:opacity-100
     }
 
     /* burger menu */
-    .burger-menu-line{
-        @apply  block w-4 border-[2px] border-solid border-black group-[.active]:ease-linear
+    .burger-menu-line {
+        @apply block w-4 border-[2px] border-solid border-black group-[.active]:ease-linear
     }
 
 
@@ -103,35 +103,32 @@ body {
         @apply pl-[7px]
     }
 }
-/* .mobile-nav{
-    @apply flex flex-col bg-black 
-} */
 
-
-
-
-
-
-
-
+.mobile-nav {
+    @apply flex flex-col bg-black
+}
 
 /*  acordion
  */
- .acordion-wrap{
+.acordion-wrap {
     @apply flex flex-col max-w-lg w-full min-h-24
- }
-.title {
-    @apply flex justify-between
 }
 
-  .text {
-    height: 0;
-    overflow: hidden;
-  }
-  .close {
+.title {
+    @apply flex justify-between text-text-xl text-white
+}
+
+.text {
+    @apply h-0 overflow-hidden
+}
+.mobile-dropdown-link{
+    @apply text-text-xl text-white bg-darkGray after:content-['>'] after:opacity-100 after:text-blue-dark  flex justify-between items-center p-[10px] after:float-right rounded-lg
+}
+.close {
     display: none;
-  }
-  .title-icon{
+}
+
+.title-icon {
     position: absolute;
     right: 0px;
     font-family: "Font Awesome 5 Free";
@@ -140,14 +137,15 @@ body {
     padding-right: 3px;
     vertical-align: middle;
     font-weight: 900;
-  }
-  
-  .step.active .text {
+}
+
+.step.active .text {
     height: fit-content;
-  }
-  .step.active .title-icon {
+}
+
+.step.active .title-icon {
     font-family: "Font Awesome 5 Free";
     content: "\f053";
     position: absolute;
     right: 0px;
-  }
+}
