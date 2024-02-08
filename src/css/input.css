@@ -103,3 +103,51 @@ body {
         @apply pl-[7px]
     }
 }
+/* .mobile-nav{
+    @apply flex flex-col bg-black 
+} */
+
+
+
+
+
+
+
+
+
+/*  acordion
+ */
+ .acordion-wrap{
+    @apply flex flex-col max-w-lg w-full min-h-24
+ }
+.title {
+    @apply flex justify-between
+}
+
+  .text {
+    height: 0;
+    overflow: hidden;
+  }
+  .close {
+    display: none;
+  }
+  .title-icon{
+    position: absolute;
+    right: 0px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f078";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+  }
+  
+  .step.active .text {
+    height: fit-content;
+  }
+  .step.active .title-icon {
+    font-family: "Font Awesome 5 Free";
+    content: "\f053";
+    position: absolute;
+    right: 0px;
+  }
