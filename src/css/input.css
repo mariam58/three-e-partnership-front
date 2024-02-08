@@ -49,7 +49,7 @@ body{
     }
 
     .nav-links {
-        @apply text-text-lg leading-[19px] text-linksColor hover:text-black cursor-pointer inline-block
+        @apply text-text-lg leading-[19px] text-linksColor hover:text-black active:text-black cursor-pointer inline-block
     }
 
     /* rose titles of section responsive */
@@ -82,8 +82,14 @@ body{
         @apply rounded-[40px] bg-white text-text-sm font-bold text-blue-dark px-2 cursor-pointer shadow-lg
         
     }
-
-}
-.dropdown{
-    @apply rounded-[10px] p-[7px] shadow-lg transition-all duration-300 cursor-pointer
+    /* dropdown */
+    .dropdown{
+        @apply absolute -left-4 top-full transition-all ease-linear rounded-[10px] p-[7px] shadow-lg duration-300 cursor-pointer hidden group-hover:block 
+    }
+    .dropdown-links{
+        @apply nav-links flex justify-between items-center w-full p-[10px] hover:text-rose-dark hover:bg-rose-light  rounded-lg  hover:after:content-['>'] hover:after:inline-block
+    }
+    /* .dropdonw-menu{
+        @apply 
+    } */
 }
