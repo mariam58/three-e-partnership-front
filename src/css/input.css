@@ -119,10 +119,13 @@ body {
 }
 
 .text {
-    @apply h-0 overflow-hidden
+    @apply h-0 overflow-hidden mb-2
 }
 .mobile-dropdown-link{
     @apply text-text-xl text-white bg-darkGray after:content-['>'] after:opacity-100 after:text-blue-dark  flex justify-between items-center p-[10px] after:float-right rounded-lg
+}
+.icon-up{
+    @apply rotate-180
 }
 .close {
     display: none;
