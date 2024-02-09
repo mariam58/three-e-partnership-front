@@ -1,6 +1,6 @@
 const burgerMenu = document.querySelector('#burger-menu');    
 const mobileDropdown = document.querySelectorAll('.mobile-dropdown');
-const acordionWrap = document.querySelectorAll(".step");
+const accordionItem = document.querySelectorAll(".step");
 
 function burger() {
         burgerMenu.addEventListener('click', ()=> {
@@ -11,15 +11,15 @@ function burger() {
     burger();
     
     
-  acordionWrap.forEach(function (elemenet) {
+  accordionItem.forEach(function (elemenet) {
       elemenet.addEventListener("click", function () {
         this.classList.toggle("active");
-        mobileDropdown.forEach(function (item){
-          item.classList.toggle('hidden');
-          // კლასი ყველას ედება
-        })
+        // mobileDropdown.forEach(function (item){
+        //   item.classList.toggle('hidden');
+        //   // კლასი ყველას ედება
+        // })
       });
     });
 
-   
-   
+ 
+
