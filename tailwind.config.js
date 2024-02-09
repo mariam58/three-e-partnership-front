@@ -20,7 +20,7 @@ module.exports = {
         colorsText:{
           rose: '#FF007E',
           blue:'#0E14F1',
-          darckGray: '#2D2D2D',
+          darkGray: '#2D2D2D',
           headerMenu: '#0B0B0B80'
         },
         partnersRect:'#00000033',
