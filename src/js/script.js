@@ -1,5 +1,5 @@
 const burgerMenu = document.querySelector('#burger-menu');    
-const mobileDropdown = document.querySelectorAll('.mobile-dropdown');
+// const mobileDropdown = document.querySelectorAll('.mobile-dropdown');
 const accordionItem = document.querySelectorAll(".step");
 
 function burger() {
@@ -14,9 +14,11 @@ function burger() {
   accordionItem.forEach(function (elemenet) {
       elemenet.addEventListener("click", function () {
         this.classList.toggle("active");
+
         let mobileDropdown = this.lastChild.previousElementSibling;
         mobileDropdown.classList.toggle('hidden')
-
+        let arrowdown = this.querySelector('.icon-down')
+        arrowdown.classList.toggle('icon-up')
       });
     });
 
