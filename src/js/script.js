@@ -6,6 +6,7 @@ const accordionItem = document.querySelectorAll(".step");
 function burger() {
         burgerMenu.addEventListener('click', ()=> {
             burgerMenu.classList.toggle('active');
+            document.body.classList.toggle('bg-black')
            if(burgerMenu.classList.contains('active')){
             mobileNav.classList.add('mobile-nav', 'acordion-wrap')
            }
