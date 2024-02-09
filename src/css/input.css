@@ -35,26 +35,26 @@ body {
 /* btn learn more, contact */
 @layer components {
     .btn-primary {
-        @apply bg-blue-dark hover:bg-darkGray text-white text-text-lg py-4 px-5 mx-auto rounded-lg cursor-pointer transition-colors duration-75 focus:ring-2
+        @apply bg-colorsText-blue hover:bg-colorsText-darkGray text-white text-text-lg py-4 px-5 mx-auto rounded-lg cursor-pointer transition-colors duration-75 focus:ring-2
     }
 
     /* btn see all  */
     .btn-see-all {
-        @apply btn-primary px-[50px] rounded-[30px] shadow-2xl shadow-blue-dark hover:shadow-darkGray
+        @apply btn-primary px-[50px] rounded-[30px] shadow-2xl shadow-colorsText-blue hover:shadow-colorsText-darkGray
     }
 
     /* underlined buttons grey */
     .more-link {
-        @apply text-text-lg leading-[19px] font-bold underline text-darkGray hover:text-linksColor
+        @apply text-text-lg leading-[19px] font-bold underline text-colorsText-darkGray hover:text-colorsText-headerMenu
         /* hover ar chans dizainshi */
     }
     .nav-links {
-        @apply text-text-lg leading-[19px] text-linksColor hover:text-black active:text-black cursor-pointer inline-block
+        @apply text-text-lg leading-[19px] text-colorsText-headerMenu hover:text-black active:text-black cursor-pointer inline-block
     }
 
     /* rose titles of section responsive */
     .heading-base {
-        @apply text-heading-md lg:text-heading-lg text-rose-dark
+        @apply text-heading-md lg:text-heading-lg text-colorsText-rose
     }
 
     /* main paaragrafs responsive */
@@ -64,7 +64,7 @@ body {
 
     /* rose paginations a */
     .pagination-links {
-        @apply relative rounded-full border border-solid border-rose-dark w-[46px] h-[46px] text-text-lg text-rose-dark transition-all duration-300 bg-transparent hover:bg-rose-dark hover:text-white active:bg-rose-dark active:text-white cursor-pointer
+        @apply relative rounded-full border border-solid border-colorsText-rose w-[46px] h-[46px] text-text-lg text-colorsText-rose transition-all duration-300 bg-transparent hover:bg-colorsText-rose hover:text-white active:bg-colorsText-rose active:text-white cursor-pointer
     }
 
     /* paginations iner text - 1 2 3  */
@@ -74,7 +74,7 @@ body {
 
     /* labels გაასწორე შადოუ*/
     .label {
-        @apply rounded-[40px] bg-white text-text-sm font-bold text-blue-dark px-2 cursor-pointer shadow-lg
+        @apply rounded-[40px] bg-white text-text-sm font-bold text-colorsText-blue px-2 cursor-pointer shadow-lg
     }
 
     /* dropdown */
@@ -83,7 +83,7 @@ body {
     }
 
     .dropdown-links {
-        @apply nav-links flex justify-between items-center p-[10px] hover:text-rose-dark hover:bg-rose-light rounded-lg after:content-['>'] after:float-right after:opacity-0 after:ml-[16px] hover:after:opacity-100
+        @apply nav-links flex justify-between items-center p-[10px] hover:text-colorsText-rose hover:bg-bg-iconRose rounded-lg after:content-['>'] after:float-right after:opacity-0 after:ml-[16px] hover:after:opacity-100
     }
 
     /* burger menu */
@@ -107,7 +107,7 @@ body {
     }
 
     .mobile-dropdown-link{
-        @apply text-text-xl text-white bg-darkGray after:content-['>'] after:opacity-100 after:text-blue-dark  flex justify-between items-center p-[10px] after:float-right rounded-lg
+        @apply text-text-xl text-white bg-colorsText-darkGray after:content-['>'] after:opacity-100 after:text-colorsText-blue  flex justify-between items-center p-[10px] after:float-right rounded-lg
     }
 
 }
