@@ -10,16 +10,17 @@
 
 <body class="font-SFProDisplay">
     <div class="wrapper">
-        <header class="header ">
-            <div class="container-wrapper flex justify-between items-center gap-[10px]">
+        <header class="header h-fit">
+            <div class="container-wrapper flex justify-between items-center gap-[10px] relative top-0 left-0 h-fit">
                 <!-- logo -->
                 <div class="logo">
-                    <a class="w-[115px] inline-block" href="#"><img src="src/images/icons/3E_LOGO.svg" alt=""></a>
+                    <a class="w-[190px] inline-block" href="#"><img src="src/images/icons/3E_LOGO.svg" alt=""></a>
                 </div>
                 <!-- navigation -->
-                <nav class="flex justify-between items-center gap-[10px]">
+                <nav class="flex justify-between items-center gap-[10px] overflow-hidden">
                     <!-- links -->
-                    <ul id="mobile-navigation" class="group lg:flex lg:justify-between lg:items-center gap-[10px] hidden">
+                    <div class="group mobile-navigation-wrapper"> 
+                        <ul id="mobile-navigation" class="group lg:flex lg:justify-between lg:items-center gap-[10px] hidden">
 
 
                         <li class="step p-[10px] lg:p-0">
@@ -38,15 +39,13 @@
                             </a>
     
                             <!-- about dropdown 1-->
-                            <ul class=" mobile-dropdown hidden lg:dropdown p-[10px] space-y-2 h-f">
+                            <ul class=" mobile-dropdown hidden lg:dropdown  
+                            p-[10px] space-y-2 h-f">
                                 <li class="text"><a class="lg:dropdown-links group-[.mobile-nav]:mobile-dropdown-link" href="#" target="_blank"rel="noopener noreferrer">Project</a></li>
                                 <li class="text"><a class="lg:dropdown-links group-[.mobile-nav]:mobile-dropdown-link" href="#" target="_blank" rel="noopener noreferrer">Consortium</a></li>
                                 <li class="text"><a class="lg:dropdown-links group-[.mobile-nav]:mobile-dropdown-link" href="#" target="_blank" rel="noopener noreferrer">Dessemination</a></li>
                             </ul>
-                            
                         </li>
-    
-    
                         <li class="group relative step  p-[10px] lg:p-0">
                             <a class="lg:nav-links pl-2 title fill-[#5B60FF] lg:fill-linksColor" href="#">News and Events
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
@@ -90,6 +89,7 @@
                            
                         </li>
                     </ul>
+                
                     <div class="search">
                         <a title="title" href="#">
                             <svg width="53px" height="53px" viewBox="0 0 53 52" fill="none"
@@ -100,9 +100,10 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="contact lg:block hidden">
-                        <a class="btn-primary" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
-                    </div>
+                        <div class="contact lg:block ">
+                            <a class="btn-primary" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
+                        </div>
+                </div>
                     <!-- burger -->
                     <div id="burger-menu" class="group h-[34px] w-[34px] bg-gray-400 rounded-lg flex flex-col justify-between items-center py-[10px] lg:hidden">
                         <span
