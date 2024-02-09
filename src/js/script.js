@@ -1,5 +1,6 @@
 const burgerMenu = document.querySelector('#burger-menu');    
-// const dropdown = document.querySelectorAll('.dropdown')
+const mobileDropdown = document.querySelectorAll('.mobile-dropdown');
+const acordionWrap = document.querySelectorAll(".step");
 
 function burger() {
         burgerMenu.addEventListener('click', ()=> {
@@ -9,16 +10,16 @@ function burger() {
     }
     burger();
     
-    let acordionWrap = document.querySelectorAll(".step");
-    // for (let item of acordionWrap) {
-    //   item.addEventListener("click", function (e) {
-    //     this.classList.toggle('active');
-    //     // e.currentTarget.classList.toggle('active')
-    //   });
-    // }
     
-    acordionWrap.forEach(function (elemenet) {
+  acordionWrap.forEach(function (elemenet) {
       elemenet.addEventListener("click", function () {
         this.classList.toggle("active");
+        mobileDropdown.forEach(function (item){
+          item.classList.toggle('hidden');
+          // კლასი ყველას ედება
+        })
       });
     });
+
+   
+   

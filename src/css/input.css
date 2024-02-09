@@ -85,7 +85,7 @@ body {
 
     /* dropdown */
     .dropdown {
-        @apply absolute hidden transition-all ease-linear rounded-[10px] p-[7px] shadow-lg duration-300 cursor-pointer group-hover:block
+        @apply absolute hidden transition-all ease-linear rounded-[10px] p-[7px] shadow-lg duration-300 cursor-pointer group-hover:block 
     }
 
     .dropdown-links {
@@ -105,7 +105,7 @@ body {
 }
 
 .mobile-nav {
-    @apply flex flex-col bg-black
+    @apply flex flex-col bg-black 
 }
 
 /*  acordion
@@ -119,7 +119,7 @@ body {
 }
 
 .text {
-    @apply h-0 overflow-hidden mb-2
+    @apply h-0 overflow-hidden 
 }
 .mobile-dropdown-link{
     @apply text-text-xl text-white bg-darkGray after:content-['>'] after:opacity-100 after:text-blue-dark  flex justify-between items-center p-[10px] after:float-right rounded-lg
@@ -146,9 +146,9 @@ body {
     height: fit-content;
 }
 
-.step.active .title-icon {
+/* .step.active .title-icon {
     font-family: "Font Awesome 5 Free";
     content: "\f053";
     position: absolute;
     right: 0px;
-}
+} */
