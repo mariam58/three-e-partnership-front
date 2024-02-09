@@ -14,10 +14,9 @@ function burger() {
   accordionItem.forEach(function (elemenet) {
       elemenet.addEventListener("click", function () {
         this.classList.toggle("active");
-        // mobileDropdown.forEach(function (item){
-        //   item.classList.toggle('hidden');
-        //   // კლასი ყველას ედება
-        // })
+        let mobileDropdown = this.lastChild.previousElementSibling;
+        mobileDropdown.classList.toggle('hidden')
+
       });
     });
 
