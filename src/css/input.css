@@ -127,28 +127,16 @@ body {
 .icon-up{
     @apply rotate-180
 }
-.close {
+
+/* .mobile-dropdown{
     display: none;
 }
 
-.title-icon {
-    position: absolute;
-    right: 0px;
-    font-family: "Font Awesome 5 Free";
-    content: "\f078";
-    display: inline-block;
-    padding-right: 3px;
-    vertical-align: middle;
-    font-weight: 900;
-}
+.step.actvie .mobile-dropdown{
+    display: block;
+} */
 
 .step.active .text {
-    height: fit-content;
+  height: fit-content;
 }
 
-/* .step.active .title-icon {
-    font-family: "Font Awesome 5 Free";
-    content: "\f053";
-    position: absolute;
-    right: 0px;
-} */
