@@ -10,24 +10,29 @@ module.exports = {
       //   xl: '1280',
       // },
       colors:{
-        rose:{
-          light: '#FFC4E1',
-          dark:'#FF007E',
+        bg:{
+          main:'#F4F4F4',
+          mainDark: '#D6D6D6',
+          iconRose: '#FFC4E1',
+          iconBlue:'#5B60FF',
+          mobileMenu:'#0B0B0B',
         },
-        blue:{
-          light: '#5B60FF',
-          dark:'#0E14F1',
+        colorsText:{
+          rose: '#FF007E',
+          blue:'#0E14F1',
+          darckGray: '#2D2D2D',
+          headerMenu: '#0B0B0B80'
         },
-        darkGray:'#2D2D2D',
-        pureWhite:'#F7F5F0',
-        yellow: '#FFD700',
-        green: '#1DB216',
-        linksColor: '#00000080'
+        partnersRect:'#00000033',
+        iconRound: '#FF007E80',
+        yellow:'#FFD700',
       },
+
      fontFamily:{
       SFProDisplay:["SF Pro Display", "sans-serif"]
      }
     },
+    
     fontSize: {
       // 50px h1
       'heading-lg': ['3.125rem', {
