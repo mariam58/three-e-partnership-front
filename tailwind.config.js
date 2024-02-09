@@ -54,11 +54,19 @@ module.exports = {
         lineHeight: '1.438rem',
         fontWeight: '700',
       }],
-      // 16px Paragraph
-      'text-lg': ['1rem', {
-        lineHeight: '1.438rem',
+
+        // 16px Paragraph line height 23
+        'text-lg': ['1rem', {
+          lineHeight: '1.438rem',
+          fontWeight: '500',
+        }],
+
+    // 16px Paragraph line height 19
+      'headerItem': ['1rem', {
+        lineHeight: '1.188rem',
         fontWeight: '500',
       }],
+    
       // 14 px  smaller paragraph
       'text-md': ['0.875rem', {
         lineHeight: '1.438rem',
