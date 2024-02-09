@@ -50,13 +50,13 @@ module.exports = {
         fontWeight: '700',
       }],
       // 18px Paragraph bigger, bold
-      'text-xl': ['1.125rem', {
+      'size-xl': ['1.125rem', {
         lineHeight: '1.438rem',
         fontWeight: '700',
       }],
 
         // 16px Paragraph line height 23
-        'text-lg': ['1rem', {
+        'size-lg': ['1rem', {
           lineHeight: '1.438rem',
           fontWeight: '500',
         }],
@@ -66,14 +66,18 @@ module.exports = {
         lineHeight: '1.188rem',
         fontWeight: '500',
       }],
-    
+    // 16px Paragraph line height 19
+    'btnrtext': ['1rem', {
+      lineHeight: '1.188rem',
+      fontWeight: '700',
+    }],
       // 14 px  smaller paragraph
-      'text-md': ['0.875rem', {
+      'size-md': ['0.875rem', {
         lineHeight: '1.438rem',
         fontWeight: '500',
       }],
       // 12px Smallest
-      'text-sm': ['0.75rem', {
+      'size-sm': ['0.75rem', {
         lineHeight: '1.438rem',
         fontWeight: '500',
       }],
