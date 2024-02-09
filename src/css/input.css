@@ -118,9 +118,9 @@ body {
     @apply flex justify-between text-text-xl text-white
 }
 
-.text {
+/* .text {
     @apply h-0 overflow-hidden 
-}
+} */
 .mobile-dropdown-link{
     @apply text-text-xl text-white bg-darkGray after:content-['>'] after:opacity-100 after:text-blue-dark  flex justify-between items-center p-[10px] after:float-right rounded-lg
 }
@@ -136,7 +136,7 @@ body {
     display: block;
 } */
 
-.step.active .text {
+/* .step.active .text {
   height: fit-content;
-}
+} */
 
