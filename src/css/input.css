@@ -29,7 +29,7 @@ body {
 
 /* all container wraper */
 .container-wrapper {
-    @apply container max-w-[1152px] w-full mx-auto px-2 xl:px-0
+    @apply container max-w-[1152px] w-full mx-auto px-6 xl:px-0
 }
 
 /* btn learn more, contact */
@@ -78,17 +78,22 @@ body {
     }
 
     /* dropdown */
-    .dropdown {
+    /* .dropdown {
         @apply absolute hidden transition-all ease-linear rounded-[10px] p-[7px] shadow-lg duration-300 cursor-pointer group-hover:block 
-    }
+    } */
 
     .dropdown-links {
         @apply nav-links flex justify-between items-center p-[10px] hover:text-colorsText-rose hover:bg-bg-iconRose rounded-lg after:content-['>'] after:float-right after:opacity-0 after:ml-[16px] hover:after:opacity-100
     }
 
+    
     /* burger menu */
+    .burger-menu{
+      @apply  h-[34px] w-[34px] bg-bg-main rounded-lg rotate-0 transition-all cursor-pointer
+    }
+
     .burger-menu-line {
-        @apply block w-4 border-[2px] border-solid border-black group-[.active]:ease-linear
+        @apply block absolute left-[9px] h-[2px] w-4 bg-black opacity-100 rotate-0 ease-in-out transition-all mx-auto 
     }
 
 
@@ -98,16 +103,19 @@ body {
     }
    
     .title {
-        @apply flex justify-between text-size-xl text-white
+        @apply direction-row text-size-xl text-white
     }
     
     
     .icon-up{
         @apply rotate-180
     }
+    .mobile-dropdown{
+        @apply p-[10px] space-y-2
+    }
 
     .mobile-dropdown-link{
-        @apply text-size-xl text-white bg-colorsText-darkGray after:content-['>'] after:opacity-100 after:text-colorsText-blue  flex justify-between items-center p-[10px] after:float-right rounded-lg
+        @apply text-size-xl text-bg-iconBlue bg-colorsText-darkGray after:content-['>'] after:opacity-100 after:text-bg-iconBlue  flex justify-between items-center py-[10px] px-5 after:float-right rounded-lg
     }
 
 }
@@ -119,8 +127,35 @@ body {
 .mobile-navigation-wrapper{
     @apply  max-w-screen-lg w-full absolute left-0 top-[58px] overflow-hidden 
 }
-.contact {
+/* .contact {
     @apply  group-[mobile-navigation-wrapper]:absolute group-[mobile-navigation-wrapper]:-bottom-2 group-[mobile-navigation-wrapper]:left-0 
+} */
+
+/* new styles new index */
+@layer components {
+
+.direction-row {
+    @apply flex items-center justify-between
+}
+.contact {
+    @apply hidden lg:inline-block
 }
 
+/* .navbar{
+    @apply fixed top-0  w-full  z-10
+ 
+} */
 
+
+.menu-container{
+    @apply  absolute lg:relative top-[58px] lg:top-0 left-0 w-full h-0 lg:h-fit overflow-hidden ease-in-out 
+
+}
+.mega-menu{
+    @apply  h-full w-full overflow-y-hidden lg:overflow-hidden lg:flex lg:justify-center
+}
+.mega-menu-show{
+    @apply h-[100vh] w-full bg-black
+}
+
+}
