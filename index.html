@@ -4,119 +4,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>testing</title>
     <link rel="stylesheet" href="src/css/output.css">
 </head>
 
 <body class="font-SFProDisplay">
     <div class="wrapper">
-        <header class="header h-fit">
-            <div class="container-wrapper flex justify-between items-center gap-[10px] relative top-0 left-0 h-fit">
-                <!-- logo -->
-                <div class="logo">
+        <header class="header">  
+            <div class="container-wrapper">
+                <nav class="navbar direction-row gap-[10px]">
+                    <!-- logo -->
                     <a class="w-[190px] inline-block" href="#"><img src="src/images/icons/3E_LOGO.svg" alt=""></a>
-                </div>
-                <!-- navigation -->
-                <nav class="flex justify-between items-center gap-[10px] overflow-hidden">
-                    <!-- links -->
-                    <div class="group mobile-navigation-wrapper"> 
-                        <ul id="mobile-navigation" class="group lg:flex lg:justify-between lg:items-center gap-[10px] hidden">
+                  <!-- მობილურზე – mega-menu-show  იკონზე კლიკის დროს-->
+                    <div id="menu-container" class="group menu-container direction-row gap-[10px]">
+                    <!-- mega-menu -->
+                        <div id="mega-menu" class="mega-menu container-wrapper">
+                            <!-- search -->
+                            <div class="relative mx-auto">
+                            <input class="bg-colorsText-darkGray w-full h-[29px] px-5 pr-16 rounded-[40px] text-sm focus:outline-none"
+                              type="search" name="search" placeholder="Search">
+                            <button title="mob-search" type="submit" class="absolute right-5 top-[5px] w-5 h-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                                  
+                            </button> 
+                          </div> 
+                          <!-- search end  -->
+
+                         <ul class="mega-menu">
+                            <li class="step p-[10px]"><a class="title" href="#" target="_blank" rel="noopener noreferrer">Home</a></li>
+                            <!-- dropdown 1 -->
 
 
-                        <li class="step p-[10px] lg:p-0">
-                            <a class="lg:nav-links pl-2 title p-[10px] lg:p-0" href="#">Home</a>
-                        </li>
-    
-    
-                        <li class="group relative step p-[10px] lg:p-0">
-                            <a class="lg:nav-links pl-2 title fill-bg-iconBlue lg:fill-linksColor" href="#">About
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
-                                    class="icon-down w-8 h-4 inline-block">
-                                    <path
-                                        d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </a>
-    
-                            <!-- about dropdown 1-->
-                            <ul class=" mobile-dropdown hidden lg:dropdown  
-                            p-[10px] space-y-2 h-f">
-                                <li class="text"><a class="lg:dropdown-links group-[.mobile-nav]:mobile-dropdown-link" href="#" target="_blank"rel="noopener noreferrer">Project</a></li>
-                                <li class="text"><a class="lg:dropdown-links group-[.mobile-nav]:mobile-dropdown-link" href="#" target="_blank" rel="noopener noreferrer">Consortium</a></li>
-                                <li class="text"><a class="lg:dropdown-links group-[.mobile-nav]:mobile-dropdown-link" href="#" target="_blank" rel="noopener noreferrer">Dessemination</a></li>
-                            </ul>
-                        </li>
-                        <li class="group relative step  p-[10px] lg:p-0">
-                            <a class="lg:nav-links pl-2 title fill-bg-iconBlue lg:fill-linksColor" href="#">News and Events
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
-                                    class="icon-down w-8 h-4 inline-block">
-                                    <path
-                                        d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </a>
-    
-                            <!-- news dropdown 2-->
-                            <ul class="mobile-dropdown hidden lg:dropdown p-[10px] space-y-2">
-                                <li  class="text"><a class="lg:dropdown-links group-[.mobile-nav]:mobile-dropdown-link" href="#" target="_blank" rel="noopener noreferrer">News</a></li>
-                                <li class="text"><a class="lg:dropdown-links group-[.mobile-nav]:mobile-dropdown-link" href="#" target="_blank" rel="noopener noreferrer">Events</a></li>
-                            </ul>
-                        </li>
-    
-    
-    
-                        <li class="step  p-[10px] lg:p-0">
-                            <a class="lg:nav-links pl-2 title p-[10px] lg:p-0" href="#" target="_blank">Deliverables and Outputs</a>
-                        </li>
-    
-    
-                        <li class="group relative step  p-[10px] lg:p-0">
-                            <a class="lg:nav-links pl-2 title fill-bg-iconBlue lg:fill-linksColor" href="#">Digital Knowledge Hub
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
-                                    class="icon-down w-8 h-4 inline-block">
-                                    <path
-                                        d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </a>
-                            <!-- knowledge dropdown 3 -->
+
+
+                            <li class="step p-[10px] ">
+                                    <!-- სათაური იცონკით მობილურისთვის-->
+                                 <div class="fill-bg-iconBlue direction-row" >
+                                     <span class="title">About</span>
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
+                                        class="icon-down w-8 h-4 inline-block">
+                                        <path
+                                            d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                 </div>
+                                 <!-- მენიუ menu -->
+                                 <ul class="mobile-dropdown hidden">
+                                    <li class="text mobile-dropdown-link"><a class="" href="#" target="_blank"rel="noopener noreferrer">Project</a></li>
+                                    <li class="text mobile-dropdown-link"><a class="" href="#" target="_blank"rel="noopener noreferrer">Consortium</a></li>
+                                    <li class="text mobile-dropdown-link"><a class="" href="#" target="_blank"rel="noopener noreferrer">Dissemination</a></li>
+                                </ul> 
+                            </li>
+
+
+
+
+
+                            <!-- 2 dropdown  -->
+                            <li class="step p-[10px]">
+                                <!-- სათაური იცონკით მობილურისთვის-->
+                                <div class="fill-bg-iconBlue direction-row" >
+                                    <span class="title">News and Events</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
+                                       class="icon-down w-8 h-4 inline-block">
+                                       <path
+                                           d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                           clip-rule="evenodd" />
+                                   </svg>
+                                </div>
+                             <!-- მენიუ menu 2 -->
+                                <ul class="mobile-dropdown hidden">
+                                    <li class="text mobile-dropdown-link"><a class="" href="#" target="_blank"rel="noopener noreferrer">News</a></li>
+                                    <li class="text mobile-dropdown-link"><a class="" href="#" target="_blank"rel="noopener noreferrer mobile-dropdown-link">Events</a></li>
+                                </ul> 
+
+
+
+
+                                
+                                <!-- li -->
+
+                            </li>
+                            <!--  li -->
+                            <li class="step p-[10px]"><a class="title" href="#" target="_blank" rel="noopener noreferrer">Deliverables and Outputs</a></li>
                             
-                            <ul class="hidden lg:dropdown p-[10px] space-y-2">
-                                    <li class="text"> <a class="lg:dropdown-links group-[.mobile-nav]:mobile-dropdown-link" href="#" target="_blank">Reports</a></li>
-                                    <li class="text"> <a class="lg:dropdown-links group-[.mobile-nav]:mobile-dropdown-link" href="#" target="_blank">Whitepapers</a></li>
-                                    <li class="text"> <a class="lg:dropdown-links group-[.mobile-nav]:mobile-dropdown-link" href="#" target="_blank">Webinars</a></li>
-                                </ul>
-                           
-                        </li>
-                    </ul>
-                
-                    <div class="search">
-                        <a title="title" href="#">
-                            <svg width="53px" height="53px" viewBox="0 0 53 52" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.5"
-                                    d="M32.6988 32L36.8335 36M35.5002 25.3333C35.5002 30.488 31.3215 34.6667 26.1668 34.6667C21.0122 34.6667 16.8335 30.488 16.8335 25.3333C16.8335 20.1787 21.0122 16 26.1668 16C31.3215 16 35.5002 20.1787 35.5002 25.3333Z"
-                                    stroke="black" stroke-width="2.38095" stroke-linecap="round" />
-                            </svg>
-                        </a>
-                    </div>
-                        <div class="contact lg:block ">
-                            <a class="btn-primary" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
+                            
+                            
+                            
+                            
+                            <!--  3 dropdown -->
+                            <li class="step p-[10px]">
+                                <!-- სათაური იცონკით მობილურისთვის-->
+                                <div class="fill-bg-iconBlue direction-row" >
+                                    <span class="title">Digital Knowledge Hub</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
+                                       class="icon-down w-8 h-4 inline-block">
+                                       <path
+                                           d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                           clip-rule="evenodd" />
+                                   </svg>
+                                </div>
+                             <!-- მენიუ menu -->
+                             <ul class="mobile-dropdown hidden">
+                                <li class="text  mobile-dropdown-link"><a class="" href="#" target="_blank"rel="noopener noreferrer">Reports</a></li>
+                                <li class="text mobile-dropdown-link"><a class="" href="#" target="_blank"rel="noopener noreferrer">Whitepapers</a></li>
+                                <li class="text mobile-dropdown-link"><a class="" href="#" target="_blank"rel="noopener noreferrer">Webinars</a></li>
+                                </ul> 
+                            </li>
+
+                            <!-- contact  igive rac hederze -->
+                            <li class="step p-[10px]"><a class="title text-bg-iconRose" href="#" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                         </ul>
                         </div>
-                </div>
-                    <!-- burger -->
-                    <div id="burger-menu" class="group h-[34px] w-[34px] bg-bg-main rounded-lg flex flex-col justify-between items-center py-[10px] lg:hidden">
-                        <span
-                            class="burger-menu-line  group-[.active]:origin-[0%_0%] group-[.active]:duration-[0.4s] group-[.active]:rotate-45"></span>
-                        <span
-                            class="burger-menu-line  group-[.active]:duration-[0.2s] group-[.active]:scale-y-0"></span>
-                        <span
-                            class="burger-menu-line  group-[.active]:origin-[0%_100%] group-[.active]:duration-[0.4s] group-[.active]:-rotate-45"></span>
+                    </div>
+                    <div class="buttons direction-row">
+                        <!-- search -->
+                        <div class="search">
+                            <a title="title" href="#">
+                                <svg width="53px" height="53px" viewBox="0 0 53 52" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.5"
+                                        d="M32.6988 32L36.8335 36M35.5002 25.3333C35.5002 30.488 31.3215 34.6667 26.1668 34.6667C21.0122 34.6667 16.8335 30.488 16.8335 25.3333C16.8335 20.1787 21.0122 16 26.1668 16C31.3215 16 35.5002 20.1787 35.5002 25.3333Z"
+                                        stroke="black" stroke-width="2.38095" stroke-linecap="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- contact -->
+                        <a class="contact btn-primary" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
+                        <!-- burger -->
+                        <div id="burger-menu" class="group burger-menu  lg:hidden">
+                            <span
+                                class="burger-menu-line top-1/3 group-[.menu-btn]:hidden
+                                "></span>
+                            <span
+                                class="burger-menu-line top-1/2 group-[.menu-btn]:rotate-45"></span>
+                            <span
+                                class="burger-menu-line top-1/2 group-[.menu-btn]:-rotate-45"></span>
+                            <span
+                                class="burger-menu-line  top-2/3 group-[.menu-btn]:hidden
+                                "></span>
+                        </div>
+                            <!-- burger with icon -->
+                             
                     </div>
                 </nav>
             </div>
+            
 
         </header>
+
+
+
+
+
+
+
+
+
         <main class="grow">
         </main>
         <footer class="bg-slate-600 h-14"></footer>
