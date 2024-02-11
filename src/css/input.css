@@ -49,7 +49,7 @@ body {
         /* hover ar chans dizainshi */
     }
     .nav-links {
-        @apply text-headerItem text-colorsText-headerMenu hover:text-black active:text-black cursor-pointer inline-block
+        @apply text-headerItem text-colorsText-headerMenu cursor-pointer inline-block
     }
 
     /* rose titles of section responsive */
@@ -103,7 +103,7 @@ body {
     }
    
     .title {
-        @apply direction-row text-size-xl text-white
+        @apply direction-row text-size-xl text-white lg:nav-links 
     }
     
     
@@ -152,7 +152,7 @@ body {
 
 }
 .dropdown-menu{
-    @apply  h-full w-full overflow-y-hidden lg:overflow-hidden lg:flex lg:justify-center
+    @apply  h-full w-full overflow-y-hidden lg:overflow-hidden lg:flex lg:justify-between items-center
 }
 .dropdown-menu-show{
     @apply h-[100vh] w-full bg-black
