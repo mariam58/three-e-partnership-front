@@ -4,11 +4,23 @@ const megaMenu = document.getElementById('menu-container')
 // const mobileDropdown = document.querySelectorAll('.mobile-dropdown');
 const accordionItem = document.querySelectorAll(".step");
 
+// logo
+const whiteLogo = document.querySelector(".logo-white");
+const blackLogo = document.querySelector(".logo-black");
+
+
+
 function burger() {
         burgerMenu.addEventListener('click', ()=> {
             burgerMenu.classList.toggle('menu-btn');
             megaMenu.classList.toggle('mega-menu-show');
             document.body.classList.toggle('bg-black');
+            blackLogo.classList.toggle('hide-logo');
+            
+              blackLogo.classList.toggle('hidden');
+              whiteLogo.classList.toggle('hidden');
+           
+
             
           //  if(burgerMenu.classList.contains('active')){
           //   mobileNav.classList.add('mobile-nav', 'acordion-wrap')
