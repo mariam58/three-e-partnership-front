@@ -115,10 +115,10 @@ body {
     }
 
   .dropdown {
-        @apply absolute hidden transition-all ease-linear rounded-[10px] p-[7px] shadow-lg duration-300 cursor-pointer z-50 group-hover:block 
+        @apply absolute top-10 hidden transition ease-linear  duration-1000 hover:delay-1000 rounded-[10px] p-[7px] shadow-lg  cursor-pointer z-50 group-hover:block bg-white hover:transition-all
     }
     .mobile-dropdown-link{
-        @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray lg:bg-white after:content-['>'] after:opacity-100 lg:after:opacity-0 after:text-bg-iconBlue lg:after:text-colorsText-headerMenu direction-row py-[10px] px-5 lg:px-[10px] after:float-right rounded-lg  lg:hover:text-colorsText-rose lg:hover:bg-bg-iconRose lg:after:ml-[16px] lg:hover:after:opacity-100 cursor-pointer
+        @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray lg:bg-white after:content-['>'] after:opacity-100 lg:after:opacity-0 after:text-bg-iconBlue lg:after:text-colorsText-headerMenu direction-row py-[10px] px-5 lg:px-[10px] after:float-right rounded-lg  lg:hover:text-colorsText-rose lg:hover:bg-bg-iconRose lg:after:ml-[16px] lg:hover:after:opacity-100 cursor-pointer lg:hover:transition-all
     }
 
 
@@ -152,7 +152,7 @@ body {
 
 
 .menu-container{
-    @apply  absolute lg:relative top-[72px] lg:top-0 left-0 w-full h-0 lg:h-fit overflow-hidden ease-in-out lg:overflow-visible
+    @apply  absolute lg:relative top-[58px] lg:top-0 left-0 w-full h-0 lg:h-fit overflow-hidden ease-in-out lg:overflow-visible
 
 }
 .dropdown-menu{
