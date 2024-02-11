@@ -49,7 +49,7 @@ body {
         /* hover ar chans dizainshi */
     }
     .nav-links {
-        @apply text-headerItem text-colorsText-headerMenu cursor-pointer inline-block
+        @apply text-headerItem text-colorsText-headerMenu hover:text-black cursor-pointer inline-block
     }
 
     /* rose titles of section responsive */
@@ -114,9 +114,13 @@ body {
         @apply p-[10px] space-y-2
     }
 
-    .mobile-dropdown-link{
-        @apply text-size-xl text-bg-iconBlue bg-colorsText-darkGray after:content-['>'] after:opacity-100 after:text-bg-iconBlue  flex justify-between items-center py-[10px] px-5 after:float-right rounded-lg
+  .dropdown {
+        @apply absolute hidden transition-all ease-linear rounded-[10px] p-[7px] shadow-lg duration-300 cursor-pointer z-50 group-hover:block 
     }
+    .mobile-dropdown-link{
+        @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray lg:bg-white after:content-['>'] after:opacity-100 lg:after:opacity-0 after:text-bg-iconBlue lg:after:text-colorsText-headerMenu direction-row py-[10px] px-5 lg:px-[10px] after:float-right rounded-lg  lg:hover:text-colorsText-rose lg:hover:bg-bg-iconRose lg:after:ml-[16px] lg:hover:after:opacity-100 cursor-pointer
+    }
+
 
 }
 
@@ -148,7 +152,7 @@ body {
 
 
 .menu-container{
-    @apply  absolute lg:relative top-[72px] lg:top-0 left-0 w-full h-0 lg:h-fit overflow-hidden ease-in-out 
+    @apply  absolute lg:relative top-[72px] lg:top-0 left-0 w-full h-0 lg:h-fit overflow-hidden ease-in-out lg:overflow-visible
 
 }
 .dropdown-menu{
