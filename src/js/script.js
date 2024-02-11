@@ -13,7 +13,7 @@ const blackLogo = document.querySelector(".logo-black");
 function burger() {
         burgerMenu.addEventListener('click', ()=> {
             burgerMenu.classList.toggle('menu-btn');
-            megaMenu.classList.toggle('mega-menu-show');
+            megaMenu.classList.toggle('dropdown-menu-show');
             document.body.classList.toggle('bg-black');
             blackLogo.classList.toggle('hide-logo');
             
