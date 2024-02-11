@@ -1,5 +1,5 @@
 const burgerMenu = document.querySelector('#burger-menu');
-const megaMenu = document.getElementById('menu-container')
+const dropdownMenu = document.getElementById('menu-container')
 // const mobileNav = document.querySelector('#mobile-navigation')    
 // const mobileDropdown = document.querySelectorAll('.mobile-dropdown');
 const accordionItem = document.querySelectorAll(".step");
@@ -13,7 +13,7 @@ const blackLogo = document.querySelector(".logo-black");
 function burger() {
         burgerMenu.addEventListener('click', ()=> {
             burgerMenu.classList.toggle('menu-btn');
-            megaMenu.classList.toggle('dropdown-menu-show');
+            dropdownMenu.classList.toggle('dropdown-menu-show');
             document.body.classList.toggle('bg-black');
             blackLogo.classList.toggle('hide-logo');
             
