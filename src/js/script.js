@@ -17,22 +17,22 @@ function burger() {
             
               blackLogo.classList.toggle('hidden');
               whiteLogo.classList.toggle('hidden');
-
-
-              window.onresize = function () {
-                let w = window.outerWidth;
-                if (w > 1024) {
-                  dropdownMenu.classList.remove('dropdown-menu-show');
-                  document.body.classList.remove('bg-black');
-                }
-            };
         })
-
     }
     burger();
     
    
 
+  window.addEventListener('resize',function () {
+    if (window.outerWidth > 1024) {
+      burgerMenu.classList.remove('menu-btn');
+      dropdownMenu.classList.remove('dropdown-menu-show');
+      document.body.classList.remove('bg-black');
+      blackLogo.classList.remove('hide-logo');
+        blackLogo.classList.remove('hidden');
+        whiteLogo.classList.add('hidden');
+    }
+} )
 
 
     
