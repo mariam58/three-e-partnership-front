@@ -10,7 +10,7 @@
 
 <body class=" font-SFProDisplay">
     <div class="wrapper">
-        <header class="header py-1">  
+        <header class="header py-1 sticky top-0">  
             <div class="container-wrapper">
                 <nav class="navbar direction-row gap-[10px]">
                     <!-- logo -->
@@ -113,16 +113,92 @@
                     </div>
                     <div class="buttons direction-row">
                         <!-- search -->
-                        <div class="search ">
-                            <a title="title" href="#">
-                                <svg width="53px" height="53px" viewBox="0 0 53 52" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity="0.5"
-                                        d="M32.6988 32L36.8335 36M35.5002 25.3333C35.5002 30.488 31.3215 34.6667 26.1668 34.6667C21.0122 34.6667 16.8335 30.488 16.8335 25.3333C16.8335 20.1787 21.0122 16 26.1668 16C31.3215 16 35.5002 20.1787 35.5002 25.3333Z"
-                                        stroke="black" stroke-width="2.38095" stroke-linecap="round" />
-                                </svg>
-                            </a>
-                        </div>
+                        
+
+
+
+
+
+                          <div id="myOverlay" class="overlay h-[100vh] flex justify-center items-center">
+                            <form action="" class="max-w-[760px] w-[100%] m-auto">
+                            
+                            <div class="w-full relative">
+                                <input
+                                  class="appearance-none border-2 pl-10 border-gray-300 hover:border-gray-400 transition-colors rounded-md w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:ring-purple-600 focus:border-purple-600 focus:shadow-outline"
+                                  id="username"
+                                  type="text"
+                                  placeholder="Search..."
+                                />
+                                <div class="absolute right-0 inset-y-0 flex items-center">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="-ml-1 mr-3 h-5 w-5 text-gray-400 hover:text-gray-500"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      d="M6 18L18 6M6 6l12 12"
+                                    />
+                                  </svg>
+                                </div>
+                              
+                                <div class="absolute left-0 inset-y-0 flex items-center">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-6 w-6 ml-3 text-gray-400 hover:text-gray-500"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+
+                            </form>
+                          </div>
+
+
+
+
+
+
+
+                        
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <!-- contact -->
                         <a class="contact btn-primary" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
                         <!-- burger -->
@@ -147,37 +223,6 @@
 
         </header>
         <main class="grow ">
-            
-            
-            <div class="search-form">
-                
-
-                <div id="myOverlay" class="overlay">
-                    <div class="overlay-content">
-                        <form class="max-w-[686px] w-full">   
-                            <div class="relative">
-                                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                                    </svg>
-                                </div>
-                                <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Mockups, Logos..." required>
-                            </div>
-                        </form>
-                        <span class="closebtn" onclick="closeSearch()" title="Close Overlay"><svg class="w-[25px] w-[25px]"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="#ffffff" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></span>
-
-                  </div>
-                  
-            </div>
-
-
-        
-
-
-
-
-
-            
         </main>
         <footer class="bg-slate-600 h-14"></footer>
     </div>
