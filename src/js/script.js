@@ -14,7 +14,6 @@ function burger() {
             dropdownMenu.classList.toggle('dropdown-menu-show');
             document.body.classList.toggle('bg-black');
             blackLogo.classList.toggle('hide-logo');
-            
               blackLogo.classList.toggle('hidden');
               whiteLogo.classList.toggle('hidden');
         })
@@ -23,7 +22,7 @@ function burger() {
     
    
 
-  window.addEventListener('resize',function () {
+ window.addEventListener('resize',function () {
     if (window.outerWidth > 1024) {
       burgerMenu.classList.remove('menu-btn');
       dropdownMenu.classList.remove('dropdown-menu-show');

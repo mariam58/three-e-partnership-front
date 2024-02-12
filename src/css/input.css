@@ -131,3 +131,33 @@ body {
     @apply h-[100vh] w-full bg-black
 }
 }
+
+/* search popup  */
+
+
+
+
+
+.overlay{
+    @apply h-full w-full fixed z-50 top-0 left-0 bg-black bg-[#000000cc] 
+}
+.overlay-content{
+    @apply relative top-[30%] left-0 translate-x-[30%]
+     text-center mx-auto flex items-center 
+}
+
+.closebtn{
+    @apply  p-[22px] cursor-pointer
+}
+
+
+  /* input{
+    @apply p-4 text-size-lg border-none float-left w-[80%] bg-white  hover:bg-blue-600
+} */
+
+
+
+
+/* .overlay{
+    @apply 
+} */
