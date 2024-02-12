@@ -17,11 +17,24 @@ function burger() {
             
               blackLogo.classList.toggle('hidden');
               whiteLogo.classList.toggle('hidden');
-          
+
+
+              window.onresize = function () {
+                let w = window.outerWidth;
+                if (w > 1024) {
+                  dropdownMenu.classList.remove('dropdown-menu-show');
+                  document.body.classList.remove('bg-black');
+                }
+            };
         })
+
     }
     burger();
     
+   
+
+
+
     
   accordionItem.forEach(function (elemenet) {
       elemenet.addEventListener("click", function () {
@@ -33,6 +46,11 @@ function burger() {
         arrowdown.classList.toggle('icon-up')
       });
     });
+
+
+    
+
+
 
  
 
