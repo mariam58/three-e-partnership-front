@@ -46,7 +46,18 @@ function burger() {
       });
     });
 
+    let overlayContant = document.getElementById("myOverlay");
+    
 
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+      // If user clicks inside the element, do nothing
+      if (event.target.closest("#overlay-content"))
+      console.log(event.target);
+    
+      // If user clicks outside the element, hide it!
+      else (overlayContant.classList.add("hidden"))
+    });
     
 
 
