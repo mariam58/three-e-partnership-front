@@ -84,6 +84,7 @@ body {
     .burger-menu-line {
         @apply block absolute left-[9px] h-[2px] w-4 bg-black opacity-100 rotate-0 ease-in-out transition-all mx-auto 
     }
+   
 
     /*  icentreba X  */
     .active {
@@ -95,7 +96,7 @@ body {
     }
     
     .icon-up{
-        @apply rotate-180
+        @apply rotate-180 
     }
     
     .mobile-dropdown{
@@ -137,6 +138,7 @@ body {
     @apply h-[100vh] w-full absolute z-50 top-[0] left-0 bg-black bg-[#000000cc] flex justify-center items-center
 }
 }
+
 
 
 

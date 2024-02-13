@@ -56,7 +56,7 @@ const search = document.querySelector('.search')
     overlayContant.addEventListener("click", function(event) {
       // If user clicks inside the element, do nothing
       if (event.target.closest("#overlay-content"))
-      console.log(event.target); 
+      return 
     
       // If user clicks outside the element, hide it!
       else (overlayContant.classList.add("hidden"))
