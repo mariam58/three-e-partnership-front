@@ -10,7 +10,7 @@
 
 <body class=" font-SFProDisplay">
     <div class="wrapper">
-        <header class="header py-1 sticky top-0">
+        <header class="header py-1 relative top-0">
             <div class="container-wrapper">
                 <nav class="navbar direction-row gap-[10px]">
                     <!-- logo -->
@@ -144,8 +144,9 @@
 
                         <!-- popup search -->
 
-                        <div id="myOverlay" class="overlay hidden">
-                            <div class="max-w-[760px] w-[100%] m-auto flex items-center justify-center">
+                        <div id="myOverlay" class="overlay ">
+                            <div class="max-w-[760px] w-[100%] m-auto ">
+                            <div class="flex items-center justify-center">
                                 <div id="overlay-content" class="group w-[90%]">
                                     <form action="" method="get" class="relative flex items-stretch justify-center">
                                         <!-- search icon -->
@@ -175,10 +176,16 @@
                                     </svg>
                                 </div>
                             </div>
+                            <div>
+                            <ul id="search-container" class="search-container ">
+                                <li class="search-item ">
+                                    Work package, detailed headline</li>
+                                </li> 
+                            </ul>
+                            <a class="search-see-all-items " href="http://#" target="_blank" rel="noopener noreferrer">See All search results</a>
+                            </div>  
                         </div>
-
-
-
+                        </div>
 
                         <!-- contact -->
                         <a class="contact btn-primary" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
