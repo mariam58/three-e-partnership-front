@@ -139,6 +139,15 @@ body {
 .overlay{
     @apply h-[100vh] w-full absolute z-50 top-[0] left-0 bg-black bg-[#000000cc] flex justify-center items-center
 }
+.search-container{
+    @apply bg-transparent w-[80%] py-[15px] text-white text-size-lg mx-auto space-y-[15px] border-b-2
+}
+.search-item{
+    @apply cursor-pointer hover:text-bg-mainDark transition-colors duration-200
+}
+.search-see-all-items{
+    @apply inline-block w-[90%] text-center mt-[15px] text-size-xl text-white hover:text-bg-mainDark transition-colors duration-200
+}
 }
 
 
