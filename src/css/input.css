@@ -72,9 +72,9 @@ body {
         @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
     }
 
-    /* labels გაასწორე შადოუ*/
+    /* labels+++*/
     .label {
-        @apply rounded-[40px] bg-white text-size-sm font-bold text-colorsText-blue px-2 cursor-pointer shadow-lg
+        @apply rounded-[40px] bg-white text-size-sm font-bold text-colorsText-blue px-2 cursor-pointer shadow-xl shadow-[rgba(0, 0, 0, 0.5)]
     }
     /* burger menu */
     .burger-menu{
