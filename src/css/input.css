@@ -130,14 +130,18 @@ body {
 .dropdown-menu-show{
     @apply h-[100vh] w-full bg-black
 }
-}
 
 /* search popup  */
 
-
-
-
-
 .overlay{
-    @apply h-[100vh] w-full absolute z-50 top-[0] left-0 bg-black bg-[#000000cc] 
+    @apply h-[100vh] w-full absolute z-50 top-[0] left-0 bg-black bg-[#000000cc] flex justify-center items-center
 }
+}
+
+
+
+
+
+
+
+

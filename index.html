@@ -113,92 +113,63 @@
                     </div>
                     <div class="buttons direction-row">
                         <!-- search -->
-                        
-
-
-
-
-
-                         <div id="myOverlay" class="overlay h-[100vh] flex justify-center items-center ">
-                            <form action="" class="max-w-[760px] w-[100%] m-auto">
-                            
-                            <div id="overlay-content" class="group w-full relative">
-                                <input
-                                  class="appearance-none border-2 pl-[74px] border-gray-300 hover:border-gray-400 transition-colors rounded-lg w-full py-[23px] text-gray-800 text-size-lg group-hover:text-black"
-                                  id="username"
-                                  type="text"
-                                  placeholder="Search"
-                                />
-                                <div class="absolute right-0 inset-y-0 flex items-center bg-colorsText-darkGray p-5 ">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-5 w-5 text-white hover:text-gray-500"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                  >
-                                    <path
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      stroke-width="2"
-                                      d="M6 18L18 6M6 6l12 12"
-                                    />
-                                  </svg>
-                                </div>
-                              
-                                <div class="absolute left-0 inset-y-0 flex items-center p-4 ">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-5 w-5 ml-3 text-gray-500 group-hover:text-black"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                  >
-                                    <path
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      stroke-width="2"
-                                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-
-                            </form>
-                          </div>
-
-
-
-
-
-
-
-                        
+                        <div>
+                            <button class="search" onclick="openSearch()" title="title" href="#">
+                                <svg width="53px" height="53px" viewBox="0 0 53 52" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.5"
+                                        d="M32.6988 32L36.8335 36M35.5002 25.3333C35.5002 30.488 31.3215 34.6667 26.1668 34.6667C21.0122 34.6667 16.8335 30.488 16.8335 25.3333C16.8335 20.1787 21.0122 16 26.1668 16C31.3215 16 35.5002 20.1787 35.5002 25.3333Z"
+                                        stroke="black" stroke-width="2.38095" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="myOverlay" class="overlay hidden">
+                    <form action="" class="max-w-[760px] w-[100%] m-auto">
                     
+                    <div id="overlay-content" class="group w-full relative">
+                        <input
+                          class="appearance-none border-2 pl-[74px] border-gray-300 hover:border-gray-400 transition-colors rounded-lg w-full py-[23px] text-gray-800 text-size-lg group-hover:text-black"
+                          id="username"
+                          type="text"
+                          placeholder="Search"
+                        />
+                        <div class="absolute right-0 inset-y-0 flex items-center bg-colorsText-darkGray p-5 ">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 text-white hover:text-gray-500"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M6 18L18 6M6 6l12 12"
+                            />
+                          </svg>
+                        </div>
+                      
+                        <div class="absolute left-0 inset-y-0 flex items-center p-4 ">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 ml-3 text-gray-500 group-hover:text-black"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    </form>
+                  </div>
                         <!-- contact -->
                         <a class="contact btn-primary" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
                         <!-- burger -->
@@ -218,6 +189,7 @@
                              
                     </div>
                 </nav>
+                
             </div>
             
 
