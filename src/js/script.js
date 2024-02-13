@@ -46,18 +46,27 @@ function burger() {
       });
     });
 
-    let overlayContant = document.getElementById("myOverlay");
+    const overlayContant = document.getElementById("myOverlay");
     
+     // open search popup
+const search = document.querySelector('.search')
+
 
     // Detect all clicks on the document
-    document.addEventListener("click", function(event) {
+    overlayContant.addEventListener("click", function(event) {
       // If user clicks inside the element, do nothing
       if (event.target.closest("#overlay-content"))
-      console.log(event.target);
+      console.log(event.target); 
     
       // If user clicks outside the element, hide it!
       else (overlayContant.classList.add("hidden"))
+
+
     });
+
+    function openSearch() {
+      overlayContant.classList.remove('hidden');
+    }
     
 
 
