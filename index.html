@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>testing</title>
     <link rel="stylesheet" href="src/css/output.css">
 </head>
-
 <body class=" font-SFProDisplay">
     <div class="wrapper">
         <header class="header py-1 relative top-0">
@@ -22,7 +20,7 @@
                     <div id="menu-container" class="menu-container direction-row gap-[10px]">
                         <!-- dropdown-menu -->
                         <div id="dropdown-menu" class="dropdown-menu justify-between p-6 lg:p-0">
-                            <!-- search -->
+                            <!-- search mobile-->
                             <form action="" method="get">
                                 <div class="relative mx-auto lg:hidden">
                                     <input
@@ -37,13 +35,11 @@
                                 </div>
                             </form>
                             <!-- search end  -->
-                            <ul class="dropdown-menu">
-                                <li class="step p-[10px]"><a class="title" href="#" target="_blank"
+                            <ul class="dropdown-menu space-x-[5px]">
+                                <li class="step py-[10px]"><a class="title" href="#" target="_blank"
                                         rel="noopener noreferrer">Home</a></li>
-
-
                                 <!-- dropdown 1 -->
-                                <li class="group step p-[10px]">
+                                <li class="group step py-[10px] ">
                                     <!-- სათაური იცონკით მობილურისთვის-->
                                     <div class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu ">
                                         <span class="title group-hover:lg:text-black ">About</span>
@@ -65,7 +61,7 @@
                                     </ul>
                                 </li>
                                 <!-- 2 dropdown  -->
-                                <li class="group step p-[10px]">
+                                <li class="group step py-[10px]">
                                     <!-- სათაური იცონკით მობილურისთვის-->
                                     <div class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu">
                                         <span class="title group-hover:lg:text-black">News and Events</span>
@@ -83,24 +79,13 @@
                                         <li class="text "><a class="mobile-dropdown-link" href="#" target="_blank"
                                                 rel="noopener noreferrer mobile-dropdown-link">Events</a></li>
                                     </ul>
-
-
-
-
-
                                     <!-- li -->
-
                                 </li>
                                 <!--  li -->
-                                <li class="group step p-[10px]"><a class="title" href="#" target="_blank"
+                                <li class="group step py-[10px]"><a class="title" href="#" target="_blank"
                                         rel="noopener noreferrer">Deliverables and Outputs</a></li>
-
-
-
-
-
                                 <!--  3 dropdown -->
-                                <li class="group step p-[10px]">
+                                <li class="group step py-[10px]">
                                     <!-- სათაური იცონკით მობილურისთვის-->
                                     <div class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu">
                                         <span class="title group-hover:lg:text-black">Digital Knowledge Hub</span>
@@ -121,72 +106,66 @@
                                                 rel="noopener noreferrer">Webinars</a></li>
                                     </ul>
                                 </li>
-
                                 <!-- contact  igive rac hederze -->
-                                <li class="step p-[10px] lg:hidden"><a class="title text-bg-iconRose" href="#"
+                                <li class="step py-[10px] lg:hidden"><a class="title text-bg-iconRose" href="#"
                                         target="_blank" rel="noopener noreferrer">Contact</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="buttons direction-row">
                         <!-- search button-->
-                        <div>
-                            <a class="search" onclick="openSearch()" title="title" href="#">
-                                <svg width="53px" height="53px" viewBox="0 0 53 52" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity="0.5"
-                                        d="M32.6988 32L36.8335 36M35.5002 25.3333C35.5002 30.488 31.3215 34.6667 26.1668 34.6667C21.0122 34.6667 16.8335 30.488 16.8335 25.3333C16.8335 20.1787 21.0122 16 26.1668 16C31.3215 16 35.5002 20.1787 35.5002 25.3333Z"
-                                        stroke="black" stroke-width="2.38095" stroke-linecap="round" />
-                                </svg>
-                            </a>
+                        <div class="mr-5">
+                            <a class="search onclick=" openSearch() title="title" href="#">
+                                <svg class="w-6 h-6 text-colorsText-headerMenu stroke-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg></a>
                         </div>
-
-
                         <!-- popup search -->
-
-                        <div id="myOverlay" class="overlay ">
+                        <div id="myOverlay" class="overlay hidden">
                             <div class="max-w-[760px] w-[100%] m-auto ">
-                            <div class="flex items-center justify-center">
-                                <div id="overlay-content" class="group w-[90%]">
-                                    <form action="" method="get" class="relative flex items-stretch justify-center">
-                                        <!-- search icon -->
-                                        <div
-                                            class="absolute inset-y-0 start-[28px] flex items-center ps-3 pointer-events-none ">
-                                            <svg class="w-4 h-4 text-colorsText-headerMenu group-focus-within:text-black"
-                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                viewBox="0 0 20 20">
-                                                <path stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2"
-                                                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                                            </svg>
-                                        </div>
-                                        <input type="search" id="default-search" name="search"
-                                            class="block w-full p-4 ps-[74px] text-size-lg     text-colorsText-headerMenu rounded-lg bg-white  focus:text-black group-hover:text-black"
-                                            placeholder="Search" required>
-                                    </form>
+                                <div class="flex items-center justify-center">
+                                    <div id="overlay-content" class="group w-[90%]">
+                                        <form action="" method="get" class="relative flex items-stretch justify-center">
+                                            <!-- search icon -->
+                                            <div
+                                                class="absolute inset-y-0 start-[5%] flex items-center pointer-events-none ">
+                                                <svg class="w-4 h-4 text-colorsText-headerMenu group-focus-within:text-black"
+                                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 20 20">
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"
+                                                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                                </svg>
+                                            </div>
+                                            <input type="search" id="default-search" name="search"
+                                                class="block w-full p-4 ps-[74px] text-size-lg     text-colorsText-headerMenu rounded-lg bg-white  focus:text-black group-hover:text-black"
+                                                placeholder="Search" required>
+                                        </form>
+                                    </div>
+                                    <!-- X -->
+                                    <div class="flex items-center justify-center bg-transparent w-[10%]"
+                                        onclick="openSearch()">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-9 w-9 text-white hover:text-black stroke-1 hover:stroke-2"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </div>
                                 </div>
-                                <!-- X -->
-                                <div class="flex items-center justify-center bg-transparent w-[10%]"
-                                    onclick="openSearch()">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="h-9 w-9 text-white hover:text-black stroke-1 hover:stroke-2" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
+                                <div>
+                                    <ul id="search-container" class="search-container ">
+                                        <li class="search-item ">
+                                            Work package, detailed headline</li>
+                                        </li>
+                                    </ul>
+                                    <a class="search-see-all-items " href="http://#" target="_blank"
+                                        rel="noopener noreferrer">See All search results</a>
                                 </div>
                             </div>
-                            <div>
-                            <ul id="search-container" class="search-container ">
-                                <li class="search-item ">
-                                    Work package, detailed headline</li>
-                                </li> 
-                            </ul>
-                            <a class="search-see-all-items " href="http://#" target="_blank" rel="noopener noreferrer">See All search results</a>
-                            </div>  
                         </div>
-                        </div>
-
                         <!-- contact -->
                         <a class="contact btn-primary" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
                         <!-- burger -->
@@ -199,13 +178,9 @@
                                 "></span>
                         </div>
                         <!-- burger with icon -->
-
                     </div>
                 </nav>
-
             </div>
-
-
         </header>
         <main class="grow ">
         </main>

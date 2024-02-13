@@ -92,7 +92,7 @@ body {
     }
 
     .title {
-        @apply direction-row text-size-xl text-white lg:nav-links 
+        @apply direction-row text-size-xl text-white lg:nav-links pl-3
     }
     
     .icon-up{
