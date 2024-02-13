@@ -21,6 +21,7 @@
                     <!-- dropdown-menu -->
                         <div id="dropdown-menu" class="dropdown-menu p-6 lg:p-0">
                             <!-- search -->
+                            <form action="" method="get">
                             <div class="relative mx-auto lg:hidden">
                             <input class="bg-colorsText-darkGray w-full h-[29px] px-5 pr-16 rounded-[40px] text-sm focus:outline-none"
                               type="search" name="search" placeholder="Search">
@@ -29,6 +30,7 @@
                                   
                             </button> 
                           </div> 
+                        </form>
                           <!-- search end  -->
 
                          <ul class="dropdown-menu">
@@ -38,10 +40,10 @@
                             <!-- dropdown 1 -->
                             <li class="group step p-[10px]">
                                     <!-- სათაური იცონკით მობილურისთვის-->
-                                 <div class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu" >
+                                 <div class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu " >
                                      <span class="title group-hover:lg:text-black ">About</span>
-                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
-                                        class="icon-down w-8 h-4 inline-block group-hover:lg:fill-black">
+                                     <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
+                                        class="icon-down w-8 h-4 inline-block group-hover:lg:fill-black duration-500 ease-linear">
                                         <path
                                             d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
                                             clip-rule="evenodd" />
@@ -60,7 +62,7 @@
                                 <div class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu" >
                                     <span class="title group-hover:lg:text-black">News and Events</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
-                                       class="icon-down w-8 h-4 inline-block group-hover:lg:fill-black">
+                                       class="icon-down w-8 h-4 inline-block group-hover:lg:fill-black duration-500 ease-linear">
                                        <path
                                            d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
                                            clip-rule="evenodd" />
@@ -92,7 +94,7 @@
                                 <div class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu" >
                                     <span class="title group-hover:lg:text-black">Digital Knowledge Hub</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
-                                       class="icon-down w-8 h-4 inline-block group-hover:lg:fill-black">
+                                       class="icon-down w-8 h-4 inline-block group-hover:lg:fill-black duration-500 ease-linear">
                                        <path
                                            d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
                                            clip-rule="evenodd" />
@@ -112,7 +114,7 @@
                         </div>
                     </div>
                     <div class="buttons direction-row">
-                        <!-- search -->
+                        <!-- search button-->
                         <div>
                             <button class="search" onclick="openSearch()" title="title" href="#">
                                 <svg width="53px" height="53px" viewBox="0 0 53 52" fill="none"
@@ -123,53 +125,48 @@
                                 </svg>
                             </button>
                         </div>
-                        <div id="myOverlay" class="overlay hidden">
-                    <form action="" class="max-w-[760px] w-[100%] m-auto">
-                    
-                    <div id="overlay-content" class="group w-full relative">
-                        <input
-                          class="appearance-none border-2 pl-[74px] border-gray-300 hover:border-gray-400 transition-colors rounded-lg w-full py-[23px] text-gray-800 text-size-lg group-hover:text-black"
-                          id="username"
-                          type="text"
-                          placeholder="Search"
-                        />
-                        <div class="absolute right-0 inset-y-0 flex items-center bg-colorsText-darkGray p-5 ">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5 text-white hover:text-gray-500"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M6 18L18 6M6 6l12 12"
-                            />
-                          </svg>
-                        </div>
-                      
-                        <div class="absolute left-0 inset-y-0 flex items-center p-4 ">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5 ml-3 text-gray-500 group-hover:text-black"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                            />
-                          </svg>
-                        </div>
-                      </div>
 
-                    </form>
-                  </div>
+                        
+                                            <!-- popup search -->
+
+                    <div id="myOverlay" class="overlay hidden">
+                        <div class="max-w-[760px] w-[100%] m-auto flex items-center justify-center">
+                            <div id="overlay-content" class="group w-[90%]">
+                                <form action="" method="get" class="relative flex items-stretch justify-center">
+                                             <!-- search icon -->
+                                    <div class="absolute inset-y-0 start-[28px] flex items-center ps-3 pointer-events-none ">
+                            <svg class="w-4 h-4 text-colorsText-headerMenu group-focus-within:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            </svg>
+                                         </div>
+                                    <input type="search" id="default-search" name="search"
+                                     class="block w-full p-4 ps-[74px] text-size-lg     text-colorsText-headerMenu rounded-lg bg-white  focus:text-black group-hover:text-black"     placeholder="Search" required>
+                                </form>
+                            </div>
+                             <!-- X -->
+                            <div class="flex items-center justify-center bg-transparent w-[10%]" onclick="openSearch()">
+                        <svg
+                        
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-9 w-9 text-white hover:text-black stroke-1 hover:stroke-2"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"
+                          />
+                        </svg>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
                         <!-- contact -->
                         <a class="contact btn-primary" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
                         <!-- burger -->
