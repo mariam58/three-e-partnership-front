@@ -1,6 +1,10 @@
 const burgerMenu = document.querySelector('#burger-menu');
 const dropdownMenu = document.getElementById('menu-container')
 const dropdownStep = document.querySelectorAll(".step");
+const search = document.querySelector('.search-onclick')
+const overlayContant = document.getElementById("myOverlay");
+const DesktopSearch = document.getElementById("desktop-search-btn");
+
 
 // logo
 const whiteLogo = document.querySelector(".logo-white");
@@ -17,6 +21,7 @@ function burger() {
             blackLogo.classList.toggle('hide-logo');
               blackLogo.classList.toggle('hidden');
               whiteLogo.classList.toggle('hidden');
+              DesktopSearch.classList.toggle('hidden')
         })
     }
     burger();
@@ -33,7 +38,7 @@ function burger() {
         whiteLogo.classList.add('hidden');
         dropdownMenu.classList.remove('dropdown-menu-show');
         dropdownMenu.classList.add('h-0')
-
+        DesktopSearch.classList.remove('hidden')
     }
 } )
 
@@ -50,10 +55,8 @@ function burger() {
       });
     });
 
-    const overlayContant = document.getElementById("myOverlay");
     
      // open search popup
-const search = document.querySelector('.search')
 
 
     // Detect all clicks on the document
@@ -61,12 +64,10 @@ const search = document.querySelector('.search')
       // If user clicks inside the element, do nothing
       if (event.target.closest("#overlay-content"))
       return 
-    
       // If user clicks outside the element, hide it!
       else (overlayContant.classList.add("hidden"))
-
-
     });
+
 
     function openSearch() {
       overlayContant.classList.remove('hidden');
