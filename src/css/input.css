@@ -96,7 +96,7 @@ body {
     }
     
     .icon-up{
-        @apply rotate-180 rotate-0
+        @apply rotate-180 lg:rotate-0
     }
     
     .mobile-dropdown{
