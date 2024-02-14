@@ -32,7 +32,9 @@ module.exports = {
       SFProDisplay:["SF Pro Display", "sans-serif"]
      }
     },
-    
+    content:{
+      'arrowRightIcon': 'url(../images/icons/Icon-right.svg)'
+    },
     fontSize: {
       // 50px h1
       'heading-lg': ['3.125rem', {

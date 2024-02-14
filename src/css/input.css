@@ -92,9 +92,11 @@ body {
     }
 
     .title {
-        @apply direction-row text-size-xl text-white lg:nav-links pl-3
+        @apply direction-row text-size-xl text-white lg:nav-links pl-3 lg:pl-0
     }
-    
+    .step{
+        @apply py-[10px] lg:py-4 px-[18px]
+    }
     .icon-up{
         @apply rotate-180 lg:rotate-0
     }
@@ -107,7 +109,7 @@ body {
         @apply absolute top-10 hidden transition ease-linear  duration-1000 hover:delay-1000 rounded-[10px] p-[7px] shadow-lg  cursor-pointer z-50 group-hover:block bg-white hover:transition-all
     }
     .mobile-dropdown-link{
-        @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray lg:bg-white after:content-['>'] after:opacity-100 lg:after:opacity-0 after:text-bg-iconBlue lg:after:text-colorsText-headerMenu direction-row py-[10px] px-5 lg:px-[10px] after:float-right rounded-lg  lg:hover:text-colorsText-rose lg:hover:bg-bg-iconRose lg:after:ml-[16px] lg:hover:after:opacity-100 cursor-pointer lg:hover:transition-all
+        @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray lg:bg-white after:content-arrowRightIcon after:inline-block after:w-8 after:opacity-100 lg:after:opacity-0 after:text-bg-iconBlue lg:after:text-colorsText-headerMenu direction-row py-[10px] px-5 lg:px-[10px] after:float-right rounded-lg  lg:hover:text-colorsText-rose lg:hover:bg-bg-iconRose lg:after:ml-[16px] lg:hover:after:opacity-100 cursor-pointer lg:hover:transition-all
     }
 }
 
