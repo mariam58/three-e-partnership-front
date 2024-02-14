@@ -122,7 +122,7 @@ body {
 }
 
 .menu-container{
-    @apply  absolute lg:relative top-[58px] lg:top-0 left-0 w-full h-0 lg:h-fit overflow-hidden ease-in-out lg:overflow-visible
+    @apply  absolute lg:relative top-[58px] lg:top-0 left-0 w-full  lg:h-fit overflow-hidden ease-in-out lg:overflow-visible
 }
 
 
@@ -131,7 +131,7 @@ body {
 }
 
 .dropdown-menu-show{
-    @apply h-[100vh] w-full bg-black
+    @apply bg-black
 }
 
 /* search popup  */
