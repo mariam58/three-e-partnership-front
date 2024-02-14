@@ -68,7 +68,7 @@ function burger() {
 
 
     function openSearch() {
-      overlayContant.classList.remove('hidden');
+      overlayContant.classList.toggle('hidden');
     }
     
 
