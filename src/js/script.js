@@ -1,6 +1,6 @@
 const burgerMenu = document.querySelector('#burger-menu');
 const dropdownMenu = document.getElementById('menu-container')
-const accordionItem = document.querySelectorAll(".step");
+const dropdownStep = document.querySelectorAll(".step");
 
 // logo
 const whiteLogo = document.querySelector(".logo-white");
@@ -12,6 +12,7 @@ function burger() {
         burgerMenu.addEventListener('click', ()=> {
             burgerMenu.classList.toggle('menu-btn');
             dropdownMenu.classList.toggle('dropdown-menu-show');
+            dropdownMenu.classList.toggle('h-0')
             document.body.classList.toggle('bg-black');
             blackLogo.classList.toggle('hide-logo');
               blackLogo.classList.toggle('hidden');
@@ -30,12 +31,15 @@ function burger() {
       blackLogo.classList.remove('hide-logo');
         blackLogo.classList.remove('hidden');
         whiteLogo.classList.add('hidden');
+        dropdownMenu.classList.remove('dropdown-menu-show');
+        dropdownMenu.classList.add('h-0')
+
     }
 } )
 
 
     
-  accordionItem.forEach(function (elemenet) {
+  dropdownStep.forEach(function (elemenet) {
       elemenet.addEventListener("click", function () {
         this.classList.toggle("active");
 
