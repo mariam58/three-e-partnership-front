@@ -127,7 +127,7 @@ body {
 
 
 .dropdown-menu{
-    @apply  h-full w-full overflow-y-hidden lg:overflow-hidden lg:flex lg:justify-end items-center
+    @apply  h-full w-full overflow-hidden lg:overflow-hidden lg:flex lg:justify-end items-center
 }
 
 .dropdown-menu-show{
