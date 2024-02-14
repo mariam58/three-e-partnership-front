@@ -33,7 +33,9 @@ module.exports = {
      }
     },
     content:{
-      'arrowRightIcon': 'url(../images/icons/Icon-right.svg)'
+      'arrowRightIcon': 'url(../images/icons/Icon-right.svg)',
+      'arrowrose': 'url(../images/icons/Icon-right-rose.svg)'
+
     },
     fontSize: {
       // 50px h1

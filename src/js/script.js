@@ -22,6 +22,7 @@ function burger() {
               blackLogo.classList.toggle('hidden');
               whiteLogo.classList.toggle('hidden');
               DesktopSearch.classList.toggle('hidden')
+              
         })
     }
     burger();
@@ -48,14 +49,13 @@ function burger() {
         this.classList.toggle("active");
         let mobileDropdown = this.lastChild.previousElementSibling;
         mobileDropdown.classList.toggle('hidden')
-        let arrowdown = this.querySelector('.icon-down')
-        arrowdown.classList.toggle('icon-up')
+        let arrowdown = this.querySelector('.dropdown-title')
+        arrowdown.classList.toggle('after:icon-up')
       });
     });
 
     
      // open search popup
-
 
     // Detect all clicks on the document
     overlayContant.addEventListener("click", function(event) {

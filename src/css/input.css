@@ -92,13 +92,21 @@ body {
     }
 
     .title {
-        @apply direction-row text-size-xl text-white lg:nav-links pl-3 lg:pl-0
+        @apply direction-row text-size-xl text-white lg:nav-links
+    }
+    .dropdown-title { 
+        @apply w-full inline-block 
+        relative after:absolute after:top-0 after:right-0
+         lg:after:content-[''] after:content-arrowRightIcon after:rotate-90 after:inline-block after:opacity-100  after:text-bg-iconBlue after:duration-500 after:ease-linear
     }
     .step{
-        @apply py-[10px] lg:py-4 px-[18px]
+        @apply py-[10px] lg:py-4 px-5
+    }
+    .icon-down{
+        @apply hidden lg:inline-block
     }
     .icon-up{
-        @apply rotate-180 lg:rotate-0
+        @apply -rotate-90 lg:rotate-0
     }
     
     .mobile-dropdown{
@@ -109,7 +117,23 @@ body {
         @apply absolute top-10 hidden transition ease-linear  duration-1000 hover:delay-1000 rounded-[10px] p-[7px] shadow-lg  cursor-pointer z-50 group-hover:block bg-white hover:transition-all
     }
     .mobile-dropdown-link{
-        @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray lg:bg-white after:content-arrowRightIcon after:inline-block after:w-8 after:opacity-100 lg:after:opacity-0 after:text-bg-iconBlue lg:after:text-colorsText-headerMenu direction-row py-[10px] px-5 lg:px-[10px] after:float-right rounded-lg  lg:hover:text-colorsText-rose lg:hover:bg-bg-iconRose lg:after:ml-[16px] lg:hover:after:opacity-100 cursor-pointer lg:hover:transition-all
+        @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray cursor-pointer  direction-row py-[10px] pl-5 px-[10px]  rounded-lg
+       
+        after:content-arrowRightIcon 
+        after:inline-block
+         after:opacity-100 
+          after:text-bg-iconBlue   
+          after:float-right 
+
+    
+          lg:bg-white
+          lg:after:content-arrowrose
+          lg:after:opacity-0
+          lg:hover:text-colorsText-rose lg:hover:bg-bg-iconRose 
+          lg:hover:transition-all 
+           lg:after:ml-[16px] 
+           lg:hover:after:opacity-100
+           
     }
 }
 
