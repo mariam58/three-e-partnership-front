@@ -22,11 +22,11 @@
                         <div id="dropdown-menu" class="dropdown-menu justify-between p-6 lg:p-0">
                             <!-- search mobile-->
                             <form action="" method="get">
-                                <div class="relative mx-auto lg:hidden">
+                                <div class="mx-auto flex items-center relative lg:hidden">
                                     <input
-                                        class="bg-colorsText-darkGray w-full h-[29px] px-5 pr-16 rounded-[40px] text-sm focus:outline-none"
-                                        type="search" name="search" placeholder="Search">
-                                    <button title="mob-search" type="submit" class="absolute right-5 top-[5px] w-5 h-5">
+                                        class="text-white bg-colorsText-darkGray w-full h-[39px] px-5 pr-16 rounded-[40px] text-size-lg focus:outline-none"
+                                        type="text" name="search" placeholder="Search">
+                                    <button title="mob-search" type="submit" class="w-5 h-5 absolute right-[19px]">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path fill="#ffffff"
                                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
@@ -115,7 +115,7 @@
                     <div class="buttons direction-row">
                         <!-- search button-->
                         <div id="desktop-search-btn" class="mr-5">
-                            <a class="search-onclick onclick=" openSearch() title="title" href="#">
+                            <a class="search-onclick" onclick=" openSearch()" title="title" href="#">
                                 <svg class="w-6 h-6 text-colorsText-headerMenu stroke-2" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -140,7 +140,7 @@
                                                 </svg>
                                             </div>
                                             <input type="search" id="default-search" name="search"
-                                                class="block w-full p-4 ps-[74px] text-size-lg     text-colorsText-headerMenu rounded-lg bg-white  focus:text-black group-hover:text-black"
+                                                class="search-close-appearance block w-full p-4 ps-[74px] text-size-lg text-colorsText-headerMenu border-none outline-white rounded-lg bg-white  focus:text-black group-hover:text-black ease-in-out duration-300"
                                                 placeholder="Search" required>
                                         </form>
                                     </div>
@@ -155,12 +155,26 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <div>
-                                    <ul id="search-container" class="search-container ">
+                                <div class="search-result">
+                                    <ul id="search-container" class="search-container">
+                                        <li class="search-item ">
+                                            Work package, detailed headline</li>
+                                        </li>
+                                        <li class="search-item ">
+                                            Work package, detailed headline</li>
+                                        </li>
+                                        <li class="search-item ">
+                                            Work package, detailed headline</li>
+                                        </li>
+                                        <li class="search-item ">
+                                            Work package, detailed headline</li>
+                                        </li>
                                         <li class="search-item ">
                                             Work package, detailed headline</li>
                                         </li>
                                     </ul>
+                                  
+
                                     <a class="search-see-all-items " href="http://#" target="_blank"
                                         rel="noopener noreferrer">See All search results</a>
                                 </div>
