@@ -18,11 +18,14 @@ function burger() {
             dropdownMenu.classList.toggle('dropdown-menu-show');
             dropdownMenu.classList.toggle('h-0')
             document.body.classList.toggle('bg-black');
+            document.body.classList.toggle('overflow-hidden');
+
             blackLogo.classList.toggle('hide-logo');
               blackLogo.classList.toggle('hidden');
               whiteLogo.classList.toggle('hidden');
               DesktopSearch.classList.toggle('hidden')
-              
+              dropdownMenu.classList.toggle('dropdown-menu-scroll')
+
         })
     }
     burger();
@@ -34,12 +37,14 @@ function burger() {
       burgerMenu.classList.remove('menu-btn');
       dropdownMenu.classList.remove('dropdown-menu-show');
       document.body.classList.remove('bg-black');
+      document.body.classList.remove('overflow-hidden');
       blackLogo.classList.remove('hide-logo');
         blackLogo.classList.remove('hidden');
         whiteLogo.classList.add('hidden');
         dropdownMenu.classList.remove('dropdown-menu-show');
         dropdownMenu.classList.add('h-0')
         DesktopSearch.classList.remove('hidden')
+        dropdownMenu.classList.remove('dropdown-menu-scroll')
     }
 } )
 
