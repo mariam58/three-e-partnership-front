@@ -153,7 +153,7 @@ body {
 
 
 .dropdown-menu{
-    @apply  h-full w-full overflow-hidden lg:overflow-hidden lg:flex lg:justify-end items-center
+    @apply  h-full w-full lg:overflow-hidden lg:flex lg:justify-end items-center
 }
 
 .dropdown-menu-show{
@@ -189,7 +189,10 @@ body {
     @apply bg-transparent p-0  opacity-100 mt-[15px] transition-all hover:opacity-75   flex items-center justify-center w-[10%] self-start
 }
 
-
+.dropdown-menu-scroll {
+    overflow-y: scroll;
+    height: calc(100vh - 58px);
+}
 
 
 
