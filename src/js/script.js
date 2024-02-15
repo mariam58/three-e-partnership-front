@@ -63,12 +63,15 @@ function burger() {
       if (event.target.closest("#overlay-content"))
       return 
       // If user clicks outside the element, hide it!
-      else (overlayContant.classList.add("hidden"))
+      else (overlayContant.classList.add("hidden"));
+      document.body.classList.toggle('overflow-hidden');
+
     });
 
 
     function openSearch() {
       overlayContant.classList.toggle('hidden');
+      document.body.classList.toggle('overflow-hidden');
     }
     
 
