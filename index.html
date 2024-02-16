@@ -10,23 +10,31 @@
 
 <body class="font-SFProDisplay bg-red-500">
     <div class="wrapper">
-        <header class="header flex justify-center items-center bg-green-500 fixed top-0 z-50 w-full h-[58px]">
+        <!-- header start -->
+        <header class="header">
+
             <div class="container-wrapper">
-                <nav class="navbar direction-row gap-[10px]">
+                <!-- mavigation start -->
+                <nav class="navigation direction-row gap-[10px]">
                     <!-- logo -->
-                    <a class="w-[190px] logo-black" href="#"><img src="src/images/icons/3E_LOGO_black.svg"
+                    <a class="logo-black w-[190px] " href="#"><img src="src/images/icons/3E_LOGO_black.svg"
                             alt="3E-Partnership logo"></a>
                     <a class="w-[190px] logo-white hidden" href="#"><img src="src/images/icons/3E_LOGO_white.svg"
                             alt="3E-Partnership logo"></a>
+                    <!-- logo end -->
+
+
                     <!-- მობილურზე – dropdown-menu-show  იკონზე კლიკის დროს-->
-                    <div id="menu-container" class="menu-container direction-row gap-[10px] h-0 lg:h-full">
+                    <div id="nav-container-wrapper" class="nav-container-wrapper direction-row gap-[10px] h-0 lg:h-full">
+
                         <!-- dropdown-menu -->
-                        <div id="dropdown-menu" class="dropdown-menu justify-between p-6 lg:p-0">
-                            <!-- search mobile-->
-                            <form action="" method="get">
-                                <div class="mx-auto flex items-center relative lg:hidden">
+                        <div id="nav-container" class="nav-container">
+                            
+                            <!-- mobile search form strat -->
+                            <form class="mobile-search-form" action="" method="get">
+                                <div class="mobile-search-form-container ">
                                     <input
-                                        class="text-white bg-colorsText-darkGray w-full h-[39px] pl-5 rounded-[40px] text-size-lg focus:outline-none"
+                                        class="mobile-search-form-input"
                                         type="text" name="search" placeholder="Search">
                                     <button title="mob-search" type="submit"
                                         class="w-5 h-5 absolute right-5 fill-white">
@@ -38,18 +46,20 @@
                                     </button>
                                 </div>
                             </form>
-                            <!-- search end  -->
-                            <ul class="lg:dropdown-menu">
+                            <!-- mobile search form end -->
 
-                                <li class="step"><a class="title block" href="#" target="_blank"
+<!-- navigation menu start -->
+                            <ul class="lg:navigation-menu">
+            <!-- home -->
+                                <li class="navigation-menu-item"><a class="navigation-menu-title block" href="#" target="_blank"
                                         rel="noopener noreferrer">Home</a></li>
 
 
-                                <!-- dropdown 1 -->
-                                <li class="group step">
+            <!-- dropdown 1     about-->
+                                <li class="group navigation-menu-item">
                                     <!-- სათაური იცონკით მობილურისთვის-->
                                     <div class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu">
-                                        <span class="title dropdown-title group-hover:lg:text-black ">About</span>
+                                        <span class="navigation-menu-title navigation-title-icons group-hover:lg:text-black ">About</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
                                             class="icon-down h-4 lg:ml-2 stroke-2 group-hover:lg:fill-black ">
                                             <path
@@ -57,24 +67,25 @@
                                                 clip-rule="evenodd" />
                                         </svg>
                                     </div>
-                                    <!-- მენიუ menu -->
+                                    <!-- მენიუ dropdownmenu -->
                                     <ul class="mobile-dropdown hidden lg:dropdown">
-                                        <li class="text "><a class="mobile-dropdown-link" href="#" target="_blank"
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#" target="_blank"
                                                 rel="noopener noreferrer">Project</a></li>
-                                        <li class="text "><a class="mobile-dropdown-link" href="#" target="_blank"
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#" target="_blank"
                                                 rel="noopener noreferrer">Consortium</a></li>
-                                        <li class="text "><a class="mobile-dropdown-link" href="#" target="_blank"
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#" target="_blank"
                                                 rel="noopener noreferrer">Dissemination</a></li>
                                     </ul>
                                 </li>
 
 
 
-                                <!-- 2 dropdown  -->
-                                <li class="group step">
+            <!-- dropdown 2     news-->
+                                <li class="group navigation-menu-item">
                                     <!-- სათაური იცონკით მობილურისთვის-->
                                     <div class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu">
-                                        <span class="title dropdown-title group-hover:lg:text-black">News and Events</span>
+                                        <span class="navigation-menu-title navigation-title-icons group-hover:lg:text-black">News and
+                                            Events</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
                                             class="icon-down h-4 lg:ml-2 group-hover:lg:fill-black ">
                                             <path
@@ -82,23 +93,28 @@
                                                 clip-rule="evenodd" />
                                         </svg>
                                     </div>
-                                    <!-- მენიუ menu 2 -->
+                                    <!-- მენიუ dropdownmenu 2 -->
                                     <ul class="mobile-dropdown hidden lg:dropdown">
-                                        <li class="text "><a class="mobile-dropdown-link" href="#" target="_blank"
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#" target="_blank"
                                                 rel="noopener noreferrer">News</a></li>
-                                        <li class="text "><a class="mobile-dropdown-link" href="#" target="_blank"
-                                                rel="noopener noreferrer mobile-dropdown-link">Events</a></li>
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#" target="_blank"
+                                                rel="noopener noreferrer dropdown-menu-link">Events</a></li>
                                     </ul>
                                     <!-- li -->
                                 </li>
-                                <!--  li -->
-                                <li class="step"><a class="title block" href="#" target="_blank"
+
+
+                                
+<!-- Deliverables and Outputs li -->
+                                <li class="navigation-menu-item"><a class="navigation-menu-title block" href="#" target="_blank"
                                         rel="noopener noreferrer">Deliverables and Outputs</a></li>
-                                <!--  3 dropdown -->
-                                <li class="group step">
+                              
+ <!--  3 dropdown       Knowledge     -->
+                                <li class="group navigation-menu-item">
                                     <!-- სათაური იცონკით მობილურისთვის-->
                                     <div class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu">
-                                        <span class="title dropdown-title group-hover:lg:text-black ">Digital Knowledge Hub</span>
+                                        <span class="navigation-menu-title navigation-title-icons group-hover:lg:text-black ">Digital Knowledge
+                                            Hub</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
                                             class="icon-down h-4 lg:ml-2 stroke-2 group-hover:lg:fill-black ">
                                             <path
@@ -106,27 +122,34 @@
                                                 clip-rule="evenodd" />
                                         </svg>
                                     </div>
-                                    <!-- მენიუ menu -->
+                                    <!-- მენიუ dropdownmenumenu -->
                                     <ul class="mobile-dropdown hidden lg:dropdown">
-                                        <li class="text "><a class="mobile-dropdown-link" href="#" target="_blank"
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#" target="_blank"
                                                 rel="noopener noreferrer">Reports</a></li>
-                                        <li class="text "><a class="mobile-dropdown-link" href="#" target="_blank"
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#" target="_blank"
                                                 rel="noopener noreferrer">Whitepapers</a></li>
-                                        <li class="text "><a class="mobile-dropdown-link" href="#" target="_blank"
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#" target="_blank"
                                                 rel="noopener noreferrer">Webinars</a></li>
                                     </ul>
                                 </li>
+
+
                                 <!-- contact  igive rac hederze -->
-                                <li class="step mb-11 lg:hidden"><a class="title text-bg-iconRose" href="#"
+                                <li class="navigation-menu-item mb-11 lg:hidden"><a class="navigation-menu-title text-bg-iconRose" href="#"
                                         target="_blank" rel="noopener noreferrer">Contact</a></li>
                             </ul>
+
+
+  <!-- navigation menu end -->
+
                         </div>
                     </div>
-                    <div class="buttons direction-row">
+
+                    <!--nav- buttons start-->
+                    <div class="navigation_buttons direction-row">
                         <!-- search button-->
                         <div id="desktop-search-btn" class="mr-5">
                             <a class="search-onclick" onclick=" openSearch()" title="title" href="#">
-
                                 <svg class="w-5 h-5 fill-black hover:fill-colorsText-headerMenu lg:fill-colorsText-headerMenu lg:hover:fill-black"
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -135,10 +158,10 @@
                                 </svg>
                             </a>
                         </div>
-                        
+
                         <!-- contact -->
                         <a class="contact btn-primary" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
-                        <!-- burger -->
+                        <!-- burger start x -->
                         <div id="burger-menu" class="group burger-menu  lg:hidden">
                             <span class="burger-menu-line top-1/3 group-[.menu-btn]:hidden
                                 "></span>
@@ -147,19 +170,23 @@
                             <span class="burger-menu-line  top-2/3 group-[.menu-btn]:hidden
                                 "></span>
                         </div>
-                        <!-- burger with icon -->
+                                                <!-- burger end-->
+
                     </div>
+                    <!-- nav buttons end -->
+
                 </nav>
+                <!-- mavigation end -->
             </div>
-            <!-- popup search -->
-            <div id="myOverlay" class="overlay hidden">
-                <div class="max-w-[760px] w-[100%] m-auto ">
+
+            <!-- popup search start-->
+            <div id="overlay" class="overlay hidden">
+                <div class="Overlay-wrapper max-w-[760px] w-[100%] m-auto ">
                     <div id="overlay-content" class="flex items-center justify-center">
-                        <form action="" method="get" class="group w-[90%]">
-                            <div class="relative flex items-stretch justify-center">
+                        <form class="Overlay-search-form group w-[90%]" action="" method="get">
+                            <div class="search-form-wrapper">
                                 <!-- search icon -->
-                                <div
-                                    class="absolute inset-y-0 start-[5%] flex items-center pointer-events-none ">
+                                <div class="absolute inset-y-0 start-[5%] flex items-center pointer-events-none">
                                     <svg class="w-4 h-4 fill-colorsText-headerMenu group-focus-within:fill-black"
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -198,11 +225,11 @@
                                         search results</a></button>
                             </div>
                         </form>
-                        <!-- X -->
+                        <!-- closing icon X -->
                         <div class="btn-close" onclick="openSearch()">
                             <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-9 w-9 text-white hover:text-black stroke-1 hover:stroke-2"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                class="h-9 w-9 text-white hover:text-black stroke-1 hover:stroke-2" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M6 18L18 6M6 6l12 12" />
                             </svg>
@@ -211,7 +238,10 @@
 
                 </div>
             </div>
+            <!-- popup search end-->
         </header>
+                <!-- header end -->
+
         <main class="grow">
 
             <img src="src/images/adrian-cuj-YRKWxizKjvU-unsplash (1).jpg" alt="">
