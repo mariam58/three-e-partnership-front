@@ -51,7 +51,7 @@ function burger() {
     
   dropdownItem.forEach(function (elemenet) {
       elemenet.addEventListener("click", function () {
-        this.classList.toggle("active");
+        // this.classList.toggle("active");
         let mobileDropdown = this.lastChild.previousElementSibling;
         mobileDropdown.classList.toggle('hidden')
         let arrowdown = this.querySelector('.navigation-title-icons')
