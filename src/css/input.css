@@ -100,11 +100,11 @@ body {
     /* headers styles  start */
 
     .header {
-        @apply flex justify-center items-center bg-green-500 fixed top-0 z-50 w-full h-[58px]
+        @apply flex justify-center items-center fixed top-0 z-50 w-full h-[58px] bg-white
     }
 
     .nav-container-wrapper {
-        @apply absolute lg:relative top-[58px] lg:top-0 left-0 w-full lg:h-fit overflow-hidden ease-in-out lg:overflow-visible
+        @apply absolute lg:relative top-[58px] lg:top-0 left-0 w-full lg:h-fit overflow-hidden ease-in-out
     }
 
     .nav-container {
