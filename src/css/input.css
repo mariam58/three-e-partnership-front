@@ -91,15 +91,15 @@ body {
         @apply lg:pl-[7px]
     }
 
-    .title {
+    .navigation-menu-title {
         @apply direction-row text-size-xl text-white lg:nav-links
     }
-    .dropdown-title { 
+    .navigation-title-icons { 
         @apply w-full inline-block 
         relative after:absolute after:top-0 after:right-0
          lg:after:content-[''] after:content-arrowRightIcon after:rotate-90 after:inline-block after:opacity-100  after:text-bg-iconBlue after:duration-500 after:ease-linear
     }
-    .step{
+    .navigation-menu-item{
         @apply py-[10px] lg:py-4 px-5
     }
     .icon-down{
@@ -116,7 +116,7 @@ body {
   .dropdown {
         @apply absolute top-10 hidden transition ease-linear  duration-1000 hover:delay-1000 rounded-[10px] p-[7px] shadow-lg  cursor-pointer z-50 group-hover:block bg-white hover:transition-all
     }
-    .mobile-dropdown-link{
+    .dropdown-menu-link{
         @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray cursor-pointer  direction-row py-[10px] pl-5 px-[10px]  rounded-lg
        
         after:content-arrowRightIcon 
@@ -147,19 +147,43 @@ body {
     @apply hidden lg:inline-block
 }
 
-.menu-container{
+.nav-container-wrapper{
     @apply  absolute lg:relative top-[58px] lg:top-0 left-0 w-full  lg:h-fit overflow-hidden ease-in-out lg:overflow-visible
 }
 
+.nav-container{
+    @apply  h-full w-full lg:overflow-hidden lg:flex lg:justify-end items-center
+    justify-between p-6 lg:p-0
+}
 
-.dropdown-menu{
+.navigation-menu{
     @apply  h-full w-full lg:overflow-hidden lg:flex lg:justify-end items-center
 }
+
+
 
 .dropdown-menu-show{
     @apply bg-black
 }
 
+
+
+
+
+
+
+
+
+
+
+/* mobile search start */
+.mobile-search-form-container{
+    @apply mx-auto flex items-center relative lg:hidden
+}
+
+.mobile-search-form-input{
+    @apply text-white bg-colorsText-darkGray w-full h-[39px] pl-5 rounded-[40px] text-size-lg focus:outline-none
+}
 /* search popup  */
 
 .overlay{
@@ -174,15 +198,23 @@ body {
 }
 .search-see-all-items{
     @apply
-     inline-block w-[90%] text-center mt-[15px] text-size-xl text-white hover:text-bg-mainDark transition-colors duration-200
+     inline-block w-[90%] text-center mt-[15px] text-size-xl text-white hover:text-bg-mainDark  duration-200
    
-    text-size-xl text-white transform-none rounded-lg mt-2 mx-auto transition ease-in-out hover:bg-gray-700
+     transform-none rounded-lg mt-2 mx-auto transition ease-in-out hover:bg-gray-700
 }
+/* margin top Seaswore !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
 .search-close-appearance{
     @apply search-cancel:appearance-none
 }
 }
-
+ 
+.search-form-wrapper {
+    @apply relative flex items-stretch justify-center
+}
 
 /*  */
 .btn-close{
@@ -197,4 +229,7 @@ body {
 
 
 
-
+/* headers styles  */
+ .header {
+    @apply flex justify-center items-center bg-green-500 fixed top-0 z-50 w-full h-[58px]
+ }

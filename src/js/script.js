@@ -1,8 +1,8 @@
 const burgerMenu = document.querySelector('#burger-menu');
-const dropdownMenu = document.getElementById('menu-container')
-const dropdownStep = document.querySelectorAll(".step");
+const dropdownMenu = document.getElementById('nav-container-wrapper')
+const dropdownItem = document.querySelectorAll(".navigation-menu-item");
 const search = document.querySelector('.search-onclick')
-const overlayContant = document.getElementById("myOverlay");
+const overlayContant = document.getElementById('overlay');
 const DesktopSearch = document.getElementById("desktop-search-btn");
 
 
@@ -49,12 +49,12 @@ function burger() {
 } )
 
     
-  dropdownStep.forEach(function (elemenet) {
+  dropdownItem.forEach(function (elemenet) {
       elemenet.addEventListener("click", function () {
         this.classList.toggle("active");
         let mobileDropdown = this.lastChild.previousElementSibling;
         mobileDropdown.classList.toggle('hidden')
-        let arrowdown = this.querySelector('.dropdown-title')
+        let arrowdown = this.querySelector('.navigation-title-icons')
         arrowdown.classList.toggle('after:icon-up')
       });
     });
