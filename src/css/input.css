@@ -34,6 +34,10 @@ body {
 
 /* btn learn more, contact */
 @layer components {
+    .direction-row {
+        @apply flex items-center justify-between
+    }
+
     .btn-primary {
         @apply bg-colorsText-blue hover:bg-colorsText-darkGray text-white text-headerItem py-4 px-5 mx-auto rounded-lg cursor-pointer transition-colors duration-75 focus:ring-2
     }
@@ -48,6 +52,7 @@ body {
         @apply text-btnrtext underline text-colorsText-darkGray hover:text-colorsText-headerMenu
         /* hover ar chans dizainshi */
     }
+
     .nav-links {
         @apply text-headerItem text-colorsText-headerMenu hover:text-black cursor-pointer inline-block
     }
@@ -76,19 +81,13 @@ body {
     .label {
         @apply rounded-[40px] bg-white text-size-sm font-bold text-colorsText-blue px-2 cursor-pointer shadow-xl shadow-[rgba(0, 0, 0, 0.5)]
     }
-    
-    /* burger menu */
-    .burger-menu{
-      @apply  h-[34px] w-[34px] bg-bg-main rounded-lg rotate-0 transition-all cursor-pointer
-    }
 
-    .burger-menu-line {
-        @apply block absolute left-[9px] h-[2px] w-4 bg-black opacity-100 rotate-0 ease-in-out transition-all mx-auto 
-    }
-    .icon-down{
+
+    .icon-down {
         @apply hidden lg:inline-block
     }
-    .icon-up{
+
+    .icon-up {
         @apply -rotate-90 lg:rotate-0
     }
 
@@ -98,139 +97,125 @@ body {
         @apply lg:pl-[7px]
     } */
 
+    /* headers styles  start */
+
+    .header {
+        @apply flex justify-center items-center bg-green-500 fixed top-0 z-50 w-full h-[58px]
+    }
+
+    .nav-container-wrapper {
+        @apply absolute lg:relative top-[58px] lg:top-0 left-0 w-full lg:h-fit overflow-hidden ease-in-out lg:overflow-visible
+    }
+
+    .nav-container {
+        @apply h-full w-full lg:overflow-hidden lg:flex lg:justify-end items-center justify-between p-6 lg:p-0
+    }
+
+
+    /* mobile search start */
+    .mobile-search-form-container {
+        @apply mx-auto flex items-center relative lg:hidden
+    }
+
+    .mobile-search-form-input {
+        @apply text-white bg-colorsText-darkGray w-full h-[39px] pl-5 rounded-[40px] text-size-lg focus:outline-none
+    }
+
+
+    /* mobile search END */
+
+
+    /* navigation menu start */
+    .navigation-menu {
+        @apply h-full w-full lg:overflow-hidden lg:flex lg:justify-end items-center
+    }
+
+    .navigation-menu-item {
+        @apply py-[10px] px-5
+    }
+
     .navigation-menu-title {
         @apply direction-row text-size-xl text-white lg:nav-links
     }
-    .navigation-title-icons { 
-        @apply w-full inline-block 
-        relative after:absolute after:top-0 after:right-0
-         lg:after:content-[''] after:content-arrowRightIcon after:rotate-90 after:inline-block after:opacity-100  after:text-bg-iconBlue after:duration-500 after:ease-linear
+
+    .navigation-title-icons {
+        @apply w-full inline-block relative after:absolute after:top-0 after:right-0 lg:after:content-[''] after:content-arrowRightIcon after:rotate-90 after:inline-block after:opacity-100 after:text-bg-iconBlue after:duration-500 after:ease-linear
     }
-    .navigation-menu-item{
-        @apply py-[10px] px-5
-    }
-    
-    .mobile-dropdown{
+
+    /* navigation menu end */
+
+    /* dropdown menu start */
+
+    .mobile-dropdown {
         @apply p-[10px] space-y-2
     }
 
-  .dropdown {
-        @apply absolute top-10 hidden transition ease-linear  duration-1000 hover:delay-1000 rounded-[10px] p-[7px] shadow-lg  cursor-pointer z-50 group-hover:block bg-white hover:transition-all
+    .dropdown {
+        @apply absolute top-10 hidden transition ease-linear duration-1000 hover:delay-1000 rounded-[10px] p-[7px] shadow-lg cursor-pointer z-50 group-hover:block bg-white hover:transition-all
     }
-    .dropdown-menu-link{
-        @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray cursor-pointer  direction-row py-[10px] pl-5 px-[10px]  rounded-lg
-       
-        after:content-arrowRightIcon 
-        after:inline-block
-         after:opacity-100 
-          after:text-bg-iconBlue   
-          after:float-right 
 
-    
-          lg:bg-white
-          lg:after:content-arrowrose
-          lg:after:opacity-0
-          lg:hover:text-colorsText-rose lg:hover:bg-bg-iconRose 
-          lg:hover:transition-all 
-           lg:after:ml-[16px] 
-           lg:hover:after:opacity-100
-           
+    .dropdown-menu-link {
+        @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray cursor-pointer direction-row py-[10px] pl-5 px-[10px] rounded-lg after:content-arrowRightIcon after:inline-block after:opacity-100 after:text-bg-iconBlue after:float-right lg:bg-white lg:after:content-arrowrose lg:after:opacity-0 lg:hover:text-colorsText-rose lg:hover:bg-bg-iconRose lg:hover:transition-all lg:after:ml-[16px] lg:hover:after:opacity-100
     }
+
+    .dropdown-menu-show {
+        @apply bg-black
+    }
+
+    .dropdown-menu-scroll {
+        overflow-y: scroll;
+        height: calc(100vh - 58px);
+    }
+
+    /* dropdown menu end */
+
+    /*  nav-buttons start */
+    .contact {
+        @apply hidden lg:inline-block
+    }
+
+    /* burger menu */
+    .burger-menu {
+        @apply h-[34px] w-[34px] bg-bg-main rounded-lg rotate-0 transition-all cursor-pointer
+    }
+
+    .burger-menu-line {
+        @apply block absolute left-[9px] h-[2px] w-4 bg-black opacity-100 rotate-0 ease-in-out transition-all mx-auto
+    }
+
+    /* search popup  */
+
+    .overlay {
+        @apply h-[100vh] w-full absolute z-50 top-[0] left-0 bg-black bg-[#000000cc] flex justify-center items-center
+    }
+
+    .Overlay-wrapper {
+        @apply max-w-[760px] w-[100%] m-auto px-2 lg:px-0
+    }
+
+    .search-form-wrapper {
+        @apply relative flex items-stretch justify-center
+    }
+
+    .search-container {
+        @apply bg-transparent w-full py-[15px] text-white text-size-lg mx-auto space-y-[15px]
+    }
+
+    .search-item {
+        @apply hover:text-bg-mainDark duration-200 text-size-lg p-2 pl-[74px] rounded-lg mt-1 text-white relative transition ease-in-out cursor-pointer
+    }
+
+    .search-see-all-items {
+        @apply inline-block w-[90%] text-center mt-[15px] text-size-xl text-white hover:text-bg-mainDark duration-200 transform-none rounded-lg mt-2 mx-auto transition ease-in-out hover:bg-gray-700
+    }
+
+    .search-close-appearance {
+        @apply search-cancel:appearance-none
+    }
+
+    .btn-close {
+        @apply bg-transparent p-0 opacity-100 mt-[15px] transition-all hover:opacity-75 flex items-center justify-center w-[10%] self-start
+    }
+
+
 }
-
-/* new styles new index */
-@layer components {
-
-.direction-row {
-    @apply flex items-center justify-between
-}
-.contact {
-    @apply hidden lg:inline-block
-}
-
-.nav-container-wrapper{
-    @apply  absolute lg:relative top-[58px] lg:top-0 left-0 w-full  lg:h-fit overflow-hidden ease-in-out lg:overflow-visible
-}
-
-.nav-container{
-    @apply  h-full w-full lg:overflow-hidden lg:flex lg:justify-end items-center
-    justify-between p-6 lg:p-0
-}
-
-.navigation-menu{
-    @apply  h-full w-full lg:overflow-hidden lg:flex lg:justify-end items-center
-}
-
-
-
-.dropdown-menu-show{
-    @apply bg-black
-}
-
-
-
-
-
-
-
-
-
-
-
-/* mobile search start */
-.mobile-search-form-container{
-    @apply mx-auto flex items-center relative lg:hidden
-}
-
-.mobile-search-form-input{
-    @apply text-white bg-colorsText-darkGray w-full h-[39px] pl-5 rounded-[40px] text-size-lg focus:outline-none
-}
-/* search popup  */
-
-.overlay{
-    @apply h-[100vh] w-full absolute z-50 top-[0] left-0 bg-black bg-[#000000cc] flex justify-center items-center
-}
-.search-container{
-    @apply bg-transparent w-full py-[15px] text-white text-size-lg mx-auto space-y-[15px]
-}
-.search-item{
-    @apply 
-    hover:text-bg-mainDark duration-200 text-size-lg p-2 pl-[74px] rounded-lg mt-1 text-white relative transition ease-in-out cursor-pointer
-}
-.search-see-all-items{
-    @apply
-     inline-block w-[90%] text-center mt-[15px] text-size-xl text-white hover:text-bg-mainDark  duration-200
-   
-     transform-none rounded-lg mt-2 mx-auto transition ease-in-out hover:bg-gray-700
-}
-/* margin top Seaswore !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-11!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-
-.search-close-appearance{
-    @apply search-cancel:appearance-none
-}
-}
- 
-.search-form-wrapper {
-    @apply relative flex items-stretch justify-center
-}
-
-/*  */
-.btn-close{
-    @apply bg-transparent p-0  opacity-100 mt-[15px] transition-all hover:opacity-75   flex items-center justify-center w-[10%] self-start
-}
-
-.dropdown-menu-scroll {
-    overflow-y: scroll;
-    height: calc(100vh - 58px);
-}
-
-
-
-
-/* headers styles  */
- .header {
-    @apply flex justify-center items-center bg-green-500 fixed top-0 z-50 w-full h-[58px]
- }
