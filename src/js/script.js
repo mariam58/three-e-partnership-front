@@ -1,3 +1,4 @@
+const header = document.querySelector('.header')
 const burgerMenu = document.querySelector('#burger-menu');
 const dropdownMenu = document.getElementById('nav-container-wrapper')
 const dropdownItem = document.querySelectorAll(".navigation-menu-item");
@@ -17,7 +18,8 @@ function burger() {
             burgerMenu.classList.toggle('menu-btn');
             dropdownMenu.classList.toggle('dropdown-menu-show');
             dropdownMenu.classList.toggle('h-0')
-            document.body.classList.toggle('bg-black');
+            header.classList.toggle('bg-black')
+            // document.body.classList.toggle('bg-black');
             document.body.classList.toggle('overflow-hidden');
 
             blackLogo.classList.toggle('hide-logo');
@@ -36,7 +38,9 @@ function burger() {
     if (window.outerWidth > 1024) {
       burgerMenu.classList.remove('menu-btn');
       dropdownMenu.classList.remove('dropdown-menu-show');
-      document.body.classList.remove('bg-black');
+      header.classList.remove('bg-black')
+
+      // document.body.classList.remove('bg-black');
       document.body.classList.remove('overflow-hidden');
       blackLogo.classList.remove('hide-logo');
         blackLogo.classList.remove('hidden');
