@@ -76,6 +76,7 @@ body {
     .label {
         @apply rounded-[40px] bg-white text-size-sm font-bold text-colorsText-blue px-2 cursor-pointer shadow-xl shadow-[rgba(0, 0, 0, 0.5)]
     }
+    
     /* burger menu */
     .burger-menu{
       @apply  h-[34px] w-[34px] bg-bg-main rounded-lg rotate-0 transition-all cursor-pointer
@@ -84,12 +85,18 @@ body {
     .burger-menu-line {
         @apply block absolute left-[9px] h-[2px] w-4 bg-black opacity-100 rotate-0 ease-in-out transition-all mx-auto 
     }
-   
+    .icon-down{
+        @apply hidden lg:inline-block
+    }
+    .icon-up{
+        @apply -rotate-90 lg:rotate-0
+    }
+
 
     /*  icentreba X  */
-    .active {
+    /* .active {
         @apply lg:pl-[7px]
-    }
+    } */
 
     .navigation-menu-title {
         @apply direction-row text-size-xl text-white lg:nav-links
@@ -100,13 +107,7 @@ body {
          lg:after:content-[''] after:content-arrowRightIcon after:rotate-90 after:inline-block after:opacity-100  after:text-bg-iconBlue after:duration-500 after:ease-linear
     }
     .navigation-menu-item{
-        @apply py-[10px] lg:py-4 px-5
-    }
-    .icon-down{
-        @apply hidden lg:inline-block
-    }
-    .icon-up{
-        @apply -rotate-90 lg:rotate-0
+        @apply py-[10px] px-5
     }
     
     .mobile-dropdown{
