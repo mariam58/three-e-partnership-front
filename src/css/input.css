@@ -236,9 +236,34 @@ body {
         @apply text-headerItem 
     }
     .footer_founders-contact{
-        @apply text-size-lg
+        @apply text-size-lg flex flex-col gap-y-[10px]
     }
     .footer_privacy{
         @apply text-size-xl
     }
+.footer-projet-team{
+    @apply flex justify-start items-center p-[14px]
+}
+    
+    .contact-icon {
+        @apply relative rounded-full border-none w-[46px] h-[46px]  transition-all duration-300  cursor-pointer
+    }
+
+
+    .facebook-icon{
+        @apply relative rounded-full border-none w-[46px] h-[46px]  transition-all duration-300 cursor-pointer
+    }
+    /* paginations iner text - 1 2 3  */
+    .project-team-icon-item {
+        @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+    }
+    .footer_social-icons{
+        @apply direction-row
+    }
+.footer_social-icons{
+    @apply flex items-center justify-center gap-x-[20px]
+}
+
+
+
 }
