@@ -108,13 +108,13 @@ body {
     }
 
     .nav-container {
-        @apply h-full w-full lg:overflow-hidden lg:flex lg:justify-end items-center justify-between p-6 lg:p-0
+        @apply h-full w-full lg:overflow-hidden lg:flex lg:justify-end items-center justify-between px-6 pt-0 pb-6  lg:p-0
     }
 
 
     /* mobile search start */
     .mobile-search-form-container {
-        @apply mx-auto flex items-center relative lg:hidden
+        @apply mx-auto flex items-center relative lg:hidden my-[14px]
     }
 
     .mobile-search-form-input {
@@ -147,7 +147,7 @@ body {
     /* dropdown menu start */
 
     .mobile-dropdown {
-        @apply p-[10px] space-y-2
+        @apply py-[10px] px-[0px] space-y-2
     }
 
     .dropdown {
@@ -155,7 +155,7 @@ body {
     }
 
     .dropdown-menu-link {
-        @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray cursor-pointer direction-row py-[10px] pl-5 px-[10px] rounded-lg after:content-arrowRightIcon after:inline-block after:opacity-100 after:text-bg-iconBlue after:float-right lg:bg-white lg:after:content-arrowrose lg:after:opacity-0 lg:hover:text-colorsText-rose lg:hover:bg-bg-iconRose lg:hover:transition-all lg:after:ml-[16px] lg:hover:after:opacity-100
+        @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray cursor-pointer direction-row py-[10px] pl-5 px-[10px] rounded-lg after:content-arrowRightIcon after:inline-block after:opacity-100 after:text-bg-iconBlue after:float-right lg:bg-white lg:after:content-arrowrose lg:after:opacity-0 after:mr-[10px]  lg:hover:text-colorsText-rose lg:hover:bg-bg-iconRose lg:hover:transition-all lg:after:ml-[16px] lg:hover:after:opacity-100
     }
 
     .dropdown-menu-show {
@@ -163,7 +163,7 @@ body {
     }
 
     .dropdown-menu-scroll {
-        overflow-y: scroll;
+        overflow-y: auto;
         height: calc(100vh - 58px);
     }
 
