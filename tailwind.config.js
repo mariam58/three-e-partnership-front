@@ -67,12 +67,12 @@ module.exports = {
 
     // 16px Paragraph line height 19
       'headerItem': ['1rem', {
-        lineHeight: '1.188rem',
+        lineHeight: '1.193rem',
         fontWeight: '500',
       }],
     // 16px Paragraph line height 19
-    'btnrtext': ['1rem', {
-      lineHeight: '1.188rem',
+    'btnText': ['1rem', {
+      lineHeight: '1.193rem',
       fontWeight: '700',
     }],
       // 14 px  smaller paragraph
@@ -83,7 +83,7 @@ module.exports = {
       // 12px Smallest
       'size-sm': ['0.75rem', {
         lineHeight: '1.438rem',
-        fontWeight: '500',
+        fontWeight: '700',
       }],
     }
   },
