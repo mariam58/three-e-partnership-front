@@ -91,13 +91,18 @@ body {
         @apply -rotate-90 lg:rotate-0
     }
 
-
+}
     /*  icentreba X  */
     /* .active {
         @apply lg:pl-[7px]
     } */
 
+
     /* headers styles  start */
+
+
+    @layer components {
+
 
     .header {
         @apply flex justify-center items-center fixed top-0 z-50 w-full h-[58px] bg-white
@@ -218,4 +223,22 @@ body {
     }
 
 
+}
+
+
+/* footer styles start*/
+@layer components {
+    .footer {
+        @apply bg-colorsText-darkGray text-white
+        flex flex-col justify-between
+    }
+    .footer_founders-info{
+        @apply text-headerItem 
+    }
+    .footer_founders-contact{
+        @apply text-size-lg
+    }
+    .footer_privacy{
+        @apply text-size-xl
+    }
 }
