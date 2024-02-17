@@ -3,12 +3,12 @@ module.exports = {
   content: ["./src/**/*.{html,js}","./index.html"], 
    theme: {
     extend: {
-      // screens:{
-      //   sm: '640px',
-      //   md: '768px',
-      //   lg: '1024',
-      //   xl: '1280',
-      // },
+      screens:{
+        // sm: '640px',
+        // md: '768px',
+        lg: '1280px',
+        // xl: '1280',
+      },
       colors:{
         bg:{
           main:'#F4F4F4',
