@@ -147,11 +147,11 @@ body {
     /* dropdown menu start */
 
     .mobile-dropdown {
-        @apply py-[10px] px-[0px] space-y-2
+        @apply py-[10px] px-[0px] space-y-2 lg:space-y-0
     }
 
     .dropdown {
-        @apply absolute top-10 hidden transition ease-linear duration-1000 hover:delay-1000 rounded-[10px] p-[7px] shadow-lg cursor-pointer z-50 group-hover:block bg-white hover:transition-all
+        @apply absolute top-[52px] hidden transition ease-linear duration-1000 hover:delay-1000 rounded-[10px] p-[7px] shadow-lg cursor-pointer z-50 group-hover:block bg-white hover:transition-all
     }
 
     .dropdown-menu-link {
