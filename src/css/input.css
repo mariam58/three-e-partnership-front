@@ -252,7 +252,8 @@ body {
         @apply text-size-xl
     }
 .footer-projet-team{
-    @apply flex justify-start items-center py-[14px] lg:w-[289px]
+    @apply flex justify-start items-center py-[14px]
+     lg:w-[289px]
 }
     
     .contact-icon {
@@ -268,7 +269,7 @@ body {
         @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
     }
     .footer_social-icons{
-        @apply direction-row
+        @apply direction-row items-center
     }
 .footer_social-icons{
     @apply flex items-center justify-center gap-x-[20px]
