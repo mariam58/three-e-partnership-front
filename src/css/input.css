@@ -202,7 +202,7 @@ body {
     }
 
     .search-item {
-        @apply hover:text-bg-mainDark duration-200 text-size-lg  pl-[74px] rounded-lg mt-1 text-white relative transition ease-in-out cursor-pointer
+        @apply hover:text-bg-mainDark duration-200 text-size-lg  pl-[74px] rounded-lg text-white relative transition ease-in-out cursor-pointer
     }
 
     .search-see-all-items {
