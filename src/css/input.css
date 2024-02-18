@@ -206,7 +206,7 @@ body {
     }
 
     .search-see-all-items {
-        @apply inline-block w-[90%] text-center mt-[15px] text-size-xl text-white hover:text-bg-mainDark duration-200 transform-none rounded-lg mt-2 mx-auto transition ease-in-out hover:bg-gray-700
+        @apply inline-block w-[90%] text-center text-size-xl text-white hover:text-bg-mainDark duration-200 transform-none rounded-lg mx-auto transition ease-in-out hover:bg-gray-700
     }
 
     .search-close-appearance {
