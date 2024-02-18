@@ -230,19 +230,29 @@ body {
 @layer components {
     .footer {
         @apply bg-colorsText-darkGray text-white
-        flex flex-col justify-between
+        flex flex-col justify-between relative
+    }
+    .footer_content{
+        @apply flex flex-col lg:flex-row-reverse justify-between gap-3
+    }
+.footer_founders {
+    @apply flex flex-col items-center max-w-[777px] w-full justify-between
+}
+
+    .footer_founders-img{
+        @apply w-full mb-[30px] lg:mb-[25px]
     }
     .footer_founders-info{
         @apply text-headerItem 
     }
     .footer_founders-contact{
-        @apply text-size-lg flex flex-col gap-y-[10px]
+        @apply text-size-lg flex flex-col gap-y-[10px] 
     }
     .footer_privacy{
         @apply text-size-xl
     }
 .footer-projet-team{
-    @apply flex justify-start items-center p-[14px]
+    @apply flex justify-start items-center py-[14px] lg:w-[289px]
 }
     
     .contact-icon {
