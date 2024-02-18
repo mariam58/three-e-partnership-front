@@ -232,6 +232,9 @@ body {
         @apply bg-colorsText-darkGray text-white
         flex flex-col justify-between relative
     }
+    .footer_logo{
+        @apply py-[9.5px]
+    }
     .footer_content{
         @apply flex flex-col lg:flex-row-reverse justify-between gap-3
     }
