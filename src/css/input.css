@@ -233,33 +233,33 @@ body {
         flex flex-col justify-between relative
     }
     .footer_logo{
-        @apply py-[9.5px] lg:py-[23px]
+        @apply py-[9.5px] tablet:py-[23px]
     }
     .footer_content{
         @apply flex flex-col justify-between  w-full 
-        tablet:flex-row-reverse  mb-6 tablet:max-w-[1152px] tablet:mx-auto lg:mb-[31px]
+        tablet:flex-row-reverse  mb-6 tablet:max-w-[1152px] tablet:mx-auto tablet:mb-[31px]
     }
 
     /* teqstis konteiner zoma ar weria zustad, amitom Sevamcire margin-bottom 28 - 21it */
 .footer_founders {
-    @apply flex flex-col items-center tablet:max-w-[777px] tablet:w-full justify-between mb-[21px] lg:mb-0
+    @apply flex flex-col items-center tablet:max-w-[777px] tablet:w-full justify-between mb-[21px] tablet:mb-0
 }
 /* suratis simaRlea 3pxiT meti, movakle paddings */
     .footer_founders-img{
-        @apply w-full mb-[28px] lg:mb-[25px]
+        @apply w-full mb-[30px] tablet:mb-[25px]
     }
     .footer_founders-info{
         @apply text-headerItem 
     }
     .footer_founders-contact{
-        @apply text-size-lg flex flex-col lg:justify-center gap-y-[10px] 
+        @apply text-size-lg flex flex-col tablet:justify-center gap-y-[10px] 
     }
 .footer-projet-team{
     @apply flex justify-start items-center py-[14px]
-     lg:w-[289px]
+    tablet:w-[289px]
 }
 .footer_privacy{
-    @apply text-size-xl lg:flex lg:flex-col-reverse lg:py-[10px]
+    @apply text-size-xl tablet:flex tablet:flex-col-reverse tablet:py-[10px]
 }
 
     .contact-icon {
@@ -277,7 +277,7 @@ body {
 
     /* iconebis kontaineri didi, movakle margin botoms 38is -6 */
 .footer_social-icons{
-    @apply flex items-center justify-center gap-x-[20px] mb-[32px] lg:mb-0
+    @apply flex items-center justify-center gap-x-[20px] mb-[32px] tablet:mb-0
 }
 
 .footer_rights{
