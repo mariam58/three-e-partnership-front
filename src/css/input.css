@@ -237,7 +237,7 @@ body {
     }
     .footer_content{
         @apply flex flex-col justify-between  w-full 
-        tablet:flex-row-reverse  mb-6 tablet:max-w-[1152px] tablet:mx-auto tablet:mb-[31px]
+        tablet:flex-row-reverse  mb-6 tablet:max-w-[1152px] tablet:mx-auto tablet:mb-[32px]
     }
 
     /* teqstis konteiner zoma ar weria zustad, amitom Sevamcire margin-bottom 28 - 21it */
