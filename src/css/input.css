@@ -259,7 +259,7 @@ body {
      lg:w-[289px]
 }
 .footer_privacy{
-    @apply text-size-xl lg:flex lg:flex-col-reverse lg:py-0
+    @apply text-size-xl lg:flex lg:flex-col-reverse lg:py-[10px]
 }
 
     .contact-icon {
