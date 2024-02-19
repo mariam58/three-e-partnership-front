@@ -63,8 +63,8 @@ function burger() {
       });
     });
 
-    
-     // open search popup
+         // close search popup
+
 
     // Detect all clicks on the document
     overlayContant.addEventListener("click", function(event) {
@@ -73,14 +73,15 @@ function burger() {
       return 
       // If user clicks outside the element, hide it!
       else (overlayContant.classList.add("hidden"));
-      document.body.classList.toggle('overflow-hidden');
+      document.body.classList.remove('overflow-hidden');
 
     });
 
+     // open search popup
 
     function openSearch() {
       overlayContant.classList.toggle('hidden');
-      document.body.classList.toggle('overflow-hidden');
+      document.body.classList.add('overflow-hidden');
     }
     
 
