@@ -238,12 +238,14 @@ body {
     .footer_content{
         @apply flex flex-col lg:flex-row-reverse justify-between mb-6
     }
-.footer_founders {
-    @apply flex flex-col items-center max-w-[777px] w-full justify-between mb-[28px]
-}
 
+    /* teqstis konteiner zoma ar weria zustad, amitom Sevamcire margin-bottom 28 - 21it */
+.footer_founders {
+    @apply flex flex-col items-center max-w-[777px] w-full justify-between mb-[21px]
+}
+/* suratis simaRlea 3pxiT meti, movakle paddings */
     .footer_founders-img{
-        @apply w-full mb-[30px] lg:mb-[25px]
+        @apply w-full mb-[28px] lg:mb-[25px]
     }
     .footer_founders-info{
         @apply text-headerItem 
@@ -271,8 +273,10 @@ body {
         @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
     }
 
+
+    /* iconebis kontaineri didi, movakle margin botoms 38is -6 */
 .footer_social-icons{
-    @apply flex items-center justify-center gap-x-[20px] mb-[38px]
+    @apply flex items-center justify-center gap-x-[20px] mb-[32px]
 }
 
 .footer_rights{
