@@ -237,12 +237,12 @@ body {
     }
     .footer_content{
         @apply flex flex-col justify-between  w-full 
-        md:flex-row-reverse  mb-6 md:max-w-[1152px] md:mx-auto lg:mb-[31px]
+        tablet:flex-row-reverse  mb-6 tablet:max-w-[1152px] tablet:mx-auto lg:mb-[31px]
     }
 
     /* teqstis konteiner zoma ar weria zustad, amitom Sevamcire margin-bottom 28 - 21it */
 .footer_founders {
-    @apply flex flex-col items-center md:max-w-[777px] md:w-full justify-between mb-[21px] lg:mb-0
+    @apply flex flex-col items-center tablet:max-w-[777px] tablet:w-full justify-between mb-[21px] lg:mb-0
 }
 /* suratis simaRlea 3pxiT meti, movakle paddings */
     .footer_founders-img{
