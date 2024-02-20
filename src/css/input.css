@@ -48,7 +48,7 @@ body {
     }
 
     /* underlined buttons grey */
-    .more-link {
+    .btn-read-more {
         @apply text-btnText underline text-colorsText-darkGray hover:text-colorsText-headerMenu
         /* hover ar chans dizainshi */
     }
@@ -68,18 +68,19 @@ body {
     }
 
     /* rose paginations a */
-    .pagination-links {
-        @apply relative rounded-full border border-solid border-colorsText-rose w-[46px] h-[46px] text-size-lg text-colorsText-rose transition-all duration-300 bg-transparent hover:bg-colorsText-rose hover:text-white active:bg-colorsText-rose active:text-white cursor-pointer
+    .pagination-item {
+        @apply relative rounded-full border border-solid bg-white border-colorsText-rose w-[46px] h-[46px] text-size-lg text-colorsText-rose transition-all duration-300 bg-transparent hover:bg-colorsText-rose hover:text-white active:bg-colorsText-rose active:text-white cursor-pointer
     }
 
     /* paginations iner text - 1 2 3  */
-    .pagination-items {
+    .pagination-links {
         @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
     }
 
     /* labels+++*/
     .label {
-        @apply rounded-[40px] bg-white text-size-sm font-bold text-colorsText-blue px-2 cursor-pointer shadow-xl shadow-[rgba(0, 0, 0, 0.5)]
+        @apply rounded-[40px] bg-white text-size-sm font-bold text-colorsText-blue px-2 cursor-pointer shadow-xl
+         shadow-[#00000080]
     }
 
 
@@ -284,4 +285,28 @@ body {
     @apply flex items-start
 }
 
+
+
+/* News section */
+
+.section-search-form-container {
+    @apply mx-auto flex items-center relative my-[28px] tablet:my-[32px]
+}
+
+.section-search-form-input {
+    @apply text-black bg-bg-mainDark w-full h-[39px] pl-5 rounded-[40px] text-size-lg focus:outline-none
+}
+
+.card{
+   @apply hover:shadow-xl rounded-xl relative overflow-hidden 
+}
+.card-img{
+    @apply rounded-xl
+}
+.card-description {
+    @apply rounded-xl bg-white  absolute bottom-0 w-full p-4 space-y-3
+}
+.card-title{
+    @apply text-heading-sm text-black
+}
 }
