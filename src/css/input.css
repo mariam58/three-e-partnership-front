@@ -285,3 +285,13 @@ body {
 }
 
 }
+
+/* News section */
+
+.section-search-form-container {
+    @apply mx-auto flex items-center relative lg:hidden my-[14px]
+}
+
+.section-search-form-input {
+    @apply text-[#000000] bg-bg-main w-full h-[39px] pl-5 rounded-[40px] text-size-lg focus:outline-none
+}
