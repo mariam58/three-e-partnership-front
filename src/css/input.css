@@ -91,13 +91,18 @@ body {
         @apply -rotate-90 lg:rotate-0
     }
 
-
+}
     /*  icentreba X  */
     /* .active {
         @apply lg:pl-[7px]
     } */
 
+
     /* headers styles  start */
+
+
+    @layer components {
+
 
     .header {
         @apply flex justify-center items-center fixed top-0 z-50 w-full h-[58px] bg-white
@@ -217,5 +222,66 @@ body {
         @apply bg-transparent p-0 opacity-100 mt-[11px] transition-all hover:opacity-75 flex items-center justify-center w-[10%] self-start
     }
 
+
+}
+
+
+/* footer styles start*/
+@layer components {
+    .footer {
+        @apply bg-colorsText-darkGray text-white
+        flex flex-col justify-between relative
+    }
+    .footer_logo{
+        @apply py-[9.5px] tablet:py-[23px]
+    }
+    .footer_content{
+        @apply flex flex-col justify-between  w-full 
+        tablet:flex-row-reverse  mb-6 tablet:max-w-[1152px] tablet:mx-auto tablet:mb-[32px]
+    }
+
+    /* teqstis konteiner zoma ar weria zustad, amitom Sevamcire margin-bottom 28 - 21it */
+.footer_founders {
+    @apply flex flex-col items-center tablet:max-w-[777px] tablet:w-full justify-between mb-[28px] tablet:mb-0
+}
+/* suratis simaRlea 3pxiT meti, movakle paddings */
+    .footer_founders-img{
+        @apply w-full mb-[30px] tablet:mb-[25px]
+    }
+    .footer_founders-info{
+        @apply text-headerItem 
+    }
+    .footer_founders-contact{
+        @apply text-size-lg flex flex-col tablet:justify-center gap-y-[10px] 
+    }
+.footer-projet-team{
+    @apply flex justify-start items-center py-[14px]
+    tablet:w-[289px]
+}
+.footer_privacy{
+    @apply text-size-xl tablet:flex tablet:flex-col-reverse tablet:py-[10px]
+}
+
+    .contact-icon {
+        @apply relative rounded-full border-none w-[46px] h-[46px]  transition-all duration-300  cursor-pointer
+    }
+
+    .social-icon{
+        @apply relative rounded-full border-none w-[50px] h-[50px]  transition-all duration-300 cursor-pointer
+    }
+    /* paginations iner text - 1 2 3  */
+    .project-team-icon-item {
+        @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+    }
+
+
+    /* iconebis kontaineri didi, movakle margin botoms 38is -6 */
+.footer_social-icons{
+    @apply flex items-center justify-center gap-x-[20px] mb-[38px] tablet:mb-0
+}
+
+.footer_rights{
+    @apply flex items-start
+}
 
 }
