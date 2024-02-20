@@ -68,18 +68,19 @@ body {
     }
 
     /* rose paginations a */
-    .pagination-links {
-        @apply relative rounded-full border border-solid border-colorsText-rose w-[46px] h-[46px] text-size-lg text-colorsText-rose transition-all duration-300 bg-transparent hover:bg-colorsText-rose hover:text-white active:bg-colorsText-rose active:text-white cursor-pointer
+    .pagination-item {
+        @apply relative rounded-full border border-solid bg-white border-colorsText-rose w-[46px] h-[46px] text-size-lg text-colorsText-rose transition-all duration-300 bg-transparent hover:bg-colorsText-rose hover:text-white active:bg-colorsText-rose active:text-white cursor-pointer
     }
 
     /* paginations iner text - 1 2 3  */
-    .pagination-items {
+    .pagination-links {
         @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
     }
 
     /* labels+++*/
     .label {
-        @apply rounded-[40px] bg-white text-size-sm font-bold text-colorsText-blue px-2 cursor-pointer shadow-xl shadow-[rgba(0, 0, 0, 0.5)]
+        @apply rounded-[40px] bg-white text-size-sm font-bold text-colorsText-blue px-2 cursor-pointer shadow-xl
+         /* shadow-[rgba(0, 0, 0, 0.5)] */
     }
 
 
