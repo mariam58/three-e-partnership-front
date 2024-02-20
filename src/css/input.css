@@ -290,7 +290,7 @@ body {
 /* News section */
 
 .section-search-form-container {
-    @apply mx-auto flex items-center relative lg:hidden my-[14px]
+    @apply mx-auto flex items-center relative my-[28px] tablet:my-[32px]
 }
 
 .section-search-form-input {
