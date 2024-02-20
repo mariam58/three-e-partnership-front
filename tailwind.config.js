@@ -40,7 +40,8 @@ module.exports = {
     },
     content:{
       'arrowRightIcon': 'url(../images/icons/Icon-right.svg)',
-      'arrowrose': 'url(../images/icons/Icon-right-rose.svg)'
+      'arrowrose': 'url(../images/icons/Icon-right-rose.svg)',
+      'readMoreHover': 'url(../images/icons/read-moreArrow.svg)'
 
     },
     fontSize: {
