@@ -305,7 +305,7 @@ body {
     @apply rounded-xl
 }
 .card-description {
-    @apply rounded-xl bg-white  absolute bottom-0 w-full p-4 space-y-3
+    @apply rounded-xl bg-white  w-full p-4 space-y-3  -translate-y-[12px]
 }
 .card-title{
     @apply text-heading-sm text-black
