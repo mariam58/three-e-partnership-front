@@ -49,7 +49,7 @@ body {
 
     /* underlined buttons grey */
     .btn-read-more {
-        @apply text-btnText underline text-colorsText-darkGray hover:text-colorsText-headerMenu
+        @apply text-btnText underline hover:text-colorsText-darkGray text-colorsText-headerMenu
         /* hover ar chans dizainshi */
     }
 
@@ -79,8 +79,7 @@ body {
 
     /* labels+++*/
     .label {
-        @apply rounded-[40px] bg-white text-size-sm font-bold text-colorsText-blue px-2 cursor-pointer shadow-xl
-         shadow-[#00000080]
+        @apply rounded-[40px] bg-white text-size-sm font-bold text-colorsText-blue p-2 cursor-pointer shadow-3xl
     }
 
 
@@ -298,7 +297,8 @@ body {
 }
 
 .card{
-   @apply hover:shadow-xl rounded-xl relative overflow-hidden 
+   @apply shadow-cardShadow rounded-xl relative overflow-hidden hover:shadow-hoverCardShadow
+    ease-out duration-300
 }
 .card-img{
     @apply rounded-xl
