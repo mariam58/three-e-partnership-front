@@ -80,7 +80,7 @@ body {
     /* labels+++*/
     .label {
         @apply rounded-[40px] bg-white text-size-sm font-bold text-colorsText-blue px-2 cursor-pointer shadow-xl
-         /* shadow-[rgba(0, 0, 0, 0.5)] */
+         shadow-[#00000080]
     }
 
 
@@ -294,17 +294,17 @@ body {
 }
 
 .section-search-form-input {
-    @apply text-[#000000] bg-bg-main w-full h-[39px] pl-5 rounded-[40px] text-size-lg focus:outline-none
+    @apply text-black bg-bg-mainDark w-full h-[39px] pl-5 rounded-[40px] text-size-lg focus:outline-none
 }
 
 .card{
-   @apply hover:shadow-xl rounded-xl relative overflow-hidden
+   @apply hover:shadow-xl rounded-xl relative overflow-hidden 
 }
 .card-img{
     @apply rounded-xl
 }
 .card-description {
-    @apply rounded-xl bg-white  absolute bottom-0 w-full
+    @apply rounded-xl bg-white  absolute bottom-0 w-full p-4 space-y-3
 }
 .card-title{
     @apply text-heading-sm text-black
