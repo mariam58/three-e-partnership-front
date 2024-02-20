@@ -48,7 +48,7 @@ body {
     }
 
     /* underlined buttons grey */
-    .more-link {
+    .btn-read-more {
         @apply text-btnText underline text-colorsText-darkGray hover:text-colorsText-headerMenu
         /* hover ar chans dizainshi */
     }
@@ -285,7 +285,7 @@ body {
     @apply flex items-start
 }
 
-}
+
 
 /* News section */
 
@@ -295,4 +295,18 @@ body {
 
 .section-search-form-input {
     @apply text-[#000000] bg-bg-main w-full h-[39px] pl-5 rounded-[40px] text-size-lg focus:outline-none
+}
+
+.card{
+   @apply hover:shadow-xl rounded-xl relative overflow-hidden
+}
+.card-img{
+    @apply rounded-xl
+}
+.card-description {
+    @apply rounded-xl bg-white  absolute bottom-0 w-full
+}
+.card-title{
+    @apply text-heading-sm text-black
+}
 }
