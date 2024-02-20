@@ -298,7 +298,7 @@ body {
 
 .card{
    @apply shadow-cardShadow rounded-xl relative overflow-hidden hover:shadow-hoverCardShadow
-    ease-out duration-300 hover:translate-y-[-1px] 
+    ease-out duration-300 hover:translate-y-[-1px] cursor-pointer
    
 }
 .card-img{
