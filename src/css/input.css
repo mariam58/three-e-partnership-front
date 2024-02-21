@@ -310,4 +310,23 @@ body {
 .card-title{
     @apply text-heading-sm text-black
 }
+
+
+
+
+/* event style start */
+.events-cards{
+    @apply  grid gap-y-[28px] tablet:gap-y-[34px] gap-x-[24px] mx-auto md:grid-cols-2 mb-[52px] transition-all
+}
+.events{
+    @apply flex gap-5  mb-[28px]
+}
+
+
+
+/* event style end */
+
+
+
+
 }
