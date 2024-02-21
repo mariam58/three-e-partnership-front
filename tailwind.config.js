@@ -9,6 +9,12 @@ module.exports = {
         lg: '1280px',
         // xl: '1280',
       },
+      boxShadow: {
+        '3xl': '0 4px 20px -5px rgba(0, 0, 0, 0.8)',
+        'cardShadow': '0 14px 40px 0px rgba(0, 0, 0, 0.05)',
+        'hoverCardShadow': '0 14px 40px 0px rgba(0, 0, 0, 0.3)',
+
+      },
       colors:{
         bg:{
           main:'#F4F4F4',
@@ -34,7 +40,8 @@ module.exports = {
     },
     content:{
       'arrowRightIcon': 'url(../images/icons/Icon-right.svg)',
-      'arrowrose': 'url(../images/icons/Icon-right-rose.svg)'
+      'arrowrose': 'url(../images/icons/Icon-right-rose.svg)',
+      'readMoreHover': 'url(../images/icons/read-moreArrow.svg)'
 
     },
     fontSize: {

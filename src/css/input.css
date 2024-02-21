@@ -48,8 +48,8 @@ body {
     }
 
     /* underlined buttons grey */
-    .more-link {
-        @apply text-btnText underline text-colorsText-darkGray hover:text-colorsText-headerMenu
+    .btn-read-more {
+        @apply text-btnText underline group-hover:text-colorsText-darkGray text-colorsText-headerMenu underline-offset-4
         /* hover ar chans dizainshi */
     }
 
@@ -68,18 +68,18 @@ body {
     }
 
     /* rose paginations a */
-    .pagination-links {
-        @apply relative rounded-full border border-solid border-colorsText-rose w-[46px] h-[46px] text-size-lg text-colorsText-rose transition-all duration-300 bg-transparent hover:bg-colorsText-rose hover:text-white active:bg-colorsText-rose active:text-white cursor-pointer
+    .pagination-item {
+        @apply relative rounded-full border border-solid bg-white border-colorsText-rose w-[46px] h-[46px] text-size-lg text-colorsText-rose transition-all duration-300 bg-transparent hover:bg-colorsText-rose hover:text-white active:bg-colorsText-rose active:text-white cursor-pointer
     }
 
     /* paginations iner text - 1 2 3  */
-    .pagination-items {
+    .pagination-links {
         @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
     }
 
     /* labels+++*/
     .label {
-        @apply rounded-[40px] bg-white text-size-sm font-bold text-colorsText-blue px-2 cursor-pointer shadow-xl shadow-[rgba(0, 0, 0, 0.5)]
+        @apply rounded-[40px] bg-white text-size-sm font-bold text-colorsText-blue p-2 cursor-pointer shadow-3xl
     }
 
 
@@ -284,4 +284,30 @@ body {
     @apply flex items-start
 }
 
+
+
+/* News section */
+
+.section-search-form-container {
+    @apply mx-auto flex items-center relative mb-[28px] tablet:mb-[32px]
+}
+
+.section-search-form-input {
+    @apply text-black bg-bg-main w-full h-[39px] pl-5 rounded-[40px] text-size-lg focus:outline-none
+}
+
+.card{
+   @apply shadow-cardShadow rounded-xl relative overflow-hidden hover:shadow-hoverCardShadow
+    ease-out duration-300 hover:translate-y-[-1px] cursor-pointer
+   
+}
+.card-img{
+    @apply rounded-xl
+}
+.card-description {
+    @apply rounded-xl bg-white  w-full px-4 pt-4 pb-1 space-y-3  -translate-y-[12px]
+}
+.card-title{
+    @apply text-heading-sm text-black
+}
 }
