@@ -319,7 +319,7 @@ body {
     @apply  grid gap-y-[28px] tablet:gap-y-[34px] gap-x-[24px] mx-auto md:grid-cols-2 mb-[52px] transition-all
 }
 .events{
-    @apply flex gap-5  mb-[28px] max-w-[448px] w-full
+    @apply flex items-center gap-5  mb-[28px] max-w-[448px] w-full
 }
 
 
