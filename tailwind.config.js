@@ -14,6 +14,8 @@ module.exports = {
         'cardShadow': '0 14px 40px 0px rgba(0, 0, 0, 0.05)',
         'hoverCardShadow': '0 14px 40px 0px rgba(0, 0, 0, 0.3)',
         'eventCardShadow': '0 0px 20px 0px rgba(91, 96, 255, 0.5)',
+        'circleCardShadow': 'inset 0 0px 20px 0px rgba(91, 96, 255, 0.5)',
+
 
       },
       colors:{
@@ -23,6 +25,7 @@ module.exports = {
           iconRose: '#FFC4E1',
           iconBlue:'#5B60FF',
           mobileMenu:'#0B0B0B',
+          circleGradient: 'linear-gradient(180deg, rgba(243,244,255,1) 2%, rgba(191,194,255,0.8072478991596639) 86%, rgba(191,194,255,0.9389005602240896) 92%)'
         },
         colorsText:{
           rose: '#FF007E',
