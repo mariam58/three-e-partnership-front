@@ -331,4 +331,10 @@ body {
 
 
 
+/* project */
+
+.project-card {
+    @apply flex flex-col items-center justify-between
+}
+
 }
