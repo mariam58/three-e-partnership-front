@@ -88,6 +88,37 @@ function burger() {
       document.body.classList.remove('overflow-hidden');
 
     }
+
+    //  partners page
+const partnersBtn = document.getElementById('partners-btn')
+const partnersList = document.getElementById('partners-list')
+
+const associatedBtn = document.getElementById('associated-btn')
+const associatedList = document.getElementById('associated-list')
+
+
+
+    function openPartners(){
+      partnersBtn.classList.toggle('bg-bg-main')
+      partnersBtn.classList.toggle('bg-colorsText-blue')
+      partnersList.classList.toggle('hidden')
+      partnersBtn.classList.toggle('text-white')
+      partnersBtn.classList.toggle('text-black')
+
+
+    }
+
+    function openassociated(){
+      associatedBtn.classList.toggle('bg-bg-main')
+      associatedBtn.classList.toggle('bg-colorsText-blue')
+      associatedBtn.classList.toggle('text-white ')
+      associatedList.classList.toggle('hidden')
+      associatedBtn.classList.toggle('text-black')
+
+    }
+
+    
+
     
 
 
