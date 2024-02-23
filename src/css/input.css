@@ -285,7 +285,7 @@ body {
 }
 
 
-.section-main-img-container{
+.hero-block{
     @apply relative top-0 left-0 mb-[28px] tablet:mb-[79px] transition-all bg-cover bg-center bg-no-repeat h-[252px] flex items-center justify-center
 }
 
@@ -334,8 +334,23 @@ body {
 
 /* project */
 
-.project-card {
-    @apply flex flex-col items-center justify-between px-[42px] pt-[28px]
+.project-card-wrapper{
+    @apply flex items-center justify-center flex-wrap gap-[28px] lg:gap-x-[37px] lg:gap-y-[34px] mx-auto mt-[28px] tablet:mt-[51px] transition-all  mb-[28px]
 }
 
+
+.project-card {
+    @apply w-[294px] h-auto bg-white rounded-lg px-[42px] pt-[31px] pb-[23px] overflow-hidden shadow-lg flex flex-col items-center
+}
+
+.card-img-holder {
+    @apply w-full h-auto py-[5px] px-[9px] rounded mb-[5px]
+
+}
+.project-card-img{
+    @apply w-full h-auto max-h-[115px] object-cover rounded
+}
+.project-card-about {
+    @apply  text-center border border-[#00000033] rounded-md text-size-lg text-[#0B0B0B80] px-[19px] py-[32px] mb-5 
+}
 }
