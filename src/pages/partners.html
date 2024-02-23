@@ -261,12 +261,12 @@
 
                     <div class="partners-cards flex flex-col justify-end">
                         <!--  Project Partners-->
-                        <h2 class="mb-[10px] tablet:mb-0">
-                            <button type="button" class="w-full project-btn  bg-bg-main tablet:bg-transparent">
+                        <h2 class="mb-[10px] tablet:mb-0" onclick="openPartners()">
+                            <button id="partners-btn" type="button" class="w-full project-btn  bg-bg-main  tablet:bg-transparent text-black tablet:text-black">
                                 project partners
                             </button>
                         </h2>
-                        <div class="hide-it hidden tablet:block transition-all">
+                        <div id="partners-list" class="hide-it hidden tablet:block transition-all">
                             <div
                                 class="project-card-wrapper tablet:mt-[51px]">
 
@@ -396,13 +396,13 @@
 
 
                         <!--Associated partners -->
-                        <h2 class="mb-[28px] tablet:my-[28px]">
-                            <button type="button" class="w-full project-btn bg-bg-main tablet:bg-transparent">
+                        <h2 class="mb-[28px] tablet:my-[28px] " onclick="openassociated()">
+                            <button id="associated-btn" type="button" class="w-full project-btn bg-bg-main text-black tablet:bg-transparent">
                                 Associated Partner
                             </button>
                         </h2>
                         <!--Associated partners card-->
-                        <div class="hide-it hidden tablet:block transition-all">
+                        <div id="associated-list" class="hide-it hidden tablet:block transition-all">
                             <div
                                 class="project-card-wrapper">
 
