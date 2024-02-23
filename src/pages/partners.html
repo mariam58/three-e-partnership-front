@@ -221,7 +221,7 @@
                             </div>
                         </form>
                         <!-- closing icon X -->
-                        <div class="btn-close" onclick="openSearch()">
+                        <div class="btn-close" onclick="closesearch()">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="h-9 w-9 text-white hover:text-black stroke-1 hover:stroke-2" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
@@ -236,53 +236,71 @@
         </header>
         <!-- header end -->
 
+        <!-- main -->
+
         <main class="grow mt-[58px] bg-white">
             <section class="partners">
                 <!-- main image start -->
 
-                <div class="section-main-img-container  bg-[url('.../images/partners-main.jpg')]">
+                <div class="section-main-img-container  bg-[url('../images/partners-main.jpg')]">
                     <div class="absolute top-0 left-0  bg-[#00000060] z-10 w-full h-full"></div>
-                    <h1 class="absolute z-20 text-heading-lg text-white">Project Partners 
-                        and Associated
-                        Partner</h1>
+                    <h1 class="absolute z-20 lg:text-heading-lg text-white mx-[35px] text-heading-md text-center">Project Partners and Associated Partner</h1>
                 </div>
+
                 <!-- main image end -->
 
                 <div class="container-wrapper">
                     <!-- heading start  -->
                     
-                        <h2 class="heading-base text-center">Headline for describing Project Partners and Associated Partner</h2>
-                  
+                        <h2 class="heading-base text-center mb-[28px]">Headline for describing Project Partners and Associated Partner</h2>
+                        
                     <!-- Project Partners card -->
                     
 
-                    <!--  Project Partners card-->
                     <div class="partners-cards">
-                        <a class="btn-primary w-full" href="#">Project Partners</a>
-                        <div class="project-partners-cards">
-                            <div class="project-card ">
+                         <!--  Project Partners-->
+                        <h2>
+                            <button type="button" class="w-full btn-primary">
+                              project partners
+                            </button>
+                         </h2>
+                            <!--  Project Partners card-->
+
+                            <div class="hide-it">
+                            <div class="project-card">
                                 <img src="../images/BTU_LOGO_ENG.png" alt="">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                                <div class="w-[210px] h-[225px] text-center border border-[#00000033] rounded-md text-size-lg text-[#0B0B0B80] px-[19px] py-[32px]">
+                                    <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                                </div>
                                 <a class="btn-primary" href="http://#" target="_blank" rel="noopener noreferrer">Learn more</a>
                             </div>
-
-                        </div>
-                    </div>
-                    <!-- card end -->
-
-
+                                  </div>
                     
 
-                    <!--Associated partners -->
-                    <div class="associated-partners">
-                        <a class="btn-primary w-full" href="#">Associated Partner</a>
-                        <div class="Associated Partner-cards">
+                        <!--Associated partners -->
+                        <h2>
+                            <button type="button" class="w-full btn-primary">
+                              project partners
+                            </button>
+                         </h2>
+                        <!--Associated partners card-->
+                        <div class="hide-it">
+                            <div class="project-card">
+                                <img src="../images/BTU_LOGO_ENG.png" alt="">
+                                <div class="w-[210px] h-[225px] text-center border border-[#00000033] rounded-md text-size-lg text-[#0B0B0B80] px-[19px] py-[32px]">
+                                    <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                                     </div>
+                                <a class="btn-primary" href="http://#" target="_blank" rel="noopener noreferrer">Learn more</a>
+                            </div>
+                         </div>
 
-                        </div>
-                    </div>
                 </div>
             </section>
         </main>
+        <!-- main -->
+
+
+        <!-- footer -->
         <footer class="footer">
             <div class="flex flex-col items-stretch">
                 <!-- logo -->
