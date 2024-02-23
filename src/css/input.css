@@ -288,6 +288,7 @@ body {
 .section-main-img-container{
     @apply relative top-0 left-0 mb-[28px] tablet:mb-[79px] transition-all bg-cover bg-center bg-no-repeat h-[252px] flex items-center justify-center
 }
+
 /* News section */
 
 .section-search-form-container {
