@@ -80,8 +80,13 @@ function burger() {
      // open search popup
 
     function openSearch() {
-      overlayContant.classList.toggle('hidden');
+      overlayContant.classList.remove('hidden');
       document.body.classList.add('overflow-hidden');
+    }
+    function closesearch(){
+      overlayContant.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+
     }
     
 
