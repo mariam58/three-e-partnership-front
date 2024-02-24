@@ -354,6 +354,6 @@ body {
     @apply  text-center border border-[#00000033] rounded-md text-size-lg text-[#0B0B0B80] px-[19px] py-[32px] mb-5 
 }
 .project-btn{
-    @apply  py-4 px-5 mx-auto rounded-lg cursor-pointer transition-colors duration-75  text-heading-sm   tablet:text-heading-md tablet:py-0 
+    @apply  py-[20px] px-5 mx-auto rounded-lg cursor-pointer transition-colors duration-75  text-heading-sm   tablet:text-heading-md tablet:py-0 
 }
 }
