@@ -111,7 +111,7 @@ const associatedList = document.getElementById('associated-list')
     function openassociated(){
       associatedBtn.classList.toggle('bg-bg-main')
       associatedBtn.classList.toggle('bg-colorsText-blue')
-      associatedBtn.classList.toggle('text-white ')
+      associatedBtn.classList.toggle('text-white')
       associatedList.classList.toggle('hidden')
       associatedBtn.classList.toggle('text-black')
 
