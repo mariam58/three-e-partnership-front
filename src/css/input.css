@@ -286,13 +286,13 @@ body {
 
 
 .hero-block{
-    @apply relative top-0 left-0 transition-all bg-cover bg-center bg-no-repeat h-[252px] flex items-center justify-center
+    @apply relative top-0 left-0 mb-[28px] tablet:mb-[79px] transition-all bg-cover bg-center bg-no-repeat h-[252px] flex items-center justify-center
 }
 
 /* News section */
 
 .section-search-form-container {
-    @apply mx-auto flex items-center relative mb-[28px] tablet:mb-[32px]
+    @apply mx-auto flex items-center relative  mb-[28px] tablet:mb-[32px]
 }
 
 .section-search-form-input {
@@ -356,4 +356,20 @@ body {
 .project-btn{
     @apply  py-[20px] px-5 mx-auto rounded-lg cursor-pointer transition-colors duration-75  text-heading-sm   tablet:text-heading-md tablet:py-0 
 }
+
+
+/* search result styles */
+.search-result-card{
+    @apply  shadow-cardShadow hover:shadow-hoverCardShadow p-5 mb-[28px]
 }
+
+.search-result-title{
+    @apply text-colorsText-rose text-heading-sm mb-[10px]
+}
+.search-result-text{
+    @apply text-[#000000] opacity-50 text-size-lg 
+}
+}
+
+/* search result styles */
+
