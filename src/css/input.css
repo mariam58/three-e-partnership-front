@@ -283,7 +283,9 @@ body {
 .footer_rights{
     @apply flex items-start
 }
-
+.footer_privacy-policy {
+    @apply hover:text-yellow
+}
 
 .hero-block{
     @apply relative top-0 left-0 mb-[28px] tablet:mb-[79px] transition-all bg-cover bg-center bg-no-repeat h-[252px] flex items-center justify-center
