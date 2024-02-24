@@ -360,7 +360,7 @@ body {
 
 /* search result styles */
 .search-result-card{
-    @apply  shadow-cardShadow hover:shadow-hoverCardShadow p-5 mb-[28px]
+    @apply  shadow-cardShadow hover:shadow-hoverCardShadow p-5 mb-[28px] rounded-xl
 }
 
 .search-result-title{
