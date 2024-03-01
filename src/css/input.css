@@ -375,3 +375,11 @@ body {
 
 /* search result styles */
 
+h2::first-letter,
+h3::first-letter,
+h4::first-letter,
+h1::first-letter,
+h2::first-letter,
+p::first-letter{
+    text-transform: uppercase
+  }
