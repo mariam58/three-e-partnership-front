@@ -342,7 +342,7 @@ body {
 
 
 .project-card {
-    @apply w-[294px] h-auto bg-white rounded-lg px-[42px] pt-[31px] pb-[23px] overflow-hidden shadow-lg flex flex-col items-center
+    @apply w-[294px] h-auto bg-white rounded-lg px-[42px] pt-[31px] pb-[23px] overflow-hidden shadow-lg flex flex-col items-center justify-between self-stretch
 }
 
 .card-img-holder {
@@ -353,7 +353,7 @@ body {
     @apply w-full h-auto max-h-[115px] object-cover rounded
 }
 .project-card-about {
-    @apply  text-center border border-[#00000033] rounded-md text-size-lg text-[#0B0B0B80] px-[19px] py-[32px] mb-5 
+    @apply  min-h-[225px] text-center border border-[#00000033] rounded-md text-size-lg text-[#0B0B0B80] p-[19px] mb-5 flex items-center justify-center 
 }
 .project-btn{
     @apply  py-[20px] px-5 mx-auto rounded-lg cursor-pointer transition-colors duration-75  text-heading-sm   tablet:text-heading-md tablet:py-0 
