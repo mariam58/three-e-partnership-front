@@ -403,14 +403,29 @@ p::first-letter{
 
     .hero-slider{
         @apply mx-auto
-    }
-.her-slider_slide{
-        @apply w-full h-full flex items-center justify-center
+    } 
+
+    /* .hero-slider_slide {
+        @apply
+    } */
+
+    /* .hero-slider_img {
+        @apply text-center h-[623px] w-full bg-cover bg-center bg-no-repeat
+    } */
+    /* .btn-next{
+        @apply !text-bg-main size-2
+    } */
+    
+  
 }
-.hero-slider_img {
-        @apply text-center h-[623px] overflow-hidden w-full bg-cover bg-center bg-no-repeat
-    }
 
 
-
+.hero-slider .swiper-button-next::after,
+.hero-slider .swiper-button-prev::after{
+    color: rgba(244, 244, 244, 1);
+    font-size: 20px;
+    height: 24px;
+} 
+.hero-slider .swiper-pagination-bullet-active{
+    background: rgba(244, 244, 244, 1);
 }
