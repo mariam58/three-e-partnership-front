@@ -1,775 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webinars</title>
-    <link
-      rel="stylesheet"
-      href="../css/output.css"
-    />
-  </head>
+    <link rel="stylesheet" href="../css/output.css">
+</head>
 
-  <body class="font-SFProDisplay bg-red-500">
+<body class="font-SFProDisplay bg-red-500">
     <div class="wrapper">
-      <!-- header start -->
-      <header class="header">
-        <div class="container-wrapper">
-          <!-- mavigation start -->
-          <nav class="navigation direction-row">
-            <!-- logo -->
-            <a
-              class="logo-black min-w-[190px]"
-              href="#"
-              ><img
-                src="../images/icons/3E_LOGO_black.svg"
-                alt="3E-Partnership logo"
-            /></a>
-            <a
-              class="min-w-[190px] logo-white hidden"
-              href="#"
-              ><img
-                src="../images/icons/3E_LOGO_white.svg"
-                alt="3E-Partnership logo"
-            /></a>
-            <!-- logo end -->
-            <!-- მობილურზე – dropdown-menu-show  იკონზე კლიკის დროს-->
-            <div
-              id="nav-container-wrapper"
-              class="nav-container-wrapper direction-row gap-[10px] h-0 lg:h-full lg:overflow-visible"
-            >
-              <!-- dropdown-menu -->
-              <div
-                id="nav-container"
-                class="nav-container"
-              >
-                <!-- mobile search form strat -->
-                <form
-                  class="mobile-search-form"
-                  action=""
-                  method="get"
-                >
-                  <div class="mobile-search-form-container">
-                    <input
-                      class="mobile-search-form-input"
-                      type="text"
-                      name="search"
-                      placeholder="Search"
-                    />
-                    <button
-                      title="mob-search"
-                      type="submit"
-                      class="w-5 h-5 absolute right-[19px] fill-white"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                      >
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                          d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </form>
-                <!-- mobile search form end -->
+        <!-- header start -->
+        <header class="header">
 
-                <!-- navigation menu start -->
-                <ul class="lg:navigation-menu">
-                  <!-- home -->
-                  <li class="navigation-menu-item">
-                    <a
-                      class="navigation-menu-title block"
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Home</a
-                    >
-                  </li>
+            <div class="container-wrapper">
+                <!-- mavigation start -->
+                <nav class="navigation direction-row">
+                    <!-- logo -->
+                    <a class="logo-black min-w-[190px] " href="#"><img src="../images/icons/3E_LOGO_black.svg"
+                            alt="3E-Partnership logo"></a>
+                    <a class="min-w-[190px] logo-white hidden" href="#"><img src="../images/icons/3E_LOGO_white.svg"
+                            alt="3E-Partnership logo"></a>
+                    <!-- logo end -->
+                    <!-- მობილურზე – dropdown-menu-show  იკონზე კლიკის დროს-->
+                    <div id="nav-container-wrapper"
+                        class="nav-container-wrapper direction-row gap-[10px] h-0 lg:h-full lg:overflow-visible">
 
-                  <!-- dropdown 1     about-->
-                  <li class="group navigation-menu-item">
-                    <!-- სათაური იცონკით მობილურისთვის-->
-                    <div
-                      class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu"
-                    >
-                      <span
-                        class="navigation-menu-title navigation-title-icons group-hover:lg:text-black"
-                        >About</span
-                      >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill=""
-                        class="icon-down h-4 lg:ml-[6px] group-hover:lg:fill-black"
-                      >
-                        <path
-                          d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
+                        <!-- dropdown-menu -->
+                        <div id="nav-container" class="nav-container">
+
+                            <!-- mobile search form strat -->
+                            <form class="mobile-search-form" action="" method="get">
+                                <div class="mobile-search-form-container ">
+                                    <input class="mobile-search-form-input" type="text" name="search"
+                                        placeholder="Search">
+                                    <button title="mob-search" type="submit"
+                                        class="w-5 h-5 absolute right-[19px] fill-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                            <path
+                                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                            <!-- mobile search form end -->
+
+                            <!-- navigation menu start -->
+                            <ul class="lg:navigation-menu">
+                                <!-- home -->
+                                <li class="navigation-menu-item"><a class="navigation-menu-title block" href="#"
+                                        target="_blank" rel="noopener noreferrer">Home</a></li>
+
+                                <!-- dropdown 1     about-->
+                                <li class="group navigation-menu-item">
+                                    <!-- სათაური იცონკით მობილურისთვის-->
+                                    <div class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu">
+                                        <span
+                                            class="navigation-menu-title navigation-title-icons group-hover:lg:text-black ">About</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
+                                            class="icon-down h-4 lg:ml-[6px] group-hover:lg:fill-black ">
+                                            <path
+                                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <!-- მენიუ dropdownmenu -->
+                                    <ul class="mobile-dropdown hidden lg:dropdown">
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#"
+                                                target="_blank" rel="noopener noreferrer">Project</a></li>
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#"
+                                                target="_blank" rel="noopener noreferrer">Consortium</a></li>
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#"
+                                                target="_blank" rel="noopener noreferrer">Dissemination</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <!-- dropdown 2     news-->
+                                <li class="group navigation-menu-item">
+                                    <!-- სათაური იცონკით მობილურისთვის-->
+                                    <div class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu">
+                                        <span
+                                            class="navigation-menu-title navigation-title-icons group-hover:lg:text-black">News
+                                            and
+                                            Events</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
+                                            class="icon-down h-4 lg:ml-[6px] group-hover:lg:fill-black ">
+                                            <path
+                                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <!-- მენიუ dropdownmenu 2 -->
+                                    <ul class="mobile-dropdown hidden lg:dropdown">
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#"
+                                                target="_blank" rel="noopener noreferrer">News</a></li>
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#"
+                                                target="_blank" rel="noopener noreferrer dropdown-menu-link">Events</a>
+                                        </li>
+                                    </ul>
+                                    <!-- li -->
+                                </li>
+
+
+                                <!-- Deliverables and Outputs li -->
+                                <li class="navigation-menu-item"><a class="navigation-menu-title block" href="#"
+                                        target="_blank" rel="noopener noreferrer">Deliverables and Outputs</a></li>
+
+                                <!--  3 dropdown       Knowledge     -->
+                                <li class="group navigation-menu-item">
+                                    <!-- სათაური იცონკით მობილურისთვის-->
+                                    <div class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu">
+                                        <span
+                                            class="navigation-menu-title navigation-title-icons group-hover:lg:text-black ">Digital
+                                            Knowledge
+                                            Hub</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""
+                                            class="icon-down h-4 lg:ml-[6px] stroke-2 group-hover:lg:fill-black ">
+                                            <path
+                                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <!-- მენიუ dropdownmenumenu -->
+                                    <ul class="mobile-dropdown hidden lg:dropdown">
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#"
+                                                target="_blank" rel="noopener noreferrer">Reports</a></li>
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#"
+                                                target="_blank" rel="noopener noreferrer">Whitepapers</a></li>
+                                        <li class="dropdown-menu-item"><a class="dropdown-menu-link" href="#"
+                                                target="_blank" rel="noopener noreferrer">Webinars</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- contact  igive rac hederze -->
+                                <li class="navigation-menu-item lg:hidden"><a
+                                        class="navigation-menu-title text-bg-iconRose mb-11" href="#" target="_blank"
+                                        rel="noopener noreferrer">Contact</a></li>
+                            </ul>
+                            <!-- navigation menu end -->
+                        </div>
                     </div>
-                    <!-- მენიუ dropdownmenu -->
-                    <ul class="mobile-dropdown hidden lg:dropdown">
-                      <li class="dropdown-menu-item">
-                        <a
-                          class="dropdown-menu-link"
-                          href="#"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Project</a
-                        >
-                      </li>
-                      <li class="dropdown-menu-item">
-                        <a
-                          class="dropdown-menu-link"
-                          href="#"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Consortium</a
-                        >
-                      </li>
-                      <li class="dropdown-menu-item">
-                        <a
-                          class="dropdown-menu-link"
-                          href="#"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Dissemination</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-
-                  <!-- dropdown 2     news-->
-                  <li class="group navigation-menu-item">
-                    <!-- სათაური იცონკით მობილურისთვის-->
-                    <div
-                      class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu"
-                    >
-                      <span
-                        class="navigation-menu-title navigation-title-icons group-hover:lg:text-black"
-                        >News and Events</span
-                      >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill=""
-                        class="icon-down h-4 lg:ml-[6px] group-hover:lg:fill-black"
-                      >
-                        <path
-                          d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
+                    <!--desktop nav- buttons start-->
+                    <div class="navigation_buttons direction-row">
+                        <!-- search button-->
+                        <div id="desktop-search-btn" class="mr-4">
+                            <a class="search-onclick" onclick=" openSearch()" title="title" href="#">
+                                <svg class="w-5 h-5 fill-black hover:fill-colorsText-headerMenu lg:fill-colorsText-headerMenu lg:hover:fill-black"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- contact -->
+                        <a class="contact btn-primary" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
+                        <!-- burger start x -->
+                        <div id="burger-menu" class="group burger-menu  lg:hidden">
+                            <span class="burger-menu-line top-1/3 group-[.menu-btn]:hidden
+                                "></span>
+                            <span class="burger-menu-line top-1/2 group-[.menu-btn]:rotate-45"></span>
+                            <span class="burger-menu-line top-1/2 group-[.menu-btn]:-rotate-45"></span>
+                            <span class="burger-menu-line  top-2/3 group-[.menu-btn]:hidden
+                                "></span>
+                        </div>
+                        <!-- burger end-->
                     </div>
-                    <!-- მენიუ dropdownmenu 2 -->
-                    <ul class="mobile-dropdown hidden lg:dropdown">
-                      <li class="dropdown-menu-item">
-                        <a
-                          class="dropdown-menu-link"
-                          href="#"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >News</a
-                        >
-                      </li>
-                      <li class="dropdown-menu-item">
-                        <a
-                          class="dropdown-menu-link"
-                          href="#"
-                          target="_blank"
-                          rel="noopener noreferrer dropdown-menu-link"
-                          >Events</a
-                        >
-                      </li>
-                    </ul>
-                    <!-- li -->
-                  </li>
+                    <!-- nav buttons end -->
+                </nav>
+                <!-- mavigation end -->
+            </div>
 
-                  <!-- Deliverables and Outputs li -->
-                  <li class="navigation-menu-item">
-                    <a
-                      class="navigation-menu-title block"
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Deliverables and Outputs</a
-                    >
-                  </li>
-
-                  <!--  3 dropdown       Knowledge     -->
-                  <li class="group navigation-menu-item">
-                    <!-- სათაური იცონკით მობილურისთვის-->
-                    <div
-                      class="group fill-bg-iconBlue direction-row lg:fill-colorsText-headerMenu"
-                    >
-                      <span
-                        class="navigation-menu-title navigation-title-icons group-hover:lg:text-black"
-                        >Digital Knowledge Hub</span
-                      >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill=""
-                        class="icon-down h-4 lg:ml-[6px] stroke-2 group-hover:lg:fill-black"
-                      >
-                        <path
-                          d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
+            <!-- popup search start-->
+            <div id="overlay" class="overlay hidden">
+                <div class="Overlay-wrapper">
+                    <div id="overlay-content" class="flex items-center justify-center">
+                        <form class="Overlay-search-form group w-[90%]" action="" method="get">
+                            <div class="search-form-wrapper">
+                                <!-- search icon -->
+                                <div class="absolute inset-y-0 start-[5%] flex items-center pointer-events-none">
+                                    <svg class="w-10 h-4 fill-colorsText-headerMenu group-focus-within:fill-black"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                                    </svg>
+                                </div>
+                                <input type="search" id="default-search" name="search"
+                                    class="search-close-appearance block w-full p-4 ps-[74px] text-size-lg text-colorsText-headerMenu border-none outline-white rounded-lg bg-white  focus:text-black group-hover:text-black ease-in-out duration-300"
+                                    placeholder="Search" required>
+                            </div>
+                            <div class="search-result w-full rounded-lg mx-0">
+                                <ul id="search-container " class="search-container">
+                                    <li class="search-item">
+                                        Work package, detailed headline</li>
+                                    </li>
+                                    <li class="search-item ">
+                                        Work package, detailed headline</li>
+                                    </li>
+                                    <li class="search-item ">
+                                        Work package, detailed headline</li>
+                                    </li>
+                                    <li class="search-item ">
+                                        Work package, detailed headline</li>
+                                    </li>
+                                    <li class="search-item ">
+                                        Work package, detailed headline</li>
+                                    </li>
+                                    <li class="search-item ">
+                                        Work package, detailed headline</li>
+                                    </li>
+                                </ul>
+                                <hr class="border border-white mb-[15px] ml-[74px]">
+                                <button type="submit" class="search-see-all-items">
+                                    <a href="http://" target="_blank" rel="noopener noreferrer" class="text-size-xl">See
+                                        All
+                                        search results</a></button>
+                            </div>
+                        </form>
+                        <!-- closing icon X -->
+                        <div class="btn-close" onclick="closesearch()">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-9 w-9 text-white hover:text-black stroke-1 hover:stroke-2" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
                     </div>
-                    <!-- მენიუ dropdownmenumenu -->
-                    <ul class="mobile-dropdown hidden lg:dropdown">
-                      <li class="dropdown-menu-item">
-                        <a
-                          class="dropdown-menu-link"
-                          href="#"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Reports</a
-                        >
-                      </li>
-                      <li class="dropdown-menu-item">
-                        <a
-                          class="dropdown-menu-link"
-                          href="#"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Whitepapers</a
-                        >
-                      </li>
-                      <li class="dropdown-menu-item">
-                        <a
-                          class="dropdown-menu-link"
-                          href="#"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Webinars</a
-                        >
-                      </li>
+                </div>
+            </div>
+            <!-- popup search end-->
+        </header>
+        <!-- header end -->
+
+        <!-- main -->
+
+        <main class="grow mt-[58px] bg-white">
+            <section class="search-section">
+                <!-- main image start -->
+
+                <div class="hero-block  bg-[url('../images/report-main.jpg')] mb-[28px] tablet:mb-[150px]">
+                    <div class="absolute top-0 left-0  bg-[#00000060] z-10 w-full h-full"></div>
+                    <h1 class="absolute z-20 lg:text-heading-lg text-white mx-[35px] text-heading-md text-center">
+                        Webinars</h1>
+                </div>
+
+                <!-- main image end -->
+
+
+
+                <div class="container-wrapper mb-[28px] tablet:mb-[150px]">
+                    <!-- heading start -->
+                    <h2 class="heading-base  mb-[28px]">Headline for describing Digital knowledge hub - REPORTS, let’s try to make this headline as long as possible</h2>
+                    <p class="paragraph-base">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <a class="text-colorsText-rose" href="http://#" target="_blank" rel="noopener noreferrer">text</a> ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a class="text-colorsText-rose" href="http://#" target="_blank" rel="noopener noreferrer">electronic</a> typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum </p>
+                        <p class="paragraph-base  mb-[28px]"> 
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type <a class="text-colorsText-rose" href="http://#" target="_blank" rel="noopener noreferrer">specimen</a> book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem IpsumLorem Ipsum is simply dummy <a class="text-colorsText-rose" href="http://#" target="_blank" rel="noopener noreferrer">text</a> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of <a class="text-colorsText-rose" href="http://#" target="_blank" rel="noopener noreferrer">lorem Ipsum</a>
+                    </p>
+                 
+                        <div class="flex items-center">
+                            <svg class="rtl:rotate-180 w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <a href="#" class="ms-1 paragraph-base">Downloadable PDF link <img class="inline-block ml-[10px]" src="../images/icons/pdf.svg" alt=""></a>
+                            
+                          </div>
+                    
+                </div>
+            </section>
+        </main>
+        <!-- main -->
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="flex flex-col items-stretch">
+                <!-- logo -->
+                <div class="footer_logo container-wrapper">
+                    <a class="min-w-[190px] logo-white inline-block" href="#"><img class=" bg-colorsText-darkGray"
+                            src="../images/icons/3E_LOGO_white.svg" alt="3E-Partnership logo"></a>
+                </div>
+                <!-- logo -->
+                <hr class="border border-white mb-[35px] tablet:mb-[32px]">
+
+                <div class="footer_content">
+                    <!-- founder -->
+                    <div class="footer_founders px-6 tablet:px-0">
+                        <div class="footer_founders-img ">
+                            <img src="../images/founders.png" alt="Co-founded by the European Union">
+                        </div>
+                        <div class="footer_founders-info">
+                            <p>Funded by the European Union. Views and opinions expressed are however those of the
+                                author(s) only and do not necessarily reflect those of the European Union or
+                                European
+                                Education and Culture Executive Agency (EACEA).
+                            </p>
+                            <p> Neither the European Union nor the granting authority can be held responsible for
+                                them.
+                            </p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <ul class="footer_founders-contact px-6 lg:px-0">
+                        <!-- team -->
+                        <li class="footer-projet-team">
+                            <div class="contact-icon bg-bg-iconBlue">
+                                <svg class="project-team-icon-item" width="28" height="22" viewBox="0 0 28 22"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22.9999 13.1069C24.584 14.2906 25.9999 17.2707 25.9999 19.1069C25.9999 19.6789 25.5825 20.1426 25.0677 20.1426H24.4999M18.4999 8.25539C19.5247 7.66258 20.2142 6.55456 20.2142 5.28551C20.2142 4.01645 19.5247 2.90843 18.4999 2.31562M2.93209 20.1426H19.3534C19.8682 20.1426 20.2856 19.6789 20.2856 19.1069C20.2856 15.5111 17.2815 12.5962 11.1427 12.5962C5.00396 12.5962 1.99988 15.5111 1.99988 19.1069C1.99988 19.6789 2.41724 20.1426 2.93209 20.1426ZM14.5713 5.28551C14.5713 7.17905 13.0363 8.71408 11.1427 8.71408C9.24919 8.71408 7.71416 7.17905 7.71416 5.28551C7.71416 3.39196 9.24919 1.85693 11.1427 1.85693C13.0363 1.85693 14.5713 3.39196 14.5713 5.28551Z"
+                                        stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <a class="projet-team-link ml-[14px]" href="#" target="_blank"
+                                rel="noopener noreferrer">3E-Partnership Project Team</a>
+                        </li>
+                        <!-- mail -->
+                        <li class="footer-projet-team">
+                            <div class="contact-icon bg-bg-iconBlue">
+                                <svg class="project-team-icon-item" width="26" height="20" viewBox="0 0 26 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.5625 18.75H21.4375C22.9908 18.75 24.25 17.425 24.25 15.7904V4.20956C24.25 2.57504 22.9908 1.25 21.4375 1.25H4.5625C3.0092 1.25 1.75 2.57504 1.75 4.20956V15.7904C1.75 17.425 3.0092 18.75 4.5625 18.75Z"
+                                        fill="white" />
+                                    <path
+                                        d="M3.15625 2.72978L13 10.8686L23.5469 2.72978M10.0699 10.0001L3.15625 17.5276M22.8437 16.911L15.9292 10.0001M4.5625 18.75C3.0092 18.75 1.75 17.425 1.75 15.7904V4.20956C1.75 2.57504 3.0092 1.25 4.5625 1.25H21.4375C22.9908 1.25 24.25 2.57504 24.25 4.20956V15.7904C24.25 17.425 22.9908 18.75 21.4375 18.75H4.5625Z"
+                                        stroke="#5B60FF" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <a class="projet-team-link ml-[14px]" href="mailto:3e-partnership@btu.edu.ge"
+                                target="_blank" rel="noopener noreferrer">3e-partnership@btu.edu.ge</a>
+                        </li>
                     </ul>
-                  </li>
-
-                  <!-- contact  igive rac hederze -->
-                  <li class="navigation-menu-item lg:hidden">
-                    <a
-                      class="navigation-menu-title text-bg-iconRose mb-11"
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Contact</a
-                    >
-                  </li>
-                </ul>
-                <!-- navigation menu end -->
-              </div>
-            </div>
-            <!--desktop nav- buttons start-->
-            <div class="navigation_buttons direction-row">
-              <!-- search button-->
-              <div
-                id="desktop-search-btn"
-                class="mr-4"
-              >
-                <a
-                  class="search-onclick"
-                  onclick=" openSearch()"
-                  title="title"
-                  href="#"
-                >
-                  <svg
-                    class="w-5 h-5 fill-black hover:fill-colorsText-headerMenu lg:fill-colorsText-headerMenu lg:hover:fill-black"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path
-                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                    />
-                  </svg>
-                </a>
-              </div>
-              <!-- contact -->
-              <a
-                class="contact btn-primary"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Contact</a
-              >
-              <!-- burger start x -->
-              <div
-                id="burger-menu"
-                class="group burger-menu lg:hidden"
-              >
-                <span
-                  class="burger-menu-line top-1/3 group-[.menu-btn]:hidden"
-                ></span>
-                <span
-                  class="burger-menu-line top-1/2 group-[.menu-btn]:rotate-45"
-                ></span>
-                <span
-                  class="burger-menu-line top-1/2 group-[.menu-btn]:-rotate-45"
-                ></span>
-                <span
-                  class="burger-menu-line top-2/3 group-[.menu-btn]:hidden"
-                ></span>
-              </div>
-              <!-- burger end-->
-            </div>
-            <!-- nav buttons end -->
-          </nav>
-          <!-- mavigation end -->
-        </div>
-
-        <!-- popup search start-->
-        <div
-          id="overlay"
-          class="overlay hidden"
-        >
-          <div class="Overlay-wrapper">
-            <div
-              id="overlay-content"
-              class="flex items-center justify-center"
-            >
-              <form
-                class="Overlay-search-form group w-[90%]"
-                action=""
-                method="get"
-              >
-                <div class="search-form-wrapper">
-                  <!-- search icon -->
-                  <div
-                    class="absolute inset-y-0 start-[5%] flex items-center pointer-events-none"
-                  >
-                    <svg
-                      class="w-10 h-4 fill-colorsText-headerMenu group-focus-within:fill-black"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                    >
-                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path
-                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                      />
-                    </svg>
-                  </div>
-                  <input
-                    type="search"
-                    id="default-search"
-                    name="search"
-                    class="search-close-appearance block w-full p-4 ps-[74px] text-size-lg text-colorsText-headerMenu border-none outline-white rounded-lg bg-white focus:text-black group-hover:text-black ease-in-out duration-300"
-                    placeholder="Search"
-                    required
-                  />
                 </div>
-                <div class="search-result w-full rounded-lg mx-0">
-                  <ul
-                    id="search-container "
-                    class="search-container"
-                  >
-                    <li class="search-item">Work package, detailed headline</li>
-                    <li class="search-item">Work package, detailed headline</li>
-                    <li class="search-item">Work package, detailed headline</li>
-                    <li class="search-item">Work package, detailed headline</li>
-                    <li class="search-item">Work package, detailed headline</li>
-                    <li class="search-item">Work package, detailed headline</li>
-                  </ul>
-                  <hr class="border border-white mb-[15px] ml-[74px]" />
-                  <button
-                    type="submit"
-                    class="search-see-all-items"
-                  >
-                    <a
-                      href="http://"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-size-xl"
-                      >See All search results</a
-                    >
-                  </button>
+                <hr class="hidden tablet:block tablet:w-full tablet:border-white tablet:border">
+                <div
+                    class="tablet:flex tablet:justify-between tablet:flex-row-reverse tablet:items-center tablet:max-w-[1152px] tablet:w-full tablet:mx-auto tablet:py-[41px] tablet:px-6 lg:px-0">
+                    <ul class="footer_social-icons">
+                        <li class="facebook flex">
+                            <a class="social-icon bg-white inline-block" href="http://" target="_blank"
+                                rel="noopener noreferrer"> <svg class="project-team-icon-item" width="26" height="26"
+                                    viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25.5 13.0758C25.5 6.13 19.9042 0.5 13 0.5C6.09583 0.5 0.5 6.13 0.5 13.0758C0.5 19.3542 5.07 24.5567 11.0467 25.5V16.7117H7.87333V13.075H11.0467V10.305C11.0467 7.15333 12.9125 5.41167 15.7683 5.41167C17.135 5.41167 18.5667 5.6575 18.5667 5.6575V8.7525H16.9892C15.4367 8.7525 14.9533 9.7225 14.9533 10.7175V13.0758H18.42L17.8658 16.7108H14.9533V25.5C20.93 24.5567 25.5 19.3542 25.5 13.0758Z"
+                                        fill="#5B60FF" />
+                                </svg></a>
+                        </li>
+                        <li class="instagram flex">
+                            <a class="social-icon bg-white inline-block" href="http://" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg class="project-team-icon-item" width="34" height="33" viewBox="0 0 34 33"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.0002 4.27174C13.679 4.27174 13.2633 4.2856 11.9589 4.34511C10.657 4.40462 9.76762 4.61169 8.98991 4.91414C8.17469 5.22066 7.43529 5.70163 6.82387 6.32446C6.20204 6.93517 5.72077 7.67405 5.41355 8.48968C5.11273 9.2674 4.90485 10.1576 4.84534 11.4595C4.78665 12.763 4.77197 13.178 4.77197 16.5C4.77197 19.822 4.78583 20.237 4.84534 21.5413C4.90485 22.8432 5.11192 23.7326 5.41436 24.5103C5.72089 25.3255 6.20186 26.0649 6.82469 26.6764C7.43541 27.2982 8.17429 27.7794 8.98991 28.0867C9.76762 28.3883 10.657 28.5954 11.9589 28.6549C13.2633 28.7144 13.679 28.7283 17.0002 28.7283C20.3214 28.7283 20.7372 28.7144 22.0415 28.6549C23.3434 28.5954 24.2328 28.3883 25.0106 28.0859C25.8258 27.7794 26.5652 27.2984 27.1766 26.6755C27.7984 26.0648 28.2797 25.326 28.5869 24.5103C28.8885 23.7326 29.0956 22.8432 29.1551 21.5413C29.2146 20.237 29.2285 19.8212 29.2285 16.5C29.2285 13.1788 29.2146 12.763 29.1551 11.4587C29.0956 10.1568 28.8885 9.2674 28.5861 8.48968C28.2791 7.6737 27.7978 6.93451 27.1758 6.32365C26.5651 5.70182 25.8262 5.22054 25.0106 4.91332C24.2328 4.6125 23.3426 4.40462 22.0407 4.34511C20.7372 4.28642 20.3222 4.27174 17.0002 4.27174ZM17.0002 6.47528C20.2652 6.47528 20.6524 6.4875 21.9421 6.5462C23.1339 6.60082 23.7812 6.79892 24.2125 6.96767C24.7831 7.18859 25.1907 7.45435 25.6187 7.88153C26.0467 8.30952 26.3116 8.71712 26.5326 9.28778C26.7005 9.71903 26.8994 10.3663 26.954 11.5582C27.0127 12.8478 27.025 13.2351 27.025 16.5C27.025 19.765 27.0127 20.1522 26.954 21.4419C26.8994 22.6337 26.7013 23.281 26.5326 23.7122C26.3369 24.2434 26.0246 24.7239 25.6187 25.1185C25.2242 25.5244 24.7437 25.8367 24.2125 26.0323C23.7812 26.2003 23.1339 26.3992 21.9421 26.4538C20.6524 26.5125 20.266 26.5247 17.0002 26.5247C13.7345 26.5247 13.3481 26.5125 12.0584 26.4538C10.8665 26.3992 10.2193 26.2011 9.78801 26.0323C9.25685 25.8366 8.77633 25.5244 8.38176 25.1185C7.97592 24.7239 7.66365 24.2434 7.4679 23.7122C7.29996 23.281 7.10105 22.6337 7.04643 21.4419C6.98773 20.1522 6.97551 19.765 6.97551 16.5C6.97551 13.2351 6.98773 12.8478 7.04643 11.5582C7.10105 10.3663 7.29915 9.71903 7.4679 9.28778C7.68882 8.71712 7.95458 8.30952 8.38176 7.88153C8.77627 7.47558 9.25682 7.1633 9.78801 6.96767C10.2193 6.79973 10.8665 6.60082 12.0584 6.5462C13.3481 6.4875 13.7353 6.47528 17.0002 6.47528V6.47528Z"
+                                        fill="#5B60FF" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.0002 20.5801C16.4644 20.5801 15.9338 20.4746 15.4388 20.2695C14.9437 20.0645 14.4939 19.764 14.1151 19.3851C13.7362 19.0062 13.4356 18.5564 13.2306 18.0614C13.0255 17.5664 12.92 17.0358 12.92 16.5C12.92 15.9642 13.0255 15.4336 13.2306 14.9386C13.4356 14.4435 13.7362 13.9937 14.1151 13.6149C14.4939 13.236 14.9437 12.9354 15.4388 12.7304C15.9338 12.5253 16.4644 12.4198 17.0002 12.4198C18.0823 12.4198 19.1201 12.8497 19.8853 13.6149C20.6505 14.38 21.0803 15.4178 21.0803 16.5C21.0803 17.5821 20.6505 18.6199 19.8853 19.3851C19.1201 20.1503 18.0823 20.5801 17.0002 20.5801V20.5801ZM17.0002 10.2146C15.3332 10.2146 13.7345 10.8768 12.5558 12.0556C11.377 13.2343 10.7148 14.833 10.7148 16.5C10.7148 18.1669 11.377 19.7656 12.5558 20.9444C13.7345 22.1231 15.3332 22.7853 17.0002 22.7853C18.6671 22.7853 20.2658 22.1231 21.4446 20.9444C22.6233 19.7656 23.2855 18.1669 23.2855 16.5C23.2855 14.833 22.6233 13.2343 21.4446 12.0556C20.2658 10.8768 18.6671 10.2146 17.0002 10.2146V10.2146ZM25.114 10.1005C25.114 10.4946 24.9575 10.8725 24.6789 11.1511C24.4002 11.4297 24.0223 11.5862 23.6283 11.5862C23.2342 11.5862 22.8563 11.4297 22.5777 11.1511C22.2991 10.8725 22.1426 10.4946 22.1426 10.1005C22.1426 9.70647 22.2991 9.32857 22.5777 9.04994C22.8563 8.77131 23.2342 8.61478 23.6283 8.61478C24.0223 8.61478 24.4002 8.77131 24.6789 9.04994C24.9575 9.32857 25.114 9.70647 25.114 10.1005"
+                                        fill="#5B60FF" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="linkedin flex">
+                            <a class="social-icon bg-white inline-block" href="http://" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg class="project-team-icon-item" width="26" height="25" viewBox="0 0 26 25"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25.2285 2.07002V22.93C25.2285 23.4069 25.039 23.8643 24.7018 24.2016C24.3646 24.5388 23.9072 24.7283 23.4302 24.7283H2.57025C2.09331 24.7283 1.63592 24.5388 1.29867 24.2016C0.961433 23.8643 0.771973 23.4069 0.771973 22.93L0.771973 2.07002C0.771973 1.59309 0.961433 1.13569 1.29867 0.798446C1.63592 0.461204 2.09331 0.271744 2.57025 0.271744L23.4302 0.271744C23.9072 0.271744 24.3646 0.461204 24.7018 0.798446C25.039 1.13569 25.2285 1.59309 25.2285 2.07002V2.07002ZM7.96507 9.62277H4.36852V21.1317H7.96507V9.62277ZM8.28876 5.66656C8.29065 5.39451 8.23894 5.12476 8.13658 4.87269C8.03422 4.62063 7.88322 4.39119 7.69218 4.19749C7.50115 4.00378 7.27383 3.8496 7.02322 3.74375C6.7726 3.6379 6.50358 3.58245 6.23153 3.58057H6.16679C5.61355 3.58057 5.08297 3.80034 4.69177 4.19154C4.30057 4.58274 4.0808 5.11332 4.0808 5.66656C4.0808 6.21981 4.30057 6.75039 4.69177 7.14159C5.08297 7.53279 5.61355 7.75256 6.16679 7.75256V7.75256C6.43886 7.75925 6.70958 7.71227 6.96349 7.6143C7.21739 7.51633 7.44951 7.3693 7.64657 7.18159C7.84363 6.99388 8.00177 6.76919 8.11196 6.52034C8.22215 6.27149 8.28222 6.00338 8.28876 5.7313V5.66656ZM21.6319 14.14C21.6319 10.6802 19.4309 9.33504 17.2442 9.33504C16.5282 9.29919 15.8153 9.45169 15.1767 9.77732C14.538 10.103 13.9959 10.5903 13.6045 11.1909H13.5038V9.62277H10.123V21.1317H13.7195V15.0104C13.6676 14.3835 13.865 13.7613 14.2691 13.2792C14.6731 12.797 15.2511 12.4937 15.8775 12.4353H16.0141C17.1578 12.4353 18.0066 13.1546 18.0066 14.9672V21.1317H21.6032L21.6319 14.14Z"
+                                        fill="#5B60FF" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer_privacy">
+                        <div
+                            class="border-b border-t border-white tablet:border-none w-full py-[19px] tablet:py-0 mb-6 tablet:mb-0 text-center tablet:text-start">
+                            <span class="footer_privacy-policy ">Privacy Policy</span>
+                        </div>
+
+                        <div
+                            class="items-center footer_rights tablet:w-full mb-[60px] tablet:mb-[10px] flex justify-center mx-auto tablet:mx-0 flex-col tablet:flex-row ">
+                            <div class="flex items-center">
+                                <svg class="inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="8" fill="white" />
+                                </svg>
+                                <span class="pl-[10px]">
+                                    20?? **COMPANY NAME** <span class="hidden tablet:inline">.</span> &nbsp</span>
+
+                            </div>
+                            <span class="block">All rights reserved</span>
+
+                        </div>
+
+                    </div>
                 </div>
-              </form>
-              <!-- closing icon X -->
-              <div
-                class="btn-close"
-                onclick="closesearch()"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-9 w-9 text-white hover:text-black stroke-1 hover:stroke-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </div>
             </div>
-          </div>
-        </div>
-        <!-- popup search end-->
-      </header>
-      <!-- header end -->
-
-      <!-- main -->
-
-      <main class="grow mt-[58px] bg-white">
-        <section class="search-section">
-          <!-- main image start -->
-
-          <div
-            class="hero-block bg-[url('../images/report-main.jpg')] mb-[28px] tablet:mb-[150px]"
-          >
-            <div
-              class="absolute top-0 left-0 bg-[#00000060] z-10 w-full h-full"
-            ></div>
-            <h1
-              class="absolute z-20 lg:text-heading-lg text-white mx-[35px] text-heading-md text-center"
-            >
-              Webinars
-            </h1>
-          </div>
-
-          <!-- main image end -->
-
-          <div class="container-wrapper mb-[28px] tablet:mb-[150px]">
-            <!-- heading start -->
-            <h2 class="heading-base mb-[28px]">
-              Headline for describing Digital knowledge hub - REPORTS, let’s try
-              to make this headline as long as possible
-            </h2>
-            <p class="paragraph-base">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-              <a
-                class="text-colorsText-rose"
-                href="http://#"
-                target="_blank"
-                rel="noopener noreferrer"
-                >text</a
-              >
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              <a
-                class="text-colorsText-rose"
-                href="http://#"
-                target="_blank"
-                rel="noopener noreferrer"
-                >electronic</a
-              >
-              typesetting, remaining essentially unchanged. It was popularised
-              in the 1960s with the release of Letraset sheets containing Lorem
-              Ipsum passages, and more recently with desktop publishing software
-              like Aldus PageMaker including versions of Lorem Ipsum
-            </p>
-            <p class="paragraph-base mb-[28px]">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type
-              <a
-                class="text-colorsText-rose"
-                href="http://#"
-                target="_blank"
-                rel="noopener noreferrer"
-                >specimen</a
-              >
-              book. It has survived not only five centuries, but also the leap
-              into electronic typesetting, remaining essentially unchanged. It
-              was popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem IpsumLorem Ipsum is simply dummy
-              <a
-                class="text-colorsText-rose"
-                href="http://#"
-                target="_blank"
-                rel="noopener noreferrer"
-                >text</a
-              >
-              of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries, but
-              also the leap into electronic typesetting, remaining essentially
-              unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages, and more recently
-              with desktop publishing software like Aldus PageMaker including
-              versions of
-              <a
-                class="text-colorsText-rose"
-                href="http://#"
-                target="_blank"
-                rel="noopener noreferrer"
-                >lorem Ipsum</a
-              >
-            </p>
-
-            <div class="flex items-center">
-              <svg
-                class="rtl:rotate-180 w-3 h-3"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m1 9 4-4-4-4"
-                />
-              </svg>
-              <a
-                href="#"
-                class="ms-1 paragraph-base"
-                >Downloadable PDF link
-                <img
-                  class="inline-block ml-[10px]"
-                  src="../images/icons/pdf.svg"
-                  alt=""
-              /></a>
-            </div>
-          </div>
-        </section>
-      </main>
-      <!-- main -->
-
-      <!-- footer -->
-      <footer class="footer">
-        <div class="flex flex-col items-stretch">
-          <!-- logo -->
-          <div class="footer_logo container-wrapper">
-            <a
-              class="min-w-[190px] logo-white inline-block"
-              href="#"
-              ><img
-                class="bg-colorsText-darkGray"
-                src="../images/icons/3E_LOGO_white.svg"
-                alt="3E-Partnership logo"
-            /></a>
-          </div>
-          <!-- logo -->
-          <hr class="border border-white mb-[35px] tablet:mb-[32px]" />
-
-          <div class="footer_content">
-            <!-- founder -->
-            <div class="footer_founders px-6 tablet:px-0">
-              <div class="footer_founders-img">
-                <img
-                  src="../images/founders.png"
-                  alt="Co-founded by the European Union"
-                />
-              </div>
-              <div class="footer_founders-info">
-                <p>
-                  Funded by the European Union. Views and opinions expressed are
-                  however those of the author(s) only and do not necessarily
-                  reflect those of the European Union or European Education and
-                  Culture Executive Agency (EACEA).
-                </p>
-                <p>
-                  Neither the European Union nor the granting authority can be
-                  held responsible for them.
-                </p>
-              </div>
-            </div>
-            <!--  -->
-            <ul class="footer_founders-contact px-6 lg:px-0">
-              <!-- team -->
-              <li class="footer-projet-team">
-                <div class="contact-icon bg-bg-iconBlue">
-                  <svg
-                    class="project-team-icon-item"
-                    width="28"
-                    height="22"
-                    viewBox="0 0 28 22"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M22.9999 13.1069C24.584 14.2906 25.9999 17.2707 25.9999 19.1069C25.9999 19.6789 25.5825 20.1426 25.0677 20.1426H24.4999M18.4999 8.25539C19.5247 7.66258 20.2142 6.55456 20.2142 5.28551C20.2142 4.01645 19.5247 2.90843 18.4999 2.31562M2.93209 20.1426H19.3534C19.8682 20.1426 20.2856 19.6789 20.2856 19.1069C20.2856 15.5111 17.2815 12.5962 11.1427 12.5962C5.00396 12.5962 1.99988 15.5111 1.99988 19.1069C1.99988 19.6789 2.41724 20.1426 2.93209 20.1426ZM14.5713 5.28551C14.5713 7.17905 13.0363 8.71408 11.1427 8.71408C9.24919 8.71408 7.71416 7.17905 7.71416 5.28551C7.71416 3.39196 9.24919 1.85693 11.1427 1.85693C13.0363 1.85693 14.5713 3.39196 14.5713 5.28551Z"
-                      stroke="white"
-                      stroke-width="2.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </div>
-                <a
-                  class="projet-team-link ml-[14px]"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >3E-Partnership Project Team</a
-                >
-              </li>
-              <!-- mail -->
-              <li class="footer-projet-team">
-                <div class="contact-icon bg-bg-iconBlue">
-                  <svg
-                    class="project-team-icon-item"
-                    width="26"
-                    height="20"
-                    viewBox="0 0 26 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.5625 18.75H21.4375C22.9908 18.75 24.25 17.425 24.25 15.7904V4.20956C24.25 2.57504 22.9908 1.25 21.4375 1.25H4.5625C3.0092 1.25 1.75 2.57504 1.75 4.20956V15.7904C1.75 17.425 3.0092 18.75 4.5625 18.75Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M3.15625 2.72978L13 10.8686L23.5469 2.72978M10.0699 10.0001L3.15625 17.5276M22.8437 16.911L15.9292 10.0001M4.5625 18.75C3.0092 18.75 1.75 17.425 1.75 15.7904V4.20956C1.75 2.57504 3.0092 1.25 4.5625 1.25H21.4375C22.9908 1.25 24.25 2.57504 24.25 4.20956V15.7904C24.25 17.425 22.9908 18.75 21.4375 18.75H4.5625Z"
-                      stroke="#5B60FF"
-                      stroke-width="2.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <a
-                  class="projet-team-link ml-[14px]"
-                  href="mailto:3e-partnership@btu.edu.ge"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >3e-partnership@btu.edu.ge</a
-                >
-              </li>
-            </ul>
-          </div>
-          <hr
-            class="hidden tablet:block tablet:w-full tablet:border-white tablet:border"
-          />
-          <div
-            class="tablet:flex tablet:justify-between tablet:flex-row-reverse tablet:items-center tablet:max-w-[1152px] tablet:w-full tablet:mx-auto tablet:py-[41px] tablet:px-6 lg:px-0"
-          >
-            <ul class="footer_social-icons">
-              <li class="facebook flex">
-                <a
-                  class="social-icon bg-white inline-block"
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg
-                    class="project-team-icon-item"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M25.5 13.0758C25.5 6.13 19.9042 0.5 13 0.5C6.09583 0.5 0.5 6.13 0.5 13.0758C0.5 19.3542 5.07 24.5567 11.0467 25.5V16.7117H7.87333V13.075H11.0467V10.305C11.0467 7.15333 12.9125 5.41167 15.7683 5.41167C17.135 5.41167 18.5667 5.6575 18.5667 5.6575V8.7525H16.9892C15.4367 8.7525 14.9533 9.7225 14.9533 10.7175V13.0758H18.42L17.8658 16.7108H14.9533V25.5C20.93 24.5567 25.5 19.3542 25.5 13.0758Z"
-                      fill="#5B60FF"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="instagram flex">
-                <a
-                  class="social-icon bg-white inline-block"
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg
-                    class="project-team-icon-item"
-                    width="34"
-                    height="33"
-                    viewBox="0 0 34 33"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M17.0002 4.27174C13.679 4.27174 13.2633 4.2856 11.9589 4.34511C10.657 4.40462 9.76762 4.61169 8.98991 4.91414C8.17469 5.22066 7.43529 5.70163 6.82387 6.32446C6.20204 6.93517 5.72077 7.67405 5.41355 8.48968C5.11273 9.2674 4.90485 10.1576 4.84534 11.4595C4.78665 12.763 4.77197 13.178 4.77197 16.5C4.77197 19.822 4.78583 20.237 4.84534 21.5413C4.90485 22.8432 5.11192 23.7326 5.41436 24.5103C5.72089 25.3255 6.20186 26.0649 6.82469 26.6764C7.43541 27.2982 8.17429 27.7794 8.98991 28.0867C9.76762 28.3883 10.657 28.5954 11.9589 28.6549C13.2633 28.7144 13.679 28.7283 17.0002 28.7283C20.3214 28.7283 20.7372 28.7144 22.0415 28.6549C23.3434 28.5954 24.2328 28.3883 25.0106 28.0859C25.8258 27.7794 26.5652 27.2984 27.1766 26.6755C27.7984 26.0648 28.2797 25.326 28.5869 24.5103C28.8885 23.7326 29.0956 22.8432 29.1551 21.5413C29.2146 20.237 29.2285 19.8212 29.2285 16.5C29.2285 13.1788 29.2146 12.763 29.1551 11.4587C29.0956 10.1568 28.8885 9.2674 28.5861 8.48968C28.2791 7.6737 27.7978 6.93451 27.1758 6.32365C26.5651 5.70182 25.8262 5.22054 25.0106 4.91332C24.2328 4.6125 23.3426 4.40462 22.0407 4.34511C20.7372 4.28642 20.3222 4.27174 17.0002 4.27174ZM17.0002 6.47528C20.2652 6.47528 20.6524 6.4875 21.9421 6.5462C23.1339 6.60082 23.7812 6.79892 24.2125 6.96767C24.7831 7.18859 25.1907 7.45435 25.6187 7.88153C26.0467 8.30952 26.3116 8.71712 26.5326 9.28778C26.7005 9.71903 26.8994 10.3663 26.954 11.5582C27.0127 12.8478 27.025 13.2351 27.025 16.5C27.025 19.765 27.0127 20.1522 26.954 21.4419C26.8994 22.6337 26.7013 23.281 26.5326 23.7122C26.3369 24.2434 26.0246 24.7239 25.6187 25.1185C25.2242 25.5244 24.7437 25.8367 24.2125 26.0323C23.7812 26.2003 23.1339 26.3992 21.9421 26.4538C20.6524 26.5125 20.266 26.5247 17.0002 26.5247C13.7345 26.5247 13.3481 26.5125 12.0584 26.4538C10.8665 26.3992 10.2193 26.2011 9.78801 26.0323C9.25685 25.8366 8.77633 25.5244 8.38176 25.1185C7.97592 24.7239 7.66365 24.2434 7.4679 23.7122C7.29996 23.281 7.10105 22.6337 7.04643 21.4419C6.98773 20.1522 6.97551 19.765 6.97551 16.5C6.97551 13.2351 6.98773 12.8478 7.04643 11.5582C7.10105 10.3663 7.29915 9.71903 7.4679 9.28778C7.68882 8.71712 7.95458 8.30952 8.38176 7.88153C8.77627 7.47558 9.25682 7.1633 9.78801 6.96767C10.2193 6.79973 10.8665 6.60082 12.0584 6.5462C13.3481 6.4875 13.7353 6.47528 17.0002 6.47528V6.47528Z"
-                      fill="#5B60FF"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M17.0002 20.5801C16.4644 20.5801 15.9338 20.4746 15.4388 20.2695C14.9437 20.0645 14.4939 19.764 14.1151 19.3851C13.7362 19.0062 13.4356 18.5564 13.2306 18.0614C13.0255 17.5664 12.92 17.0358 12.92 16.5C12.92 15.9642 13.0255 15.4336 13.2306 14.9386C13.4356 14.4435 13.7362 13.9937 14.1151 13.6149C14.4939 13.236 14.9437 12.9354 15.4388 12.7304C15.9338 12.5253 16.4644 12.4198 17.0002 12.4198C18.0823 12.4198 19.1201 12.8497 19.8853 13.6149C20.6505 14.38 21.0803 15.4178 21.0803 16.5C21.0803 17.5821 20.6505 18.6199 19.8853 19.3851C19.1201 20.1503 18.0823 20.5801 17.0002 20.5801V20.5801ZM17.0002 10.2146C15.3332 10.2146 13.7345 10.8768 12.5558 12.0556C11.377 13.2343 10.7148 14.833 10.7148 16.5C10.7148 18.1669 11.377 19.7656 12.5558 20.9444C13.7345 22.1231 15.3332 22.7853 17.0002 22.7853C18.6671 22.7853 20.2658 22.1231 21.4446 20.9444C22.6233 19.7656 23.2855 18.1669 23.2855 16.5C23.2855 14.833 22.6233 13.2343 21.4446 12.0556C20.2658 10.8768 18.6671 10.2146 17.0002 10.2146V10.2146ZM25.114 10.1005C25.114 10.4946 24.9575 10.8725 24.6789 11.1511C24.4002 11.4297 24.0223 11.5862 23.6283 11.5862C23.2342 11.5862 22.8563 11.4297 22.5777 11.1511C22.2991 10.8725 22.1426 10.4946 22.1426 10.1005C22.1426 9.70647 22.2991 9.32857 22.5777 9.04994C22.8563 8.77131 23.2342 8.61478 23.6283 8.61478C24.0223 8.61478 24.4002 8.77131 24.6789 9.04994C24.9575 9.32857 25.114 9.70647 25.114 10.1005"
-                      fill="#5B60FF"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="linkedin flex">
-                <a
-                  class="social-icon bg-white inline-block"
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg
-                    class="project-team-icon-item"
-                    width="26"
-                    height="25"
-                    viewBox="0 0 26 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M25.2285 2.07002V22.93C25.2285 23.4069 25.039 23.8643 24.7018 24.2016C24.3646 24.5388 23.9072 24.7283 23.4302 24.7283H2.57025C2.09331 24.7283 1.63592 24.5388 1.29867 24.2016C0.961433 23.8643 0.771973 23.4069 0.771973 22.93L0.771973 2.07002C0.771973 1.59309 0.961433 1.13569 1.29867 0.798446C1.63592 0.461204 2.09331 0.271744 2.57025 0.271744L23.4302 0.271744C23.9072 0.271744 24.3646 0.461204 24.7018 0.798446C25.039 1.13569 25.2285 1.59309 25.2285 2.07002V2.07002ZM7.96507 9.62277H4.36852V21.1317H7.96507V9.62277ZM8.28876 5.66656C8.29065 5.39451 8.23894 5.12476 8.13658 4.87269C8.03422 4.62063 7.88322 4.39119 7.69218 4.19749C7.50115 4.00378 7.27383 3.8496 7.02322 3.74375C6.7726 3.6379 6.50358 3.58245 6.23153 3.58057H6.16679C5.61355 3.58057 5.08297 3.80034 4.69177 4.19154C4.30057 4.58274 4.0808 5.11332 4.0808 5.66656C4.0808 6.21981 4.30057 6.75039 4.69177 7.14159C5.08297 7.53279 5.61355 7.75256 6.16679 7.75256V7.75256C6.43886 7.75925 6.70958 7.71227 6.96349 7.6143C7.21739 7.51633 7.44951 7.3693 7.64657 7.18159C7.84363 6.99388 8.00177 6.76919 8.11196 6.52034C8.22215 6.27149 8.28222 6.00338 8.28876 5.7313V5.66656ZM21.6319 14.14C21.6319 10.6802 19.4309 9.33504 17.2442 9.33504C16.5282 9.29919 15.8153 9.45169 15.1767 9.77732C14.538 10.103 13.9959 10.5903 13.6045 11.1909H13.5038V9.62277H10.123V21.1317H13.7195V15.0104C13.6676 14.3835 13.865 13.7613 14.2691 13.2792C14.6731 12.797 15.2511 12.4937 15.8775 12.4353H16.0141C17.1578 12.4353 18.0066 13.1546 18.0066 14.9672V21.1317H21.6032L21.6319 14.14Z"
-                      fill="#5B60FF"
-                    />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <div class="footer_privacy">
-              <div
-                class="border-b border-t border-white tablet:border-none w-full py-[19px] tablet:py-0 mb-6 tablet:mb-0 text-center tablet:text-start"
-              >
-                <span class="footer_privacy-policy">Privacy Policy</span>
-              </div>
-
-              <div
-                class="items-center footer_rights tablet:w-full mb-[60px] tablet:mb-[10px] flex justify-center mx-auto tablet:mx-0 flex-col tablet:flex-row"
-              >
-                <div class="flex items-center">
-                  <svg
-                    class="inline-block"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="8"
-                      cy="8"
-                      r="8"
-                      fill="white"
-                    />
-                  </svg>
-                  <span class="pl-[10px]">
-                    20?? **COMPANY NAME**
-                    <span class="hidden tablet:inline">.</span> &nbsp</span
-                  >
-                </div>
-                <span class="block">All rights reserved</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
     </div>
     <script src="../js/script.js"></script>
-  </body>
+</body>
+
 </html>
