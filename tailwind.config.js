@@ -10,7 +10,7 @@ module.exports = {
         // xl: '1280',
       },
       boxShadow: {
-        '3xl': '0 4px 20px -5px rgba(0, 0, 0, 0.8)',
+        'labelshadow': '0 4px 20px -5px rgba(0, 0, 0, 0.5)',
         'cardShadow': '0 14px 40px 0px rgba(0, 0, 0, 0.05)',
         'hoverCardShadow': '0 14px 40px 0px rgba(0, 0, 0, 0.3)',
         'eventCardShadow': '0 0px 20px 0px rgba(91, 96, 255, 0.5)',
