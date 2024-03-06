@@ -371,7 +371,7 @@ body {
 .search-result-text{
     @apply text-[#000000] opacity-50 text-size-lg 
 }
-}
+
 
 /* search result styles */
 
@@ -383,3 +383,19 @@ h2::first-letter,
 p::first-letter{
     text-transform: uppercase
   }
+/* slider style:  */
+
+
+.hero-slider{
+    @apply mx-auto
+}
+.her-slider_slide{
+    @apply w-full h-full flex items-center justify-center
+}
+.hero-slider_img {
+    @apply text-center h-[623px] overflow-hidden w-full bg-cover bg-center bg-no-repeat
+}
+
+
+
+}

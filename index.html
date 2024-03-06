@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>testing</title>
     <link rel="stylesheet" href="src/css/output.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
 </head>
 
 <body class="font-SFProDisplay bg-red-500">
@@ -245,12 +246,55 @@
         <main class="grow">
             <!--main slider -->
             <section class="hero-section">
-
-                <div class="mb-[28px] tablet:mb-[79px] bg-[url('../images/news-main.jpg')]">
-                    <div class="py-5 text-heading-lg bg-[#00000060] w-full h-full flex items-center justify-center">
+                <!-- slider -->
+                <div class="hero-slider swiper-container">
+                    <div class="hero-slider_wrapper swiper-wrapper">
+                        <!-- 1 -->
+                        <div class="hero-slider_slide swiper-slide">
+                            <div class="hero-slider_img">
+                                <img src="src/images/slide1.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="hero-slider_slide swiper-slide">
+                            <div class="hero-slider_img">
+                                <img src="src/images/slide2.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="hero-slider_slide swiper-slide">
+                            <div class="hero-slider_img">
+                                <img class="" src="src/images/slide3.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-pagination"></div>
                 </div>
-                
+<!-- 4
+ -->
+
+ <!-- 
+
+  -->
+
+<!-- Slider main container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </section>
         </main>
 
@@ -387,6 +431,7 @@
             </div>
         </footer>
     </div>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="src/js/script.js"></script>
 </body>
 
