@@ -121,6 +121,9 @@ const associatedList = document.getElementById('associated-list')
   const swiper = new Swiper(".hero-slider", {
     slidesPerView: 1,
     spaceBetween: 30,
+    // autoplay: {
+    //   Delay: 3000
+    // },
     loop: true,
     pagination: {
       el: ".swiper-pagination",

@@ -92,16 +92,17 @@ body {
     }
 
 }
-    /*  icentreba X  */
-    /* .active {
+
+/*  icentreba X  */
+/* .active {
         @apply lg:pl-[7px]
     } */
 
 
-    /* headers styles  start */
+/* headers styles  start */
 
 
-    @layer components {
+@layer components {
 
 
     .header {
@@ -113,7 +114,7 @@ body {
     }
 
     .nav-container {
-        @apply h-full w-full lg:overflow-hidden lg:flex lg:justify-end items-center justify-between px-6 pt-0 pb-6  lg:p-0
+        @apply h-full w-full lg:overflow-hidden lg:flex lg:justify-end items-center justify-between px-6 pt-0 pb-6 lg:p-0
     }
 
 
@@ -160,7 +161,7 @@ body {
     }
 
     .dropdown-menu-link {
-        @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray cursor-pointer direction-row py-[10px] pl-5 px-[10px] rounded-lg after:content-arrowRightIcon after:inline-block after:opacity-100 after:text-bg-iconBlue after:float-right lg:bg-white lg:after:content-arrowrose lg:after:opacity-0 after:mr-[10px]  lg:hover:text-colorsText-rose lg:hover:bg-bg-iconRose lg:hover:transition-all lg:after:ml-[16px] lg:hover:after:opacity-100
+        @apply text-size-xl lg:text-headerItem text-bg-iconBlue lg:text-colorsText-headerMenu bg-colorsText-darkGray cursor-pointer direction-row py-[10px] pl-5 px-[10px] rounded-lg after:content-arrowRightIcon after:inline-block after:opacity-100 after:text-bg-iconBlue after:float-right lg:bg-white lg:after:content-arrowrose lg:after:opacity-0 after:mr-[10px] lg:hover:text-colorsText-rose lg:hover:bg-bg-iconRose lg:hover:transition-all lg:after:ml-[16px] lg:hover:after:opacity-100
     }
 
     .dropdown-menu-show {
@@ -207,7 +208,7 @@ body {
     }
 
     .search-item {
-        @apply hover:text-bg-mainDark duration-200 text-size-lg  pl-[74px] rounded-lg text-white relative transition ease-in-out cursor-pointer
+        @apply hover:text-bg-mainDark duration-200 text-size-lg pl-[74px] rounded-lg text-white relative transition ease-in-out cursor-pointer
     }
 
     .search-see-all-items {
@@ -232,43 +233,49 @@ body {
         @apply bg-colorsText-darkGray text-white
         flex flex-col justify-between relative
     }
-    .footer_logo{
+
+    .footer_logo {
         @apply py-[9.5px] tablet:py-[23px]
     }
-    .footer_content{
-        @apply flex flex-col justify-between  w-full 
-        tablet:flex-row-reverse  mb-6 tablet:max-w-[1152px] tablet:mx-auto tablet:mb-[32px]
+
+    .footer_content {
+        @apply flex flex-col justify-between w-full tablet:flex-row-reverse mb-6 tablet:max-w-[1152px] tablet:mx-auto tablet:mb-[32px]
     }
 
     /* teqstis konteiner zoma ar weria zustad, amitom Sevamcire margin-bottom 28 - 21it */
-.footer_founders {
-    @apply flex flex-col items-center tablet:max-w-[777px] tablet:w-full justify-between mb-[28px] tablet:mb-0
-}
-/* suratis simaRlea 3pxiT meti, movakle paddings */
-    .footer_founders-img{
+    .footer_founders {
+        @apply flex flex-col items-center tablet:max-w-[777px] tablet:w-full justify-between mb-[28px] tablet:mb-0
+    }
+
+    /* suratis simaRlea 3pxiT meti, movakle paddings */
+    .footer_founders-img {
         @apply w-full mb-[30px] tablet:mb-[25px]
     }
-    .footer_founders-info{
-        @apply text-headerItem 
+
+    .footer_founders-info {
+        @apply text-headerItem
     }
-    .footer_founders-contact{
-        @apply text-size-lg flex flex-col tablet:justify-center gap-y-[10px] 
+
+    .footer_founders-contact {
+        @apply text-size-lg flex flex-col tablet:justify-center gap-y-[10px]
     }
-.footer-projet-team{
-    @apply flex justify-start items-center py-[14px]
-    tablet:w-[289px]
-}
-.footer_privacy{
-    @apply text-size-xl tablet:flex tablet:flex-col-reverse tablet:py-[10px]
-}
+
+    .footer-projet-team {
+        @apply flex justify-start items-center py-[14px] tablet:w-[289px]
+    }
+
+    .footer_privacy {
+        @apply text-size-xl tablet:flex tablet:flex-col-reverse tablet:py-[10px]
+    }
 
     .contact-icon {
-        @apply relative rounded-full border-none w-[46px] h-[46px]  transition-all duration-300  cursor-pointer
+        @apply relative rounded-full border-none w-[46px] h-[46px] transition-all duration-300 cursor-pointer
     }
 
-    .social-icon{
-        @apply relative rounded-full border-none w-[50px] h-[50px]  transition-all duration-300 cursor-pointer
+    .social-icon {
+        @apply relative rounded-full border-none w-[50px] h-[50px] transition-all duration-300 cursor-pointer
     }
+
     /* paginations iner text - 1 2 3  */
     .project-team-icon-item {
         @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
@@ -276,69 +283,75 @@ body {
 
 
     /* iconebis kontaineri didi, movakle margin botoms 38is -6 */
-.footer_social-icons{
-    @apply flex items-center justify-center gap-x-[20px] mb-[38px] tablet:mb-0
-}
+    .footer_social-icons {
+        @apply flex items-center justify-center gap-x-[20px] mb-[38px] tablet:mb-0
+    }
 
-.footer_rights{
-    @apply flex items-start
-}
-.footer_privacy-policy {
-    @apply hover:text-yellow
-}
+    .footer_rights {
+        @apply flex items-start
+    }
 
 .hero-block{
     @apply transition-all bg-cover bg-center h-[252px] object-cover object-center bg-no-repeat overflow-hidden text-white  text-center
 }
+    .footer_privacy-policy {
+        @apply hover:text-yellow
+    }
 
-/* News section */
+    .hero-block {
+        @apply relative top-0 left-0 mb-[28px] tablet:mb-[79px] transition-all bg-cover bg-center bg-no-repeat h-[252px] flex items-center justify-center
+    }
 
-.section-search-form-container {
-    @apply mx-auto flex items-center relative  mb-[28px] tablet:mb-[32px]
-}
+    /* News section */
 
-.section-search-form-input {
-    @apply text-black bg-bg-main w-full h-[39px] pl-5 rounded-[40px] text-size-lg focus:outline-none
-}
+    .section-search-form-container {
+        @apply mx-auto flex items-center relative mb-[28px] tablet:mb-[32px]
+    }
 
-.card{
-   @apply shadow-cardShadow rounded-xl relative overflow-hidden hover:shadow-hoverCardShadow
-    ease-out duration-300 hover:translate-y-[-1px] cursor-pointer
-   
-}
-.card-img{
-    @apply rounded-xl
-}
-.card-description {
-    @apply rounded-xl bg-white w-full px-4 pt-4 pb-1 space-y-3 -translate-y-[12px]
-}
-.card-title{
-    @apply text-heading-sm text-black
-}
+    .section-search-form-input {
+        @apply text-black bg-bg-main w-full h-[39px] pl-5 rounded-[40px] text-size-lg focus:outline-none
+    }
 
+    .card {
+        @apply shadow-cardShadow rounded-xl relative overflow-hidden hover:shadow-hoverCardShadow ease-out duration-300 hover:translate-y-[-1px] cursor-pointer
+    }
 
+    .card-img {
+        @apply rounded-xl
+    }
 
+    .card-description {
+        @apply rounded-xl bg-white w-full px-4 pt-4 pb-1 space-y-3 -translate-y-[12px]
+    }
 
-/* event style start */
-.events-cards{
-    @apply  grid gap-y-[28px] tablet:gap-y-[34px] gap-x-[24px] mx-auto md:grid-cols-2 mb-[52px] transition-all
-}
-.events{
-    @apply flex items-center gap-5  mb-[30px] max-w-[448px] w-full
-}
-
-
-
-/* event style end */
+    .card-title {
+        @apply text-heading-sm text-black
+    }
 
 
 
 
-/* project */
+    /* event style start */
+    .events-cards {
+        @apply grid gap-y-[28px] tablet:gap-y-[34px] gap-x-[24px] mx-auto md:grid-cols-2 mb-[52px] transition-all
+    }
 
-.project-card-wrapper{
-    @apply flex items-center justify-center flex-wrap gap-[28px] lg:gap-x-[37px] lg:gap-y-[34px] mx-auto tablet:mt-0 transition-all;
-}
+    .events {
+        @apply flex items-center gap-5 mb-[30px] max-w-[448px] w-full
+    }
+
+
+
+    /* event style end */
+
+
+
+
+    /* project */
+
+    .project-card-wrapper {
+        @apply flex items-center justify-center flex-wrap gap-[28px] lg:gap-x-[37px] lg:gap-y-[34px] mx-auto tablet:mt-0 transition-all;
+    }
 
 
 .project-card {
@@ -360,20 +373,21 @@ body {
 }
 
 
-/* search result styles */
-.search-result-card{
-    @apply  shadow-cardShadow hover:shadow-hoverCardShadow p-5 mb-[28px] rounded-xl
-}
+    /* search result styles */
+    .search-result-card {
+        @apply shadow-cardShadow hover:shadow-hoverCardShadow p-5 mb-[28px] rounded-xl
+    }
 
-.search-result-title{
-    @apply text-colorsText-rose text-heading-sm mb-[10px]
-}
-.search-result-text{
-    @apply text-[#000000] opacity-50 text-size-lg 
-}
+    .search-result-title {
+        @apply text-colorsText-rose text-heading-sm mb-[10px]
+    }
+
+    .search-result-text {
+        @apply text-[#000000] opacity-50 text-size-lg
+    }
 
 
-/* search result styles */
+    /* search result styles */
 
 h2::first-letter,
 h3::first-letter,
@@ -384,17 +398,18 @@ p::first-letter{
     text-transform: uppercase
   }
 /* slider style:  */
+    /* slider style:  */
 
 
-.hero-slider{
-    @apply mx-auto
-}
+    .hero-slider{
+        @apply mx-auto
+    }
 .her-slider_slide{
-    @apply w-full h-full flex items-center justify-center
+        @apply w-full h-full flex items-center justify-center
 }
 .hero-slider_img {
-    @apply text-center h-[623px] overflow-hidden w-full bg-cover bg-center bg-no-repeat
-}
+        @apply text-center h-[623px] overflow-hidden w-full bg-cover bg-center bg-no-repeat
+    }
 
 
 
