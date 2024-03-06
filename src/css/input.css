@@ -230,8 +230,7 @@ body {
 /* footer styles start*/
 @layer components {
     .footer {
-        @apply bg-colorsText-darkGray text-white
-        flex flex-col justify-between relative
+        @apply bg-colorsText-darkGray text-white flex flex-col justify-between relative
     }
 
     .footer_logo {
@@ -400,23 +399,6 @@ p::first-letter{
 /* slider style:  */
     /* slider style:  */
 
-
-    .hero-slider{
-        @apply mx-auto
-    } 
-
-    /* .hero-slider_slide {
-        @apply
-    } */
-
-    /* .hero-slider_img {
-        @apply text-center h-[623px] w-full bg-cover bg-center bg-no-repeat
-    } */
-    /* .btn-next{
-        @apply !text-bg-main size-2
-    } */
-    
-  
 }
 
 
@@ -428,4 +410,39 @@ p::first-letter{
 } 
 .hero-slider .swiper-pagination-bullet-active{
     background: rgba(244, 244, 244, 1);
+}
+#main-swiper .swiper-wrapper {
+    width: 100%;
+
+}
+
+#main-swiper .swiper-button-next::after,
+#main-swiper .swiper-button-prev::after {
+    color: rgba(244, 244, 244, 1);
+    font-size: 20px;
+    height: 24px;
+}
+
+#main-swiper .swiper-pagination-bullet {
+ height: 10px;
+ width: 10px;
+   background-color: rgba(255, 255, 255, 1); 
+   opacity: 30%;
+   
+}
+
+#main-swiper .swiper-pagination-bullet-active {
+    opacity: 100%;
+}
+#main-swiper .swiper-slide img{
+    display: block;
+    height: 625px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#main-swiper .swiper-slide{
+    background-color: red;
+
 }

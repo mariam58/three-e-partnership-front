@@ -119,10 +119,11 @@ const associatedList = document.getElementById('associated-list')
 
 // swiper
 
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('#main-swiper', {
       slidesPerView: 1,
       speed: 400,
-      spaceBetween: 30,
+      effect: 'fade',
+      autoPlay:3000,
       loop: true,
       pagination: {
             el: ".swiper-pagination",
