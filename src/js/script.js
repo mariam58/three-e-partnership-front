@@ -127,7 +127,8 @@ const associatedList = document.getElementById('associated-list')
       loop: true,
       pagination: {
             el: ".swiper-pagination",
-            clickable: true,
+        clickable: true,
+        dynamicBullets: true,
           },
           navigation: {
                 nextEl: ".swiper-button-next",

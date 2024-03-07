@@ -415,15 +415,9 @@ body {
 #main-swiper .swiper-button-next::after,
 #main-swiper .swiper-button-prev::after {
     color: rgba(244, 244, 244, 1);
-    font-size: 20px;
-    height: 24px;
-}
-
-#main-swiper .swiper-pagination {
-    width: fit-content;
-    margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 24px;
+    line-height: 900;
+    line-height: 46px;
 }
 
 #main-swiper .swiper-pagination-bullet {
@@ -432,10 +426,18 @@ body {
     background-color: rgba(255, 255, 255, 1);
     opacity: 30%;
 }
+#main-swiper .swiper-button-next,
+#main-swiper .swiper-button-prev {
+    height: calc(100vh - 59px);
+    width: 142px;
+    top: 0;
+    margin-top: 0;
+}
 
 #main-swiper .swiper-pagination-bullet-active {
     opacity: 100%;
 }
+
 #main-swiper .overlay {
     background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 
@@ -463,28 +465,20 @@ body {
     }
 
     #main-swiper .swiper-button-next {
-        right: 21%
+        right: 20%
     }
 
     #main-swiper .swiper-button-prev {
-        left: 21%
+        left: 20%
     }
 
     #main-swiper .swiper-button-next::after,
     #main-swiper .swiper-button-prev::after {
-        font-size: 10px;
-        height: 12px;
+        font-size: 16px;
+        text-align: center;
     }
 
     #main-swiper .swiper-pagination-bullets {
-        bottom: 40px;
+        bottom: 48px;
     }
-
-
-
-
-
-
-
-
 }
