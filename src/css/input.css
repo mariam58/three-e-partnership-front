@@ -383,3 +383,10 @@ h2::first-letter,
 p::first-letter{
     text-transform: uppercase
   }
+
+
+  /* home page */
+
+  .partners-card-img{
+    @apply max-w-[368px] w-full
+  }
