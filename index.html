@@ -244,9 +244,9 @@
         <!--  -->
         <!--  -->
         <main class="grow mt-[58px] bg-white">
-            <section class="news">
-                <!-- main image start -->
-                <div class="swiper mx-auto" id="main-swiper" keyboard="true" autoplay-delay="2500"
+            <section class="main-slider">
+                <!-- main slider start -->
+                <div class="swiper mx-auto" id="main-swiper" keyboard="true" autoplay="2500"
                     autoplay-disable-on-interaction="false">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper mx-auto">
@@ -255,7 +255,8 @@
                             <div class="overlay"></div><img src="src/images/slide1.png" alt="">
                         </div>
                         <div class="swiper-slide mx-auto">
-                            <div class="overlay"></div><img src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg" alt="">
+                            <div class="overlay"></div><img src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg"
+                                alt="">
                         </div>
                         <div class="swiper-slide mx-auto">
                             <div class="overlay"></div><img src="src/images/slide1.png" alt="">
@@ -277,19 +278,62 @@
                         </div>
 
                     </div>
-                    <div class="">
-                        <div id="navigation-wrapper">
-                            <div class="swiper-button-prev" id="button-prew"></div>
-                            <div class="swiper-button-next" id="button-next"></div>
-                            <div class="swiper-pagination"></div>
-                        </div>
+                    <div id="navigation-wrapper">
+                        <div class="swiper-button-prev" id="button-prew"></div>
+                        <div class="swiper-button-next" id="button-next"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-
-                <!-- main image end -->
-
-
+                <!-- main slider end -->
             </section>
+
+
+            <section class="news-section bg-bg-main tablet:py-[70px] py-[28px]">
+                <div class="container-wrapper">
+                    <div class="flex tablet:justify-between justify-center w-full tablet:items-center mb-[28px]">
+                        <div class="news-header">
+                            <h2 class="text-heading-md">news</h2>
+                        </div>
+                        <div class="news-btn hidden tablet:block">
+                            <a class="btn-see-all " href="http://#" target="_blank" rel="noopener noreferrer">See all</a>
+                        </div>
+                    </div>
+                    <div class="mb-[28px]">
+                        <!-- Slider news container -->
+                        <div class="swiper" id="news-swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg"
+                                        alt=""></div>
+                            </div>
+                            <!-- navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="news-btn tablet:hidden block w-full text-center">
+                            <a class="btn-see-all " href="http://#" target="_blank" rel="noopener noreferrer">See all</a>
+                        </div>
+                </div>
+            </section>
+
         </main>
 
         <!--   -->

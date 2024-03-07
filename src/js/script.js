@@ -1,3 +1,6 @@
+// const { default: Swiper } = require("swiper");
+
+
 const header = document.querySelector('.header')
 const burgerMenu = document.querySelector('#burger-menu');
 const dropdownMenu = document.getElementById('nav-container-wrapper')
@@ -119,23 +122,46 @@ const associatedList = document.getElementById('associated-list')
 
 // swiper
 
-    const swiper = new Swiper('#main-swiper', {
-      slidesPerView: 1,
-      speed: 400,
-      effect: 'fade',
-      autoPlay:3000,
-      loop: true,
-      pagination: {
-            el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-          },
-          navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-    });
+  new Swiper("#main-swiper", {
+    slidesPerView: 1,
+    speed: 400,
+    effect: "fade",
+    autoPlay: 3000,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
     
-
- 
+new Swiper("#news-swiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 24,
+  speed: 400,
+  lazyLoading: true,
+  autoPlay: 3000,
+  keyboard: {
+    enabled: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2.5,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
 
