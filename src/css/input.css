@@ -390,27 +390,17 @@ body {
 
 
     /* search result styles */
-
+    h1::first-letter,
     h2::first-letter,
     h3::first-letter,
     h4::first-letter,
-    h1::first-letter,
-    h2::first-letter,
     p::first-letter {
         text-transform: uppercase
     }
 
-    /* slider style:  */
-    /* slider style:  */
-
 }
 
-
-#main-swiper {
-    /* max-width: 1440px;
-    width: 100%;
-    margin: 0 auto; */
-}
+/* main swiper slider start */
 
 #main-swiper .swiper-button-next::after,
 #main-swiper .swiper-button-prev::after {
@@ -450,9 +440,19 @@ body {
     object-fit: cover;
     object-position: center;
 }
+/* main swiper slider  end */
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 600px) {
-
+/* main swiper slider start */
     #main-swiper .swiper-button-next,
     #main-swiper .swiper-button-prev {
         bottom: 30px;
@@ -481,4 +481,5 @@ body {
     #main-swiper .swiper-pagination-bullets {
         bottom: 48px;
     }
+        /* main swiper slider end*/
 }
