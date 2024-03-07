@@ -126,8 +126,12 @@ const associatedList = document.getElementById('associated-list')
     slidesPerView: 1,
     speed: 400,
     effect: "fade",
-    autoPlay: 3000,
+    autoPlay: 1000,
     loop: true,
+    lazyLoading: true,
+    keyboard: {
+      enabled: true,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -140,7 +144,7 @@ const associatedList = document.getElementById('associated-list')
   });
     
 new Swiper("#news-swiper", {
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   spaceBetween: 24,
   speed: 400,
   loop: true,
@@ -150,10 +154,8 @@ new Swiper("#news-swiper", {
     enabled: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".slide-next",
+    prevEl: ".slide-prev",
   },
-
-
 });
 

@@ -473,21 +473,24 @@ body {
     @apply text-size-lg
 }
 
-#news-swiper .swiper-button-prev {
+#slider-container{
+    @apply relative max-w-[1152px] w-full mx-auto
+}
+#slider-container .slide-prev {
     @apply ml-[-33px]
 }
 
-#news-swiper .swiper-button-next {
+#slider-container .slide-next {
     @apply mr-[-33px]
 }
 
-#news-swiper .swiper-button-next,
-#news-swiper .swiper-button-prev {
+#slider-container .slide-next,
+#slider-container .slide-prev {
     @apply rounded-full bg-white w-[46px] h-[46px] text-colorsText-rose hover:bg-colorsText-rose hover:text-white shadow-md z-20 top-[135px]
 }
 
-#news-swiper .swiper-button-next::after,
-#news-swiper .swiper-button-prev::after {
+#slider-container .slide-next::after,
+#slider-container .slide-prev::after {
     @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-size-lg hover:text-white z-20
 }
 
@@ -524,8 +527,8 @@ body {
 
     /* main swiper slider end*/
 
-    #news-swiper .swiper-button-prev,
-    #news-swiper .swiper-button-next {
+    #slider-container .slide-prev,
+    #slider-container .slide-next {
         @apply hidden
     }
 

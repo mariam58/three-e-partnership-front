@@ -246,7 +246,7 @@
         <main class="grow mt-[58px] bg-white">
             <section class="main-slider">
                 <!-- main slider start -->
-                <div class="swiper mx-auto" id="main-swiper" keyboard="true" autoplay="2500"
+                <div class="swiper mx-auto" id="main-swiper" autoplay="2500"
                     autoplay-disable-on-interaction="false">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper mx-auto">
@@ -300,11 +300,12 @@
                     </div>
                     
                         <!-- Slider news container -->
-
-                        <div class="swiper mb-[23px] md:mb-[70px]" id="news-swiper">
+                        <div id="slider-container">
+                             <div class="swiper mb-[23px] md:mb-[70px]"  id="news-swiper">
                             <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
+                               <div class="swiper-wrapper">
                                 <!-- Slides -->
+                                <!-- 1 -->
                                 <div class="swiper-slide slides-card">
                                    <div class="news-card-img">
                                         <img  src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg"
@@ -326,6 +327,7 @@
                                         <p class="news-card-text">Lorem Ipsum is simply dummy text of the printing and  typesetting industry.</p>
                                     </div>
                                 </div>
+                                <!-- 3 -->
                                 <div class="swiper-slide slides-card">
                                    <div class="news-card-img">
                                         <img  src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg"
@@ -336,7 +338,7 @@
                                         <p class="news-card-text">Lorem Ipsum is simply dummy text of the printing and  typesetting industry.</p>
                                     </div>
                                 </div>
-                                <!-- 2 -->
+                                <!-- 4 -->
                                   <div class="swiper-slide slides-card">
                                    <div class="news-card-img">
                                         <img  src="src/images/events-detail-main.jpg"
@@ -347,6 +349,7 @@
                                         <p class="news-card-text">Lorem Ipsum is simply dummy text of the printing and  typesetting industry.</p>
                                     </div>
                                 </div>
+                                <!-- 5 -->
                                 <div class="swiper-slide slides-card">
                                    <div class="news-card-img">
                                         <img  src="src/images/ganapathy-kumar-JxBcs2O6-C0-unsplash.jpg"
@@ -357,7 +360,7 @@
                                         <p class="news-card-text">Lorem Ipsum is simply dummy text of the printing and  typesetting industry.</p>
                                     </div>
                                 </div>
-                                <!-- 2 -->
+                                <!-- 6 -->
                                   <div class="swiper-slide slides-card">
                                    <div class="news-card-img">
                                         <img  src="src/images/events-detail-main.jpg"
@@ -370,10 +373,10 @@
                                 </div>
                             </div>
                             <!-- navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            </div>
+                            <div class="swiper-button-prev slide-prev"></div>
+                            <div class="swiper-button-next slide-next"></div>
                         </div>
-                    
                         <!-- see all btn -->
                         <div class="w-full mx-auto text-center">
                             <a class="btn-see-all news-btn md:hidden inline-block" href="http://#" target="_blank" rel="noopener noreferrer">See all</a>
