@@ -449,8 +449,41 @@ body {
 
 
 /* main swiper slider  end */
-/* new swiper styles */
+/* news swiper styles */
+#news-swiper {
+ @apply overflow-visible
+}
+#news-swiper .swiper-wrapper{
+    @apply overflow-hidden
+}
 
+#news-swiper .news-card-img {
+    @apply  w-full mb-3 overflow-hidden max-w-[270px] 
+}
+#news-swiper .news-card-img img{
+    @apply rounded-lg min-h-[270px] object-cover object-center w-full
+}
+#news-swiper .news-date {
+    @apply text-size-md text-colorsText-headerMenu mb-3 inline-block
+}
+
+#news-swiper .news-card-text {
+    @apply text-size-lg
+}
+
+#news-swiper .swiper-button-prev{
+@apply ml-[-24px]
+}
+
+#news-swiper .swiper-button-next,
+#news-swiper .swiper-button-prev{
+    @apply rounded-full bg-white w-[46px] h-[46px] text-colorsText-rose  hover:bg-colorsText-rose hover:text-white shadow-md z-20 top-[135px]
+}
+
+#news-swiper .swiper-button-next::after,
+#news-swiper .swiper-button-prev::after{
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-size-lg hover:text-white z-20
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -463,7 +496,6 @@ body {
         width: 46px;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.2);
-
     }
 
     #main-swiper .swiper-button-next {

@@ -140,9 +140,10 @@ const associatedList = document.getElementById('associated-list')
   });
     
 new Swiper("#news-swiper", {
-  slidesPerView: 1.3,
+  slidesPerView: 1.19,
   spaceBetween: 24,
   speed: 400,
+  loop: true,
   lazyLoading: true,
   autoPlay: 3000,
   keyboard: {
@@ -152,6 +153,7 @@ new Swiper("#news-swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
   breakpoints: {
     430: {
       slidesPerView: 2,
