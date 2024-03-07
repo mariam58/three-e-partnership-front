@@ -450,12 +450,12 @@ body {
 
 /* main swiper slider  end */
 /* news swiper styles */
-#news-swiper {
+/* #news-swiper {
  @apply overflow-visible
 }
 #news-swiper .swiper-wrapper{
     @apply overflow-hidden
-}
+} */
 
 #news-swiper .news-card-img {
     @apply  w-full mb-3 overflow-hidden max-w-[270px] 
@@ -472,7 +472,10 @@ body {
 }
 
 #news-swiper .swiper-button-prev{
-@apply ml-[-24px]
+@apply ml-[-33px]
+}
+#news-swiper .swiper-button-next {
+    @apply mr-[-33px]
 }
 
 #news-swiper .swiper-button-next,
