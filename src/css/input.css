@@ -452,13 +452,13 @@ body {
 /* news swiper styles */
 /* #news-swiper {
  @apply overflow-visible
-}
-#news-swiper .swiper-wrapper{
-    @apply overflow-hidden
 } */
+#news-swiper .slides-card{
+    @apply max-w-[270px] w-full
+} 
 
 #news-swiper .news-card-img {
-    @apply w-full mb-3 overflow-hidden max-w-[270px]
+    @apply w-full mb-3 overflow-hidden 
 }
 
 #news-swiper .news-card-img img {

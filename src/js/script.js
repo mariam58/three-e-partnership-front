@@ -140,7 +140,7 @@ const associatedList = document.getElementById('associated-list')
   });
     
 new Swiper("#news-swiper", {
-  slidesPerView: 1.19,
+  slidesPerView: 'auto',
   spaceBetween: 24,
   speed: 400,
   loop: true,
@@ -154,19 +154,6 @@ new Swiper("#news-swiper", {
     prevEl: ".swiper-button-prev",
   },
 
-  breakpoints: {
-    430: {
-      slidesPerView: 2,
-    },
-    640: {
-      slidesPerView: 3,
-    },
-    768: {
-      slidesPerView: 3.5,
-    },
-    1024: {
-      slidesPerView: 4,
-    },
-  },
+
 });
 
