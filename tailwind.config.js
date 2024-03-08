@@ -11,12 +11,12 @@ module.exports = {
       },
       boxShadow: {
         'labelshadow': '0 4px 20px -5px rgba(0, 0, 0, 0.5)',
+        'seeAllBtn': '0px 0px 30px 0px rgba(14, 20, 241, 0.5)',
         'cardShadow': '0 14px 40px 0px rgba(0, 0, 0, 0.05)',
         'hoverCardShadow': '0 14px 40px 0px rgba(0, 0, 0, 0.3)',
         'eventCardShadow': '0 0px 20px 0px rgba(91, 96, 255, 0.5)',
         'circleCardShadow': 'inset 0 0px 20px 0px rgba(91, 96, 255, 0.5)',
         'wrappershadow':'0px 14px 30px -4px rgba(0, 0, 0, 0.25)',
-
       },
       colors:{
         bg:{
