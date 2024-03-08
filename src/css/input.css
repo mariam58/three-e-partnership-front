@@ -44,7 +44,7 @@ body {
 
     /* btn see all  */
     .btn-see-all {
-        @apply btn-primary px-[50px] rounded-[30px] shadow-2xl shadow-colorsText-blue hover:shadow-colorsText-darkGray
+        @apply btn-primary px-[50px] rounded-[30px] hover:shadow-colorsText-darkGray
     }
 
     /* underlined buttons grey */
@@ -390,3 +390,6 @@ p::first-letter{
   .partners-card-img{
     @apply max-w-[368px] w-full
   }
+  .partners-cards-layer{
+    background: linear-gradient(0deg, #F4F4F4 12.52%, rgba(217, 217, 217, 0) 68.99%);
+}
