@@ -148,9 +148,13 @@ new Swiper("#news-swiper", {
   slidesPerView: "auto",
   spaceBetween: 24,
   speed: 400,
+
   loop: true,
   lazyLoading: true,
-  autoPlay: 3000,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   keyboard: {
     enabled: true,
   },
