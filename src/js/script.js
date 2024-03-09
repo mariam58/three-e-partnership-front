@@ -118,6 +118,45 @@ const associatedList = document.getElementById('associated-list')
     }
 
     
+// swiper
+
+  new Swiper("#main-swiper", {
+    slidesPerView: 1,
+    speed: 400,
+    effect: "fade",
+    autoPlay: 1000,
+    loop: true,
+    lazyLoading: true,
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+    
+new Swiper("#news-swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  speed: 400,
+  loop: true,
+  lazyLoading: true,
+  autoPlay: 3000,
+  keyboard: {
+    enabled: true,
+  },
+  navigation: {
+    nextEl: ".slide-next",
+    prevEl: ".slide-prev",
+  },
+});
+
 
     
 
