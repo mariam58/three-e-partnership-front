@@ -393,3 +393,140 @@ p::first-letter{
   .partners-cards-layer{
     background: linear-gradient(0deg, #F4F4F4 12.52%, rgba(217, 217, 217, 0) 68.99%);
 }
+
+
+/* main swiper slider start */
+
+#main-swiper {
+    height: calc(100vh - 59px);
+    width: 100%;
+}
+
+#main-swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 623px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#main-swiper .overlay {
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+#main-swiper .swiper-button-next::after,
+#main-swiper .swiper-button-prev::after {
+    color: rgba(244, 244, 244, 1);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 46px;
+}
+
+#main-swiper .swiper-button-next,
+#main-swiper .swiper-button-prev {
+    height: calc(100vh - 59px);
+    width: 142px;
+    top: 0;
+    margin-top: 0;
+}
+
+#main-swiper .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 30%;
+}
+
+#main-swiper .swiper-pagination-bullet-active {
+    opacity: 100%;
+}
+
+
+/* main swiper slider  end */
+/* news swiper styles */
+/* #news-swiper {
+ @apply overflow-visible
+} */
+#news-swiper .slides-card {
+    @apply max-w-[270px] w-full
+}
+
+#news-swiper .news-card-img {
+    @apply w-full mb-3 overflow-hidden
+}
+
+#news-swiper .news-card-img img {
+    @apply rounded-lg min-h-[270px] object-cover object-center w-full
+}
+
+#news-swiper .news-date {
+    @apply text-size-md text-colorsText-headerMenu mb-3 inline-block
+}
+
+#news-swiper .news-card-text {
+    @apply text-size-lg
+}
+
+#slider-container {
+    @apply relative max-w-[1152px] w-full mx-auto
+}
+
+#slider-container .slide-prev {
+    @apply ml-[-33px]
+}
+
+#slider-container .slide-next {
+    @apply mr-[-33px]
+}
+
+#slider-container .slide-next,
+#slider-container .slide-prev {
+    @apply rounded-full bg-white w-[46px] h-[46px] text-colorsText-rose hover:bg-colorsText-rose hover:text-white shadow-md z-20 top-[135px]
+}
+
+#slider-container .slide-next::after,
+#slider-container .slide-prev::after {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-size-lg hover:text-white z-20
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* main swiper slider start */
+    #main-swiper .swiper-button-next,
+    #main-swiper .swiper-button-prev {
+        bottom: 30px;
+        top: var(--swiper-pagination-top, auto);
+        height: 46px;
+        width: 46px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    #main-swiper .swiper-button-next {
+        right: 20%
+    }
+
+    #main-swiper .swiper-button-prev {
+        left: 20%
+    }
+
+    #main-swiper .swiper-button-next::after,
+    #main-swiper .swiper-button-prev::after {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #main-swiper .swiper-pagination-bullets {
+        bottom: 48px;
+    }
+
+    /* main swiper slider end*/
+
+    #slider-container .slide-prev,
+    #slider-container .slide-next {
+        @apply hidden
+    }
+
+
+}
