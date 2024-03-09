@@ -398,7 +398,7 @@ p::first-letter{
 /* main swiper slider start */
 
 #main-swiper {
-    height: calc(100vh - 59px);
+    height: calc(100vh - 86px);
     width: 100%;
 }
 
