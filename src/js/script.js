@@ -124,7 +124,10 @@ const associatedList = document.getElementById('associated-list')
     slidesPerView: 1,
     speed: 400,
     effect: "fade",
-    autoPlay: 1000,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     loop: true,
     lazyLoading: true,
     keyboard: {
