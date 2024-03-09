@@ -44,7 +44,7 @@ body {
 
     /* btn see all  */
     .btn-see-all {
-        @apply btn-primary px-[50px] rounded-[30px] hover:shadow-colorsText-darkGray
+        @apply btn-primary px-[50px] rounded-[30px] shadow-seeAllbtn hover:shadow-colorsText-darkGray
     }
 
     /* underlined buttons grey */
@@ -290,12 +290,16 @@ body {
         @apply flex items-start
     }
 
+    .hero-block {
+        @apply transition-all bg-cover bg-center h-[252px] object-cover object-center bg-no-repeat overflow-hidden text-white text-center
+    }
+
     .footer_privacy-policy {
         @apply hover:text-yellow
     }
 
     .hero-block {
-        @apply transition-all bg-cover bg-center h-[252px] object-cover object-center bg-no-repeat overflow-hidden text-white text-center
+        @apply relative top-0 left-0 mb-[28px] tablet:mb-[79px] transition-all bg-cover bg-center bg-no-repeat h-[252px] flex items-center justify-center
     }
 
     /* News section */
@@ -383,30 +387,18 @@ body {
     .search-result-text {
         @apply text-[#000000] opacity-50 text-size-lg
     }
+
+
+    /* search result styles */
+    h1::first-letter,
+    h2::first-letter,
+    h3::first-letter,
+    h4::first-letter,
+    p::first-letter {
+        text-transform: uppercase
+    }
+
 }
-
-/* search result styles */
-
-h2::first-letter,
-h3::first-letter,
-h4::first-letter,
-h1::first-letter,
-h2::first-letter,
-p::first-letter {
-    text-transform: uppercase
-}
-
-
-/* home page */
-
-.partners-card-img {
-    @apply max-w-[368px] w-full
-}
-
-.partners-cards-layer {
-    background: linear-gradient(0deg, #F4F4F4 12.52%, rgba(217, 217, 217, 0) 68.99%);
-}
-
 
 /* main swiper slider start */
 
@@ -461,12 +453,12 @@ p::first-letter {
 /* #news-swiper {
  @apply overflow-visible
 } */
-#news-swiper .slides-card {
+#news-swiper .slides-card{
     @apply max-w-[270px] w-full
-}
+} 
 
 #news-swiper .news-card-img {
-    @apply w-full mb-3 overflow-hidden
+    @apply w-full mb-3 overflow-hidden 
 }
 
 #news-swiper .news-card-img img {
@@ -481,10 +473,9 @@ p::first-letter {
     @apply text-size-lg
 }
 
-#slider-container {
+#slider-container{
     @apply relative max-w-[1152px] w-full mx-auto
 }
-
 #slider-container .slide-prev {
     @apply ml-[-33px]
 }
@@ -540,4 +531,6 @@ p::first-letter {
     #slider-container .slide-next {
         @apply hidden
     }
+
+
 }
