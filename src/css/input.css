@@ -219,7 +219,7 @@ body {
     }
 
     .btn-close {
-        @apply bg-transparent p-0 opacity-100 mt-[11px] transition-all hover:opacity-75 flex items-center justify-center w-[10%] self-start
+        @apply bg-transparent p-0 opacity-100 mt-[11px] transition-all hover:opacity-75 flex items-center justify-center w-[10%] self-start cursor-pointer
     }
 
 
